@@ -2067,6 +2067,10 @@ input, select, textarea {
 		  transform: scale(2.5);
 	}
 
+	footer #scrolly:focus {
+		outline: none;
+	}
+
 	.scrolly:hover {
        background-color: transparent !important;
 	}
