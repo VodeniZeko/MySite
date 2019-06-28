@@ -233,7 +233,7 @@ input, select, textarea {
 	}
 
 	section.three {
-        background-image: url(https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg);  /*url(../../images/codek1.jpeg);*/ 
+        background-image: url(https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg);
         background-attachment: fixed;
         background-size: cover;
         z-index: -1;
@@ -2179,6 +2179,8 @@ input, select, textarea {
 			}
 
 
+@media (hover:hover) and (pointer:fine) {
+
 				#header .icons #tw:hover {
 					  color: #55acee;
 					  -webkit-transform: scale(1.3) ;
@@ -2230,6 +2232,7 @@ input, select, textarea {
 					  transition: 250ms cubic-bezier(.89,.03,.06,1.50);
 					   z-index: 11;
 				}
+	}
 
 	#logo {
 		position: relative;
@@ -2741,76 +2744,6 @@ input, select, textarea {
 					padding: 0 1em;
 				}
 
-		/* typed animation ABOUT ME*/
-
-
-/*			#main > section.bd-highlight {
-					  width: 30em;
-					  height: 33em;
-					  border: 1px solid white;
-					  background-color: #151515;
-					  font-family: monospace;
-					  font-size: 1em;
-					  color: black;
-					  text-shadow: 1px 1px 2px gray;
-					  box-shadow:-1px -1px 45px -1px #000;
-					}*/
-
-/*			section.spn-txt {
-					  border: 1px solid white;
-					  background-color: #000;
-					  text-align: center;
-					  font-family: sans-serif;
-					  font-size: 1.2em;
-					  color: black;
-					  margin-bottom:5px;
-					  text-shadow: 1px 1px 2px #fff;
-					  padding: 0;
-
-					}*/
-
-/*			.spn-txt{
-					 line-height: 1.5em;
-					 white-space: pre;
-					 padding-left: 35px;
-					 margin-top:0 auto;
-					 display: inline-block;
-					 font-family: 'Monaco', 'Inconsolata', 'Ubuntu Mono', monotype;
-					color: white;
-					}*/
-
-/*
-			.violet {
-					  color: rgb(122,130,151)
-					}
-			.white{
-					  color: #fff
-					}
-			.green{
-					  color: rgb(134,179,138)
-					}
-					  
-			.yellow{
-					color: rgb(221,202,96);
-					}   
-					        
-					  
-			.typed-cursor{
-					  color: white
-					  opacity: 1
-					  -webkit-animation: blink 0.7s infinite
-					  -moz-animation: blink 0.7s infinite
-					  animation: blink 0.7s infinite
-					 
-					@keyframes blink
-					  0%  
-					    opacity: 1
-					  50% 
-					    opacity: 0
-					  100% 
-					    opacity: 1
-					}
-*/
 
 		/* Footer */
 
