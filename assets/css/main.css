@@ -2067,7 +2067,7 @@ input, select, textarea {
 		  transform: scale(2.5);
 	}
 
-	footer #scrolly:focus {
+	.button:focus {
 		outline: none;
 	}
 
