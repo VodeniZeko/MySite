@@ -115,12 +115,8 @@ input, select, textarea {
 	}
 
 	h2.aboutMe {
-		color: transparent;
-		text-shadow: 0 -3px 0 transparent,
-		0 6px 8px rgba(0,0,0,.4),
-		0 9px 10px rgba(0,0,0,.15),
-		0 30px 10px rgba(0,0,0,.18),
-		0 15px 10px rgba(0,0,0,.21);
+		color: #fff;
+		
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -238,7 +234,7 @@ input, select, textarea {
 	}
 
 	section.three {
-        background-image: url(https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg); /*url(../../images/codek.jpeg);*/ 
+        background-image: url(https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg);  /*url(../../images/codek1.jpeg);*/ 
         background-attachment: fixed;
         background-size: cover;
         z-index: -1;
