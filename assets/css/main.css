@@ -2065,10 +2065,23 @@ input, select, textarea {
 		  -ms-transform: scale(2.5) ;
 		  -o-transform: scale(2.5) ;
 		  transform: scale(2.5);
+		  		-moz-transition:  0.1s ease-in-out;
+		-webkit-transition:  0.1s ease-in-out;
+		-ms-transition:  0.1s ease-in-out;
+		transition:  0.1s ease-in-out;
 	}
 
-	.button:focus {
+	button.button:focus {
 		outline: none;
+	}
+
+	footer #scrolly:hover {
+       		 -webkit-transform: scale(2.7) ;
+		  -moz-transform: scale(2.7) ;
+		  -ms-transform: scale(2.7) ;
+		  -o-transform: scale(2.7) ;
+		  transform: scale(2.7);
+		  color: #d3d3d3;
 	}
 
 
