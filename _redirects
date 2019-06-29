@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://novi-web.netlify.com/* https://takija.io/:splat 301!
