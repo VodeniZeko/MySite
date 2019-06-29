@@ -309,13 +309,16 @@ input, select, textarea {
 
 
 		@media only screen and (min-width : 1824px) {
-				footer #scrolly:hover {
-					-webkit-transform: scale(2.6) ;
-					-moz-transform: scale(2.6) ;
-					-ms-transform: scale(2.6) ;
-					-o-transform: scale(2.6) ;
-					transform: scale(2.6);
-					color: #e5e5e5;
+			footer #scrolly:hover {
+				-webkit-animation: pulsate 1.2s ease-out;
+				-webkit-animation-iteration-count: 1; 
+				opacity: 1;
+				color: #222729;
+				}
+			@-webkit-keyframes pulsate {
+				0% {-webkit-transform: scale(2.5, 2.5);}
+				50% {-webkit-transform: scale(2.8, 2.8);}
+				100% {-webkit-transform: scale(2.5, 2.5);}
 			}
 		}
 
@@ -2091,10 +2094,6 @@ input, select, textarea {
 		-ms-transform: scale(2.5) ;
 		-o-transform: scale(2.5) ;
 		transform: scale(2.5);
-		-moz-transition:  .3s ease-in-out;
-		-webkit-transition:  .3s ease-in-out;
-		-ms-transition:  .3s ease-in-out;
-		transition:  .3s ease-in-out;
 	}
 
 	button.button:focus {
