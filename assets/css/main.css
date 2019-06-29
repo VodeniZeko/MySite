@@ -307,13 +307,24 @@ input, select, textarea {
 		color: rgb(221,202,96);
 		} 
 
+
+		@media only screen and (min-width : 1824px) {
+				footer #scrolly:hover {
+					-webkit-transform: scale(2.6) ;
+					-moz-transform: scale(2.6) ;
+					-ms-transform: scale(2.6) ;
+					-o-transform: scale(2.6) ;
+					transform: scale(2.6);
+					color: #e5e5e5;
+			}
+		}
+
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.container {
 				width: 1200px;
 			}
 
-		}
 
 		@media screen and (min-width: 961px) and (max-width: 1620px) {
 
@@ -328,6 +339,7 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
+	}
 
 		}
 
@@ -1857,6 +1869,20 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			-webkit-filter: brightness(85%);
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+
+		#comingSoon {
+			-webkit-filter: brightness(25%);
+		}
+
+		.image.fit:hover {
+			-webkit-filter: brightness(100%);
 		}
 
 		.image.featured {
@@ -2060,28 +2086,19 @@ input, select, textarea {
 		cursor: pointer;
 		background-color: inherit ;
 		cursor: pointer;
-		 -webkit-transform: scale(2.5) ;
-		  -moz-transform: scale(2.5) ;
-		  -ms-transform: scale(2.5) ;
-		  -o-transform: scale(2.5) ;
-		  transform: scale(2.5);
-		  		-moz-transition:  0.1s ease-in-out;
-		-webkit-transition:  0.1s ease-in-out;
-		-ms-transition:  0.1s ease-in-out;
-		transition:  0.1s ease-in-out;
+		-webkit-transform: scale(2.5) ;
+		-moz-transform: scale(2.5) ;
+		-ms-transform: scale(2.5) ;
+		-o-transform: scale(2.5) ;
+		transform: scale(2.5);
+		-moz-transition:  .3s ease-in-out;
+		-webkit-transition:  .3s ease-in-out;
+		-ms-transition:  .3s ease-in-out;
+		transition:  .3s ease-in-out;
 	}
 
 	button.button:focus {
 		outline: none;
-	}
-
-	footer #scrolly:hover {
-       		 -webkit-transform: scale(2.7) ;
-		  -moz-transform: scale(2.7) ;
-		  -ms-transform: scale(2.7) ;
-		  -o-transform: scale(2.7) ;
-		  transform: scale(2.7);
-		  color: #d3d3d3;
 	}
 
 
