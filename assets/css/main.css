@@ -2120,8 +2120,10 @@ input, select, textarea {
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		-webkit-box-shadow: 0px 0px 22px 0px #d5d5d5;
+		-moz-box-shadow: 0px 0px 22px 0px #d5d5d5;
+		box-shadow: 0px 0px 22px 0px #d5d5d5;
 	}
 
 		.item header {
