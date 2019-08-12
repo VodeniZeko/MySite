@@ -227,7 +227,7 @@ input, select, textarea {
 
 	span.text-muted {
 		color: #fff;
-		text-shadow: .3px .9px .3px #000;
+		text-shadow: 1px 1.5px .3px #000;
 	}
 
 	br.clear {
@@ -2176,7 +2176,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #ffa500; /*#222629*/
+		background: #ffa500; 
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, .3);
 		color: #fff;
 		height: 100%;
