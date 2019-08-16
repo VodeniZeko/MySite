@@ -216,18 +216,13 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 		text-shadow: .1px .5px .1px #000;
-		color:#4d00ff;
+		color:#414172;
 	}
 
 	p.text-muted {
 		opacity: 0.5;
 		padding-top: 4em;
 		color: #000;
-	}
-
-	span.text-muted {
-		color: #fff;
-		text-shadow: 1px 1.5px .3px #000;
 	}
 
 	br.clear {
@@ -243,12 +238,13 @@ input, select, textarea {
 	}
 
 	section.three {
-        background-image: url(https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg);
+        background-image: url(https://s3.amazonaws.com/course_report_staging/close_up_code.jpg);
         background-attachment: fixed;
         background-size: cover;
         z-index: -1;
 	}
-
+/*	https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg
+*/
 	.jumbo {
 		display: flex;
 		align-items: center;
@@ -369,6 +365,32 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
+
+			ul.icons a {
+				background-color: #fff;
+			}
+
+			#header .icons #tw {
+					  color: #55acee;
+					   z-index: 11;
+				}
+
+				#header .icons #fb {
+					color: #0e76a8;
+					   z-index: 11;
+				}
+				#header .icons #gh {
+					color: #fff;
+					   z-index: 11;
+				}
+				#header .icons #em {
+					color: #ffb732;
+					   z-index: 11;
+				}
+				#header .icons #rs {
+					color: #ff0000;
+					   z-index: 11;
+				}
 
 		}
 
@@ -1963,7 +1985,7 @@ input, select, textarea {
 			border: 0;
 			color: #fff;
 			border-radius: 50%;
-            box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.5);
 	        transition: .5s;
 	        background: linear-gradient(0deg, #3c3c3c, #515151);
 	        box-sizing: border-box;
@@ -2250,7 +2272,7 @@ input, select, textarea {
 					   z-index: 11;
 				}
 				#header .icons #em:hover {
-					color: #C6C6C6;
+					color: #ffb732;
 					   z-index: 11;
 				}
 				#header .icons #rs:hover {
@@ -2416,9 +2438,7 @@ input, select, textarea {
 			}
 
 			#main > section.three {
-				background-color: #fff; 
-				box-shadow: inset  0em 0 0 .2em  rgba(0.1, 0.1, 0.1, 0.4);
-				
+				background-color: #fff; 				
 			}
 
 			#main > section.four {
