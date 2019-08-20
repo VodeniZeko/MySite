@@ -239,9 +239,9 @@ input, select, textarea {
 
 	section.three {
         background-image: url(https://s3.amazonaws.com/course_report_staging/close_up_code.jpg);
-        background-attachment: fixed;
+/*        background-attachment: fixed;*/
         background-size: cover;
-        z-index: -1;
+/*        z-index: -1;*/
 	}
 /*	https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg
 */
@@ -252,6 +252,7 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 		padding: 1em;
+		transform: skew(0deg, 2deg)
 	}
 
     .jumbo #typed-strings {
@@ -348,6 +349,31 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
+			ul.icons a {
+				background-color: #fff;
+			}
+
+			#header .icons #tw {
+					  color: #55acee;
+					   z-index: 11;
+				}
+
+				#header .icons #fb {
+					color: #0e76a8;
+					   z-index: 11;
+				}
+				#header .icons #gh {
+					color: #fff;
+					   z-index: 11;
+				}
+				#header .icons #em {
+					color: #ffb732;
+					   z-index: 11;
+				}
+				#header .icons #rs {
+					color: #ff0000;
+					   z-index: 11;
+				}
 	}
 
 		}
@@ -360,7 +386,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px)  {
 
 			.container {
 				width: 100%;
@@ -1864,9 +1890,9 @@ input, select, textarea {
 
 /* Sections/Article */
 
-	section, article {
+/*	section, article {
 		margin-bottom: 3em;
-	}
+	}*/
 
 		section > :last-child,
 		section > .container, section:last-child, article > :last-child,
@@ -1888,6 +1914,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: 100%;
 		}
 
 		.image.avatar48 {
@@ -2140,10 +2167,12 @@ input, select, textarea {
 /* Item */
 
 	.item {
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
 		-webkit-box-shadow: 0px 0px 22px 0px #d5d5d5;
 		-moz-box-shadow: 0px 0px 22px 0px #d5d5d5;
 		box-shadow: 0px 0px 22px 0px #d5d5d5;
+		padding: .3em;
+		margin:.5em;
 	}
 
 	.item:hover {
@@ -2155,7 +2184,7 @@ input, select, textarea {
 		.item header {
 			background: #fff;
 			margin: 0;
-			padding: 1em 0 1em 0;
+			padding: .5em 0 .5em 0;
 			font-size: 0.8em;
 		}
 
@@ -2214,7 +2243,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #414172/*#ffa500*/; 
+		background: #414172; 
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, .3);
 		color: #fff;
 		height: 100%;
@@ -2327,7 +2356,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: #fff/*rgba(255, 255, 255, 0.5)*/;
+				color: #fff;
 				text-decoration: none;
 				outline: 0;
 				border: 0;
@@ -2347,7 +2376,7 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #fff /*#41484c*/;
+						color: #fff;
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
@@ -2406,7 +2435,6 @@ input, select, textarea {
 			margin: 0;
 			overflow: hidden;
 			padding: 4em 0;
-			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 		}
 
@@ -2421,24 +2449,33 @@ input, select, textarea {
 				}
 
 			#main > section.cover {
-				padding: 10em 0;
+				/*padding: 10em 0;*/
 				background-size: cover;
 				background-position: center center;
 			}
 
 			#main > section.one {
-				background-color:#fff;
-
-				
+				background-color:#fff;	
 			}
 
-			#main > section.two {
-				background-color: #fff;
+
+
+/*			dsdjshlskascjkdskasjcbadlsbckjadsbcksbkcjabkjasb;kabskvjabsk;bkjn;sa;kn ;asn
+svssvksnvklasvnlsnlvasnljkvjsvjaklsvl'avnlaknvl'dvnklasnlvjanvlanlvnjdv
+vlknlvnaljvlasnklasnl'v;nslk masvna;ln ksnvadhf'lvs/na'svh'dlvnjsa'iagejfvak
+;svajg'eakvglijeava;skmv'egjeadp'k;vamsvk;'efjmv
+ds;kvajdfiv'adjskv;
+asjv'paeifk;d'vjadlvkm a;svjad'vlkajfd'vibgujpv'iajwbip[ewrjvpiaejbrweiojf d'piehrjpiejqgp'iwej]
+*/
+			#main > section.container {
+				background: #08f;
+				marging: 5em;
 			
 			}
 
 			#main > section.three {
-				background-color: #fff; 				
+				background-color: #fff; 
+				transform: skew(0deg, -2deg)translateY(-90px)				
 			}
 
 			#main > section.four {
@@ -2484,11 +2521,11 @@ input, select, textarea {
 		/* Main */
 
 			#main > section {
-				padding: 3em 0;
+				/*padding: 3em 0;*/
 			}
 
 			#main section.cover {
-				padding: 5em 0;
+				/*padding: 5em 0;*/
 			}
 
 	}
