@@ -237,18 +237,12 @@ input, select, textarea {
 		width: 1400px;
 	}
 
-	section.three {
-    
-	}
-/*	https://img4.goodfon.com/wallpaper/big/e/5c/computer-codding-coding-programing.jpg
-*/
 	.jumbo {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
 		height: 100%;
-		padding: 1em;
 		opacity: .9;
 
 	}
@@ -259,25 +253,27 @@ input, select, textarea {
 		border: 1px solid white;
 		background-color:#222729;
 		font-family: monospace;
-		font-size: 1em;
-		color: black;
-		text-shadow: 1px 1px 2px gray;
-		box-shadow:-1px -1px 55px -1px #bcbebe;
+		font-size: .8em;
+		color: #fff;
+		-webkit-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+		-moz-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+		box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
 		
 	}
 
-	.jumbo #topbox {
+/*	.jumbo #topbox {
 		border: 1px solid white;
 		background-color: #f2f2f2;
 		text-align: center;
 		font-family: sans-serif;
-		font-size: 1em;
+		font-size: .5em;
 		color: black;
 		margin-bottom:5px;
 		text-shadow: 1px 1px 2px #fff;
 		padding: 0;
+		height: 7%;
 	}
-
+*/
 	.jumbo #innerEditor {
        width: 70%;
        height: 100%;
@@ -313,6 +309,9 @@ input, select, textarea {
 		} 
 
 
+	
+	
+
 		@media only screen and (min-width : 1824px) {
 			footer #scrolly:hover {
 				-webkit-animation: pulsate 1.2s ease-out;
@@ -327,11 +326,166 @@ input, select, textarea {
 			}
 		}
 
-		@media screen and (min-width: 961px) and (max-width: 1880px) {
+		@media screen and (min-width: 961px) and (max-width: 2800px) {
 
 			.container {
 				width: 1200px;
 			}
+
+			/*lapotop and text editor*/ 
+
+			.macbook {
+			  padding: 40px;
+			  margin: 0 auto;
+			  max-width: 1200px;
+			}
+
+			.screen {
+			  background: #000;
+			  border-radius: 3% 3% 0.5% 0.5% / 5%;
+			  margin: 0 auto;
+			  /* for aspect ratio */
+			  position: relative;
+			  width: 80%;
+			}
+
+			.screen:before {
+			  border: 2px solid #cacacc;
+			  border-radius: 3% 3% 0.5% 0.5% / 5%;
+			  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset;
+			  content: "";
+			  display: block;
+			  /* for aspect ratio ~67:100 */
+			  padding-top: 67%;
+			}
+
+			.screen:after {
+			  content: "";
+			  border-top: 2px solid rgba(255, 255, 255, 0.15);
+			  position: absolute;
+			  bottom: 0.75%;
+			  left: 0.5%;
+			  padding-top: 1%;
+			  width: 99%;
+			}
+
+			.viewport {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  top: 0;
+			  margin: 4.3% 3.2%;
+			  background: #333;
+			}
+
+			.base {
+			  /* for aspect ratio */
+			  position: relative;
+			  width: 100%;
+			}
+
+			.base:before {
+			  content: "";
+			  display: block;
+			  /* for aspect ratio ~33:1000*/
+			  padding-top: 3.3%;
+			  /* stylin */
+			  background: linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%);
+			  border-radius: 0 0 10% 10%/ 0 0 50% 50%;
+			}
+
+			.base::after {
+			  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) 0.5%, rgba(0, 0, 0, 0.4) 3.3%, transparent 15%, rgba(255, 255, 255, 0.8) 50%, transparent 85%, rgba(0, 0, 0, 0.4) 96.7%, rgba(255, 255, 255, 0.8) 99.5%, rgba(0, 0, 0, 0.5) 100%);
+			  content: "";
+			  height: 53%;
+			  /*position: absolute;*/
+			  top: 0;
+			  width: 100%;
+			}
+
+			.notch {
+			  background: #ddd;
+			  border-radius: 0 0 7% 7% / 0 0 95% 95%;
+			  box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
+			  margin-left: auto;
+			  margin-right: auto;
+			  margin-top: -3.5%;
+			  z-index: 2;
+			  /* for aspect ratio */
+			  position: relative;
+			  width: 14%;
+			}
+
+			.notch:before {
+			  content: "";
+			  display: block;
+			  /* for aspect ratio ~1:10 */
+			  padding-top: 10%;
+			}
+
+           .jumbo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			/*padding: 1em;*/
+			opacity: .9;
+
+	}
+
+		    .jumbo #typed-strings {
+				width: 20em;
+				height: 20em;
+				border: none;
+				background-color: transparent;
+				font-family: monospace;
+				font-size: .8em;
+				color: #fff;
+				-webkit-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+				-moz-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+				box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+				
+			}
+
+			.jumbo #innerEditor {
+		       width: 70%;
+		       height: 100%;
+		       text-align: left;
+		       padding-left: 5%;
+			}
+
+			.jumbo #typed {
+				line-height: 1.5em;
+				text-align: left;
+				white-space: pre;
+				padding-right: 3em;
+				margin-top:0 auto;
+				display: inline-block;
+				font-family: sans-serif;
+				color: white;
+				font-size: .8em;
+				vertical-align: flex-start;
+			}
+
+			.violet {
+				  color: rgb(122,130,151); 
+				}
+			.white{
+				  color: #fff;
+				}
+			.green{
+				  color: rgb(134,179,138);
+				}
+				  
+			.yellow{
+				color: rgb(221,202,96);
+				} 
+
+
+			/*lapotop and text editor ends*/
+
 
 
 		@media screen and (min-width: 961px) and (max-width: 1620px) {
@@ -372,7 +526,8 @@ input, select, textarea {
 					color: #ff0000;
 					   z-index: 11;
 				}
-	}
+			}
+
 
 		}
 
@@ -389,6 +544,12 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
+
+			section.three {
+				  background: radial-gradient(#fff 50%, #aaa) fixed;
+
+			}
+
 
 			ul.icons a {
 				background-color: #fff;
@@ -1895,10 +2056,7 @@ input, select, textarea {
 		}
 
 /* Sections/Article */
-
-/*	section, article {
-		margin-bottom: 3em;
-	}*/
+/
 
 		section > :last-child,
 		section > .container, section:last-child, article > :last-child,
@@ -1949,10 +2107,6 @@ input, select, textarea {
 			-webkit-filter: brightness(25%);
 		}
 
-/*		.image.fit:hover {
-			-webkit-filter: brightness(100%);
-		}
-*/
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -2285,11 +2439,6 @@ input, select, textarea {
 			text-align: center;
 		}
 
-/*			#header .icons a {
-
-
-			}*/
-
 
 @media (hover:hover) and (pointer:fine) {
 
@@ -2455,6 +2604,11 @@ input, select, textarea {
 					color: inherit;
 				}
 
+			#main > section.container {
+				background: #08f;			
+			}
+
+
 			#main > section.cover {
 				
 				background-size: cover;
@@ -2471,29 +2625,10 @@ input, select, textarea {
 
 			}
 
-
-
-/*			dsdjshlskascjkdskasjcbadlsbckjadsbcksbkcjabkjasb;kabskvjabsk;bkjn;sa;kn ;asn
-svssvksnvklasvnlsnlvasnljkvjsvjaklsvl'avnlaknvl'dvnklasnlvjanvlanlvnjdv
-vlknlvnaljvlasnklasnl'v;nslk masvna;ln ksnvadhf'lvs/na'svh'dlvnjsa'iagejfvak
-;svajg'eakvglijeava;skmv'egjeadp'k;vamsvk;'efjmv
-ds;kvajdfiv'adjskv;
-asjv'paeifk;d'vjadlvkm a;svjad'vlkajfd'vibgujpv'iajwbip[ewrjvpiaejbrweiojf d'piehrjpiejqgp'iwej]
-*/
-			#main > section.container {
-				background: #08f;			
+			section.three {
+			  background: radial-gradient(#fff 50%, #aaa) fixed;
 			}
 
-			#main > section.three {
-				background-color: #fff; 
-				height: 100%;			
-			}
-
-/*			#main > section.four {
-				background-color: #fff; 
-				
-			}*/
-            
 
 /* Wide */
 
@@ -2530,14 +2665,6 @@ asjv'paeifk;d'vjadlvkm a;svjad'vlkajfd'vibgujpv'iajwbip[ewrjvpiaejbrweiojf d'pie
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
 
 		/* Main */
-
-			#main > section {
-				/*padding: 3em 0;*/
-			}
-
-			#main section.cover {
-				/*padding: 5em 0;*/
-			}
 
 	}
 
