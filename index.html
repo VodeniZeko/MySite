@@ -3,12 +3,6 @@
 <html>
 	<head>
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144154748-1"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-			  gtag('config', 'UA-144154748-1');
-			</script>
 		<title> Edvin Saletovic|| Front-end Developer</title>
 		    <!-- Global site tag (gtag.js) - Google Analytics -->
 			<meta charset="utf-8" />
@@ -27,6 +21,7 @@
 			<meta name="msapplication-TileColor" content="#da532c">
 			<meta name="theme-color" content="#ffffff">
 	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -37,7 +32,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/edvin.png" alt="" /></span>
-							<h1 id="title">Edvin Saletovic</h1>
+							<h1  id="title ">Edvin Saletovic</h1>
 							<p>Full Stack Developer</p>
 						</div>
 
@@ -75,14 +70,14 @@
 					<section id="top" class="one dark cover">
 						<div id='wavy' class="container">
 							<header>
-								<h2 class="alt">Hey <i class="far fa-hand-paper"></i>  , I'm Edvin and I help start-ups, small businesses, and agencies achieve high quality websites and exceptional user experience.
+								<h2 class="alt animated zoomInDown">Hey <i class="far fa-hand-paper"></i>  , I'm Edvin and I help start-ups, small businesses, and agencies achieve high quality websites and exceptional user experience.
 								</h2>
 								<p class="text-muted"> view my porfolio.
 								</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="scrolly" id="scrolly"><i class="fas fa-hand-point-down"></i></a>
+								<a href="#portfolio" class="scrolly" id="scrolly"><i class=" y fas fa-hand-point-down animated tada"></i></a>
 							</footer>			
 
 						</div>
@@ -92,89 +87,97 @@
 <section id="portfolio" class="two" >
 	<div class="container-second">
 
-								<header>
-									<h2>Welcome to my Portfolio.</h2>
+								<header >
+									<h2 >Welcome to my Portfolio.</h2>
 								</header>
 
 								<p>Compilation of my earliest struggles && latest projects.</p>
-		<div class="row">
+		<div class=" row row2" onLoad='g.js'>
 
-									<div class="col-4 col-12-mobile">
+									<div class=" col-4 col-12-mobile">
 										<article class="item">
-										<a href="https://roboti.netlify.com/" target="blank" class="image fit"><img src="images/robots.jpg" alt="" /></a>
-										<header>
+										<div  class="image fit"><img src="images/robots.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>Robofriends:</strong></br> Dynamic search engine made in REACT in conjunction with NODE.js. The data is obtained from an API!</h3>
 										</header>
+										<a href="https://roboti.netlify.com/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt a"></i></div></a>
 									</article>
 									</div>
 
 									<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://ruke.netlify.com/" target="blank" class="image fit"><img src="images/hands.jpg" alt="" /></a>
-										<header>
+										<div  class="image fit"><img src="images/hands.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>TrackMyHands:</strong></br> Javascript app that tracks hand movement !</h3>
 										</header>
+										<a href="https://ruke.netlify.com/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt b"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://telefon.netlify.com/" target="blank" class="image fit"><img src="images/store.jpg" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="images/store.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>E-commerce:</strong></br> E-commerce website built with React and Bootstrap with PayPal integrated shopping cart!</h3>
 										</header>
+										<a href="https://telefon.netlify.com/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt c"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://photowall-547fe.web.app" target="blank" class="image fit"><img src="images/face-app.jpg" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="images/face-app.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>Face detection app:</strong></br> Built with React and NodeJS, data obtained from Clarifai API, app lets you create an account and counts how many times you have submitted an image link for face detection!</h3>
 										</header>
+										<a href="https://projekat.netlify.com/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt d"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://photowall-547fe.web.app" target="blank" class="image fit"><img src="images/wallpost.jpg" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="images/wallpost.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>Photo-wall:</strong></br> Photo wall app, upload the photo and comment on it, it will live on firebase platorm using firebase database, front end made with React and React-router, state managed with redux!</h3>
 										</header>
+										<a href="https://photowall-547fe.web.app" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt e"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://igra.netlify.com/" target="blank" class="image fit"><img src="images/game.jpg" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="images/game.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>Rock, Paper, Scissors:</strong></br> game made with html, CSS and JS, you play against computer !</h3>
 										</header>
+										<a href="https://igra.netlify.com/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt f"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://vodenizeko.github.io/googly/" target="blank" class="image fit"><img src="images/googly.jpg" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="images/googly.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>Image finder: </strong></br> Image search engine made with React, images fetched from unsplash API </h3>
 										</header>
+										<a href="https://vodenizeko.github.io/googly/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt g"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://pozadina.netlify.com/" target="blank" class="image fit"><img src="images/pozadina.jpg" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="images/pozadina.jpg" alt="" /></div>
+										<header id="description">
 											<h3 class="ttl"><strong>Background generator:</strong></br> Colorful and fun background generator!</h3>
 										</header>
+										<a href="https://pozadina.netlify.com/" target="blank"><div id="h2-link"><i class="fas fa-external-link-alt h"></i></div></a>
 									</article>
 								</div>
 
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" target="#" class="image fit"><img src="https://cpsobsessed.files.wordpress.com/2017/08/coming-soon-01.jpg?w=434&h=356" alt="" /></a>
-										<header>
+										<div class="image fit"><img src="https://cpsobsessed.files.wordpress.com/2017/08/coming-soon-01.jpg?w=434&h=356" alt="" /></div>
+										<header id="description">
 											<!-- <h3 class="ttl"><strong>Background generator:</strong></br> Colorful and fun background generator!</h3> -->
 										</header>
 									</article>
@@ -183,6 +186,7 @@
 			</div>
 	</div>
 </section>
+
 
 				<!-- About Me -->
 					<section id="about" class="three">
@@ -210,31 +214,31 @@
 						<!-- </div> -->
 				<div style="height: 150px; overflow: hidden;" ><svg viewBox="10 0 210 120" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M213.19,0.00 C152.69,70.06 270.03,70.06 202.98,150.00 L500.00,150.00 L500.00,0.00 Z" style="stroke: none; fill: #414172;"></path></svg>
 				</div>
-
 					</section>
 
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
+								<div class="container-third">
+										<header>
+											<h2>Contact me</h2>
+										</header>
 
-							<header>
-								<h2>Contact me</h2>
-							</header>
+										<p>Please feel free to get in touch anytime, whether for work inquiries or just to say "hi",</br> I will get back to you as soon as possible.</p>
 
-							<p>Please feel free to get in touch anytime, whether for work inquiries or just to say "hi",</br> I will get back to you as soon as possible.</p>
-
-							<form id="contact" netlify-honeypot="bot-field" data-netlify="true" method="post" autofocus>
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<form id="contact" netlify-honeypot="bot-field" data-netlify="true" method="post" autofocus>
+											<div class="row">
+												<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+												<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+												<div class="col-12">
+													<textarea name="message" placeholder="Message"></textarea>
+												</div>
+												<div class="col-12">
+													<input class="btn animated tada" type="submit" value=" Send Message "  />	
+												</div>
+											</div>
+										</form>
 									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
 
 						</div>
 						<div style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #414172;"></path></svg></div>
@@ -260,8 +264,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/g.js"></script>
 			<script src="./assets/typed.js"></script>
+
+			
 			<script >
 			var typed = new Typed('#typed', {
 			  strings:["let <span class='violet'>developer</span> =  <span class='white'>\u007B^400 </span>\n <span class='violet'>firstName</span><span class='white'>:</span> <span class='green'>'Edvin'</span><span class='white'>,</span> \n <span class='violet'>lastName</span><span class='white'>:</span> <span class='green'>'Saletovic'</span><span class='white'>,</span> \n <span class='violet'>skills</span><span class='white'>:</span> \n   <span class='violet'>HTML5</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>CSS3</span><span class='white'>: </span><span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>JavaScript</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>React</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>React Native</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>Node.js</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>postgreSQL</span><span class='white'>:</span> <span class='yellow'>true</span>, \n <span class='violet'>tools</span><span class='white'>:</span> \n   <span class='violet'>git</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>bootstrap</span><span class='white'>:</span> <span class='yellow'>true</span>\n <span class='white'>\u007D</span>", "hire(developer)<span class='white'>;</span>^1000"],
@@ -272,6 +278,5 @@
                 loopCount: Infinity,
 			  });
 			</script>
-
 	</body>
 </html>
