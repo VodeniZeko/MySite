@@ -2252,6 +2252,8 @@ input, select, textarea {
 
 /* Button */
 
+@media screen and (max-width: 960px) {
+
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -2287,7 +2289,7 @@ input, select, textarea {
 			background-color:transparent ;
 		}
 
-
+}
 
 /* Item */
 
@@ -2302,20 +2304,21 @@ input, select, textarea {
 
 
 
-.item header {
-			background: #fff;
-			margin: 0;
-			padding: .5em 0 .5em 0;
-			font-size: 0.8em;
+		.item header {
+					background: #fff;
+					margin: 0;
+					padding: .5em 0 .5em 0;
+					font-size: 0.8em;
+				}
+
+		.item header h3 {
+						font-size: 1em;
+					}
+
+
+		#description {
+			background-color: #f2f2f2;
 		}
-
-.item header h3 {
-				font-size: 1em;
-			}
-
-#description {
-	background-color: #f2f2f2;
-}
 
      /* item links */
 
