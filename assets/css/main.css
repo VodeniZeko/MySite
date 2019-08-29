@@ -229,6 +229,10 @@ input, select, textarea {
 		clear: both;
 	}
 
+	.muted {
+		color: gray;
+	}
+
 /* Container */
 
 	.container {
