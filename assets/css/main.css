@@ -2970,7 +2970,7 @@ input, select, textarea {
 
 					button {
 					  background: none;
-					  border: 2px solid;
+					  border: 1px solid;
 					  font-size: .9em;
 					  font-family: cursive;
 					  margin:1em;
@@ -2979,12 +2979,12 @@ input, select, textarea {
 
 					.raise:hover,
 					.raise:focus {
-					  transform: translateY(-0.15em);
+					  transform: translateY(-0.1em);
 					  transition:ease-in-out 0.25s;
 					  color: #ffa260;
-					  -webkit-box-shadow: -2px 16px 11px -11px #ffa260;
-					  -moz-box-shadow: -2px 16px 11px -11px #ffa260;
-					  box-shadow: -2px 16px 11px -11px #ffa260;
+					  -webkit-box-shadow: -2px 13px 8px -11px #ffa260;
+					  -moz-box-shadow: -2px 13px 8px -11px #ffa260;
+					  box-shadow: -2px 13px 8px -11px #ffa260;
 					}
 
 /* Mobile */
