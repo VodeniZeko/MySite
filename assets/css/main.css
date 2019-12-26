@@ -2826,6 +2826,7 @@ input, select, textarea {
 						width: 2.25em;
 						height: 1.25em;
 						line-height: 1.25em;
+						opacity: 0.7;
 					}
 
 			body.header-visible #main {
