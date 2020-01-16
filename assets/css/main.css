@@ -174,16 +174,6 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-/*	a {
-		text-decoration: none;
-		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
-		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		outline: 0;
-	}*/
 
 	sub {
 		position: relative;
@@ -211,7 +201,7 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 		text-shadow: .1px .5px .1px #000;
-		color:#414172;
+		color:#333;
 	}
 
 	p.text-muted {
@@ -2332,7 +2322,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #414172; 
+		background: #333; 
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, .3);
 		color: #fff;
 		height: 100%;
@@ -2484,14 +2474,14 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #414172;
+		background-color: #333;
 		padding: 0 0 5em 0;
 		font-size: 0.8em;
 	}
 
 		#footer .copyright {
 			cursor: default;
-			margin: 0;
+			margin: -1px;
 		}
 
 			#footer .copyright li {
