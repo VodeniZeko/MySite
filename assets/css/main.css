@@ -239,7 +239,7 @@ input, select, textarea {
 		width: 20em;
 		height: 20em;
 		border: 1px solid white;
-		background-color:#000;
+		background-color:#333;
 		font-family: monospace;
 		font-size: .8em;
 		color: #fff;
@@ -2541,7 +2541,7 @@ input, select, textarea {
 			#main > section.dark {
 				color: #000;
 				/* color: rgba(255, 255, 255, 0.75); */
-				text-shadow: .1px .1px .2px #fff;
+				/* text-shadow: .1px .1px .2px #fff; */
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2549,7 +2549,7 @@ input, select, textarea {
 				}
 
 			#main > section.container {
-				background: #08f;			
+				/* background: #08f;			 */
 			}
 
 
@@ -2557,7 +2557,7 @@ input, select, textarea {
 				
 				background-size: cover;
 				background-position: center;
-				height: 100vh;
+				height: 80vh;
 			}
 
 			#main > section.one {

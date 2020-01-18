@@ -13,7 +13,7 @@ $(document).scroll(function() {
     $(".one").css("background", "#000");
     $(".one").css("transition", "1s");
     $(".card").css("transform", "scale(1)");
-    $(".card").css("transition", "2s");
+    $(".card").css("transition", "1s");
   } else {
     $(".projects").css("background", "#fff");
     $(".projects").css("transition", "1s");
@@ -28,7 +28,7 @@ $(document).scroll(function() {
     $(".one").css("background", "#fff");
     $(".one").css("transition", "1s");
     $(".card").css("transform", "scale(0.5)");
-    $(".card").css("transition", "2s");
+    $(".card").css("transition", "1s");
   }
 });
 $(document).scroll(function() {
@@ -39,6 +39,8 @@ $(document).scroll(function() {
     $("input").css("transition", "1s");
     $("textarea").css("background", "#fff");
     $("textarea").css("transition", "1s");
+    $("bottom").css("background", "#000");
+    $("bottom").css("transition", "1s");
   } else {
     $(".four").css("background", "#000");
     $(".four").css("transition", "1s");
@@ -46,11 +48,14 @@ $(document).scroll(function() {
     $("input").css("transition", "1s");
     $("textarea").css("background", "#000");
     $("textarea").css("transition", "1s");
+    $("bottom").css("background", "#fff");
+    $("bottom").css("transition", "1s");
   }
 });
 $(document).scroll(function() {
   if (checkVisible($(".viewport"))) {
     $(".projects").css("background", "#000");
+    $("projects").css("transition", ".1s");
   }
 });
 
