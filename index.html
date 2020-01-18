@@ -20,6 +20,8 @@
 			<meta name="msapplication-TileColor" content="#da532c">
 			<meta name="theme-color" content="#ffffff">
 	</head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<body class="is-preload">
 
@@ -64,7 +66,7 @@
 			<div id="main">
 
 				<!-- Intro -->
-				<div style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
+				<div class = "hidden"style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
 				</div>
 					<section id="top" class="one dark cover">
 						<div id='wavy' class="container">
@@ -87,10 +89,10 @@
 	<div class="container-second">
 
 								<header >
-									<h2 >Welcome to my Portfolio.</h2>
+									<h2 class="w">Welcome to my Portfolio.</h2>
 								</header>
 
-								<p>Compilation of my earliest struggles && latest projects.</p>
+								<p class="wp">Compilation of my earliest struggles && latest projects.</p>
 
 <div class="projects-body">
 
@@ -209,8 +211,8 @@
 				<!-- About Me -->
 					<section id="about" class="three">
 						
-				<div style="height: 180px; overflow: hidden;" ><svg viewBox="150 0 1200 120" preserveAspectRatio="none" style="height: 50%; width: 190%;"><path d="M208.08,0.00 C152.69,67.09 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
-				</div>
+				<!-- <div style="height: 180px; overflow: hidden;" ><svg viewBox="150 0 1200 120" preserveAspectRatio="none" style="height: 50%; width: 190%;"><path d="M208.08,0.00 C152.69,67.09 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
+				</div> -->
 						<!-- <div class="container"> -->
 
 					<div class="macbook">
@@ -221,17 +223,20 @@
 							               <div id="particles-js">      
 					                        <div id="typed-strings"><div id="topbox">text editor</div><div id="innerEditor"><span  id="typed"></span></div></div>
 				                           </div> 
-				                 </div>
+												 </div>
+												 
 									    	
 							 </div>
 						 </div>
+						 
 						<div class="base"></div>
 						<div class="notch"></div>
 					</div>
 			
 						<!-- </div> -->
-				<div style="height: 150px; overflow: hidden;" ><svg viewBox="10 0 210 120" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M213.19,0.00 C152.69,70.06 270.03,70.06 202.98,150.00 L500.00,150.00 L500.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
-				</div>
+				<!-- <div class="last" style="height: 150px; overflow: hidden;" ><svg viewBox="10 0 210 120" preserveAspectRatio="none" style="height: 100%; width: 100%; "><path d="M213.19,0.00 C152.69,70.06 270.03,70.06 202.98,150.00 L500.00,150.00 L500.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
+				</div> -->
+				
 					</section>
 
 				<!-- Contact -->
@@ -239,7 +244,7 @@
 						<div class="container">
 								<div class="container-third">
 										<header>
-											<h2>Contact me</h2>
+											<h2 class="me">Contact me</h2>
 										</header>
 
 										<p>Please feel free to get in touch anytime, whether for work inquiries or just to say "hi",</br> I will get back to you as soon as possible.</p>
@@ -261,7 +266,7 @@
 						</div>
 
 					</section>
-					<div style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
+					<div class="hidden-bottom"style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
 
 			</div>
 
@@ -276,6 +281,7 @@
 			</div>
 
 		<!-- Scripts -->
+		<script src="assets/js/g.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

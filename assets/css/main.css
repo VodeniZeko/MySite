@@ -112,14 +112,12 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #ffa500;
+		color: #000;
 		line-height: 1.5em;
-		text-shadow: .5px 1px .5px #000;
+		/* text-shadow: .5px 1px .5px #000; */
 	}
 
-	h2.aboutMe {
-		color: #ffa500;
-	}
+
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
@@ -136,12 +134,12 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #ffa500 !important;
+			color: #000;
 			text-shadow: 1px 1.5px 1px #000;
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: #000;
 			}
 
 	h3 {
@@ -201,7 +199,6 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
-		text-shadow: .1px .5px .1px #000;
 		color:#000;
 	}
 
@@ -210,6 +207,7 @@ input, select, textarea {
 		padding-top: 4em;
 		color: #000;
 	}
+
 
 	br.clear {
 		clear: both;
@@ -2164,6 +2162,7 @@ input, select, textarea {
 
 /* Form */
    .container-third {
+		 padding-top: 3em;
    	margin-left:3em;
    	margin-right:3em;
    }
@@ -2184,7 +2183,7 @@ input, select, textarea {
 		display: block;
 		border: 0;
 		outline: 0;
-		background: rgba(255, 255, 255, 0.75);
+		background: #000;
 		width: 100%;
 		border-radius: 0.35em;
 		padding: 0.75em 1em 0.75em 1em;
@@ -2194,7 +2193,7 @@ input, select, textarea {
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
-		color: #000;
+		color: #fff;
 	}
 
 		form input[type="text"]:focus,
@@ -2212,6 +2211,10 @@ input, select, textarea {
 	form input[type="password"],
 	form select {
 		line-height: 1.25em;
+	}
+
+	::placeholder{
+		color: #000;
 	}
 
 /* Button */
@@ -2395,6 +2398,7 @@ input, select, textarea {
 		cursor: default;
 	}
 
+
 		#logo h1 {
 			position: relative;
 			color: #fff;
@@ -2530,13 +2534,13 @@ input, select, textarea {
 			margin: 0;
 			overflow: hidden;
 			text-align: center;
-			padding: 6em 0 0 0;
+			/* padding: 6em 0 0 0; */
 		
 		}
 
 			#main > section.dark {
 				color: #000;
-				color: rgba(255, 255, 255, 0.75);
+				/* color: rgba(255, 255, 255, 0.75); */
 				text-shadow: .1px .1px .2px #fff;
 			}
 
@@ -2558,6 +2562,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color:#fff;
+				
 			}
 
 			#main > section.two {
@@ -2565,7 +2570,7 @@ input, select, textarea {
 			}
 
 			section.three {
-				background: #fff fixed;
+				background: #000 fixed;
 				height: 100vh;
 			}
 
@@ -2867,7 +2872,7 @@ input, select, textarea {
 			}
 
 				#main > section {
-					padding: 3em 0;
+					/* padding: 3em 0; */
 				}
 
 				#main section.cover {
@@ -2879,11 +2884,12 @@ input, select, textarea {
 						.projects-body{
 					    margin: 0;
 					    padding:0;
-					    background: #000;
+					    background: #fff;
 					    display: flex;
 					    justify-content: center;
 					    align-items: center;
-					    font-family: consolas;
+							font-family: consolas;
+							
 					}
 
 					.projects{
@@ -2891,7 +2897,7 @@ input, select, textarea {
 					    display: flex;
 					    flex-wrap: wrap;
 							justify-content: center;
-							padding-bottom: 10rem;
+							padding-bottom: 20rem;
 					}
 
 					.projects .card{
@@ -2919,14 +2925,14 @@ input, select, textarea {
 					    transform: translateY(0);
 					}
 
-					.projects .card .face.face1 .content{
+					/* .projects .card .face.face1 .content{
 					    opacity: 0.3;
 					    transition: 0.5s;
 					}
 
 					.projects .card:hover .face.face1 .content{
 					    opacity: 1;
-					}
+					} */
 
 
 					.projects .card .face.face2{
@@ -2990,6 +2996,7 @@ input, select, textarea {
 
 			body, input, textarea, select {
 				font-size: 14pt;
+				color: #fff;
 			}
 
 			h2 {
@@ -3012,7 +3019,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section {
-				padding: 2em 0;
+				/* padding: 2em 0; */
 			}
 
 			#main section.cover {
