@@ -33,6 +33,8 @@ $(document).scroll(function() {
 });
 $(document).scroll(function() {
   if (checkVisible($(".btn"))) {
+    $(".three").css("background", "#fff");
+    $(".three").css("transition", "1s");
     $(".four").css("background", "#fff");
     $(".four").css("transition", "1s");
     $("input").css("background", "#fff");
@@ -42,6 +44,8 @@ $(document).scroll(function() {
     $("bottom").css("background", "#000");
     $("bottom").css("transition", "1s");
   } else {
+    $(".three").css("background", "#000");
+    $(".three").css("transition", "1s");
     $(".four").css("background", "#000");
     $(".four").css("transition", "1s");
     $("input").css("background", "#000");
