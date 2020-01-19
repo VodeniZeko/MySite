@@ -2183,7 +2183,6 @@ input, select, textarea {
 		display: block;
 		border: 0;
 		outline: 0;
-		background: #000;
 		width: 100%;
 		border-radius: 0.35em;
 		padding: 0.75em 1em 0.75em 1em;
@@ -2193,7 +2192,7 @@ input, select, textarea {
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
-		color: #fff;
+		color: #000
 	}
 
 		form input[type="text"]:focus,
@@ -2214,7 +2213,7 @@ input, select, textarea {
 	}
 
 	::placeholder{
-		color: #000;
+		color:#000;
 	}
 
 /* Button */
@@ -2226,9 +2225,9 @@ input, select, textarea {
 			color:#000;
 		}
 
-    /* .btn:hover {
-    	text-shadow: .1px .3px .1px #000;
-    } */
+    .btn:hover {
+			color: darkgrey;
+    }
 
 
 /* Item */
@@ -2656,7 +2655,7 @@ input, select, textarea {
 					left: 50%;
 					margin-left: -1px;
 					width: 2px;
-					height: 90px;
+					height: 88px;
 					background: #ffa500;
 					content: ' ';
 			}
@@ -2993,7 +2992,7 @@ input, select, textarea {
 			}
 
 			.container {
-				padding: 0 2em 0 2em;
+				padding: 0 2em 2em 2em;
 			}
 
 		/* Item */

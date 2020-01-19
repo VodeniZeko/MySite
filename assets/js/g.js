@@ -41,8 +41,8 @@ $(document).scroll(function() {
     $("input").css("transition", "1s");
     $("textarea").css("background", "#fff");
     $("textarea").css("transition", "1s");
-    $("bottom").css("background", "#000");
-    $("bottom").css("transition", "1s");
+    $(".bottom").css("background", "#fff");
+    $(".bottom").css("transition", "1s");
   } else {
     $(".three").css("background", "#000");
     $(".three").css("transition", "1s");
@@ -52,8 +52,8 @@ $(document).scroll(function() {
     $("input").css("transition", "1s");
     $("textarea").css("background", "#000");
     $("textarea").css("transition", "1s");
-    $("bottom").css("background", "#fff");
-    $("bottom").css("transition", "1s");
+    $(".bottom").css("background", "#000");
+    $(".bottom").css("transition", "1s");
   }
 });
 $(document).scroll(function() {
