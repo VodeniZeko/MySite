@@ -2166,14 +2166,20 @@ input, select, textarea {
    .container-third {
 		 margin-top: 19em;
    	margin-left:3em;
-   	margin-right:3em;
+		 margin-right:3em;
+		 padding-bottom: 15em;
 	 }
 	 
-	 @media screen and (min-width: 961px) {
+	 @media screen and (max-width: 961px) {
 .container-third {
-	padding-top:11em;
+	padding-bottom:9em;
 }
 	 }
+	 @media screen and (max-width: 961px) {
+		.container-third {
+			padding-bottom:6 em;
+		}
+			 }
 
 	form label {
 		display: block;
@@ -2605,7 +2611,7 @@ input, select, textarea {
 				background-size: 97% 120%;
 				width: 100%;
 				height: auto;
-				min-height: 100vh;
+				min-height: 80vh;
 	
 			}
 
@@ -2945,7 +2951,7 @@ input, select, textarea {
 			}
 
 			.container {
-				padding: 0 2em 0 2em;
+				padding: -3em 2em 0 2em;
 			}
 
 		/* Icons */
@@ -3024,7 +3030,7 @@ input, select, textarea {
 			}
 
 			.container {
-				padding: 0 2em 2em 2em;
+				padding: 1em 2em 2em 2em;
 			}
 
 		/* Item */

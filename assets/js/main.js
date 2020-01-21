@@ -53,7 +53,7 @@
       $section.scrollex({
         mode: "middle",
         top: "-150vh",
-        bottom: "-5vh",
+        bottom: "1vh",
         initialize: function() {
           // Deactivate section.
           // $section.addClass('inactive');
