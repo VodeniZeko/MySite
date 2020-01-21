@@ -14,6 +14,7 @@ $(document).scroll(function() {
     $(".one").css("transition", "1s");
     $(".card").css("transform", "scale(1)");
     $(".card").css("transition", "1s");
+    $("#scroll-down").css("display", "none");
   } else {
     $(".projects").css("background", "#fff");
     $(".projects").css("transition", "1s");
@@ -29,6 +30,7 @@ $(document).scroll(function() {
     $(".one").css("transition", "1s");
     $(".card").css("transform", "scale(0.5)");
     $(".card").css("transition", "1s");
+    $("#scroll-down").css("display", "block");
   }
 });
 $(document).scroll(function() {
@@ -45,6 +47,7 @@ $(document).scroll(function() {
     $("textarea").css("opacity", ".8");
     $(".bottom").css("background", "#fff");
     $(".bottom").css("transition", "1s");
+    $("#wrapper-inner").css("display", "none");
   } else {
     $(".three").css("background", "#000");
     $(".three").css("transition", "1s");
@@ -56,6 +59,7 @@ $(document).scroll(function() {
     $("textarea").css("transition", "1s");
     $(".bottom").css("background", "#000");
     $(".bottom").css("transition", "1s");
+    $("#wrapper-inner").css("display", "block");
   }
 });
 $(document).scroll(function() {
