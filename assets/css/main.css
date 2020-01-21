@@ -312,7 +312,7 @@ input, select, textarea {
 
 			.macbook {
 			  margin: 0 auto;
-			  max-width: 1200px;
+				max-width: 1200px;
 			}
 
 			.screen {
@@ -2163,14 +2163,14 @@ input, select, textarea {
 
 /* Form */
    .container-third {
-		 padding-top: 12em;
+		 margin-top: 19em;
    	margin-left:3em;
    	margin-right:3em;
 	 }
 	 
 	 @media screen and (min-width: 961px) {
 .container-third {
-	padding-top: 25em;
+	padding-top:11em;
 }
 	 }
 
@@ -2209,7 +2209,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			box-shadow: 0 0 2px 1px #ffa500;
-			background: #fff;		
+			background:transparent;		
 		}
 
 	form input[type="text"],
@@ -2231,10 +2231,12 @@ input, select, textarea {
     	border: none;
     	cursor:pointer;
 			color:#000;
+			margin-top: 1em;
+
 		}
 
     .btn:hover {
-			color: darkgrey;
+		transform: scale(1.05);
     }
 
 
@@ -2547,8 +2549,7 @@ input, select, textarea {
 
 			#main > section.dark {
 				color: #000;
-				/* color: rgba(255, 255, 255, 0.75); */
-				/* text-shadow: .1px .1px .2px #fff; */
+
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2599,9 +2600,11 @@ input, select, textarea {
 
 			.four > .container {
 				background-image: url("../images/contact-us.svg");
-				background-repeat: no-repeat;
-				background-size: contain;
-				height: 60%;
+				background-size: 97% 120%;
+				width: 100%;
+				height: auto;
+				min-height: 100vh;
+	
 			}
 
 		
@@ -3223,9 +3226,16 @@ input, select, textarea {
 					}
 
 					.projects .card .face{
-					    width: 300px;
-					    height: 200px;
-					    transition: 0.5s;
+					    width: 360px;
+					    height: 250px;
+							transition: 0.5s;
+
+					}
+					@media screen and (max-width: 360px) {
+						.projects .card .face {
+							width: 300px;
+							height: ;
+						}
 					}
 
 					.projects .card .face.face1{
@@ -3235,8 +3245,9 @@ input, select, textarea {
 					    justify-content: center;
 					    align-items: center;
 					    z-index: 1;
-					    transform: translateY(100px);
+							transform: translateY(100px);
 					}
+
 
 					.projects .card:hover .face.face1{
 					    background: #fff;
