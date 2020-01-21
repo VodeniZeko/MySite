@@ -32,7 +32,7 @@ $(document).scroll(function() {
   }
 });
 $(document).scroll(function() {
-  if (checkVisible($("input"))) {
+  if (checkVisible($(".ds-bp"))) {
     $(".three").css("background", "#fff");
     $(".three").css("transition", "1s");
     $(".four").css("background", "#fff");

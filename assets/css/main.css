@@ -158,7 +158,8 @@ input, select, textarea {
 	}
 
 		header > p {
-			margin: 1em 0 0 0;
+			margin: 2em 0 0 0;
+			line-height: 2em;
 		}
 
 	footer {
@@ -2223,6 +2224,7 @@ input, select, textarea {
 		color:#000;
 		font-weight: 900;
 	}
+
 
 /* Button */
 
