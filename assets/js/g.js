@@ -32,15 +32,17 @@ $(document).scroll(function() {
   }
 });
 $(document).scroll(function() {
-  if (checkVisible($(".btn"))) {
+  if (checkVisible($(".me"))) {
     $(".three").css("background", "#fff");
     $(".three").css("transition", "1s");
     $(".four").css("background", "#fff");
     $(".four").css("transition", "1s");
     $("input").css("background", "#fff");
+    $("input").css("opacity", ".7");
     $("input").css("transition", "1s");
     $("textarea").css("background", "#fff");
     $("textarea").css("transition", "1s");
+    $("textarea").css("opacity", ".7");
     $(".bottom").css("background", "#fff");
     $(".bottom").css("transition", "1s");
   } else {

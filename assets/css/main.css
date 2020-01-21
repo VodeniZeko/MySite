@@ -135,8 +135,10 @@ input, select, textarea {
 
 		h2.alt {
 			color: #000;
-			text-shadow: 1px 1.5px 1px #000;
+			text-shadow: .1px .5px .1px #000;
 		}
+
+
 
 			h2.alt strong {
 				color: #000;
@@ -309,7 +311,6 @@ input, select, textarea {
 			/*lapotop and text editor*/ 
 
 			.macbook {
-			  padding: 40px;
 			  margin: 0 auto;
 			  max-width: 1200px;
 			}
@@ -1536,7 +1537,7 @@ input, select, textarea {
 		@media screen and (max-width: 960px) {
             section.four {
             	margin: 0 !important;
-            	padding: 0 !important;
+							padding: 0 !important;
             }
             #main {
          	    margin: 0 !important;
@@ -2162,10 +2163,16 @@ input, select, textarea {
 
 /* Form */
    .container-third {
-		 padding-top: 3em;
+		 padding-top: 12em;
    	margin-left:3em;
    	margin-right:3em;
-   }
+	 }
+	 
+	 @media screen and (min-width: 961px) {
+.container-third {
+	padding-top: 25em;
+}
+	 }
 
 	form label {
 		display: block;
@@ -2192,7 +2199,8 @@ input, select, textarea {
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
-		color: #000
+		color: #000;
+		font-weight: 900;
 	}
 
 		form input[type="text"]:focus,
@@ -2201,8 +2209,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			box-shadow: 0 0 2px 1px #ffa500;
-			background: #fff;
-			
+			background: #fff;		
 		}
 
 	form input[type="text"],
@@ -2214,6 +2221,7 @@ input, select, textarea {
 
 	::placeholder{
 		color:#000;
+		font-weight: 900;
 	}
 
 /* Button */
@@ -2376,7 +2384,7 @@ input, select, textarea {
 					   z-index: 11;
 				}
 				#header .icons #gh {
-					color: #000;
+					color: #fff;
 					   z-index: 11;
 				}
 				#header .icons #em {
@@ -2580,6 +2588,25 @@ input, select, textarea {
 				background: #000 ;
 				height: 100vh;
 			}
+
+			@media screen and (max-width: 500px)  {
+				#main > section.three {
+					height: 76vh;
+				}
+			}
+
+
+
+			.four > .container {
+				background-image: url("../images/contact-us.svg");
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 60%;
+			}
+
+		
+
+			
 
 			/* scroll down arrow  */
 
@@ -3188,6 +3215,7 @@ input, select, textarea {
 					    flex-wrap: wrap;
 							justify-content: center;
 							padding-bottom: 20rem;
+							margin: -1px;
 					}
 
 					.projects .card{
@@ -3349,7 +3377,153 @@ input, select, textarea {
 
 	}
 
-
+/* =======================================================================================================================
+	
+/* SOME RANDOME IMAGES WITH EFFECTS FOR A "MAYBE" PROJECT  */
+/* 
+	@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1477 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+figure.snip1477 *,
+figure.snip1477 *:before,
+figure.snip1477 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+figure.snip1477 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  opacity: 0.9;
+}
+figure.snip1477 .title {
+  position: absolute;
+  top: 58%;
+  left: 25px;
+  padding: 5px 10px 10px;
+}
+figure.snip1477 .title:before,
+figure.snip1477 .title:after {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+figure.snip1477 .title:before {
+  top: 0;
+  left: 10px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+figure.snip1477 .title:after {
+  bottom: 0;
+  right: 10px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+figure.snip1477 .title div:before,
+figure.snip1477 .title div:after {
+  width: 2px;
+  height: 300px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+figure.snip1477 .title div:before {
+  top: 10px;
+  right: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+figure.snip1477 .title div:after {
+  bottom: 10px;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+figure.snip1477 h2,
+figure.snip1477 h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.snip1477 h2 {
+  font-weight: 400;
+}
+figure.snip1477 h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+figure.snip1477 figcaption {
+  position: absolute;
+  bottom: 42%;
+  left: 25px;
+  text-align: left;
+  opacity: 0;
+  padding: 5px 60px 5px 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+figure.snip1477 figcaption p {
+  margin: 0;
+}
+figure.snip1477 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+figure.snip1477:hover img,
+figure.snip1477.hover img {
+  zoom: 1;
+  filter: alpha(opacity=35);
+  -webkit-opacity: 0.35;
+  opacity: 0.35;
+}
+figure.snip1477:hover .title:before,
+figure.snip1477.hover .title:before,
+figure.snip1477:hover .title:after,
+figure.snip1477.hover .title:after,
+figure.snip1477:hover .title div:before,
+figure.snip1477.hover .title div:before,
+figure.snip1477:hover .title div:after,
+figure.snip1477.hover .title div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+figure.snip1477:hover .title:before,
+figure.snip1477.hover .title:before,
+figure.snip1477:hover .title:after,
+figure.snip1477.hover .title:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+figure.snip1477:hover figcaption,
+figure.snip1477.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+ */
 
 
 
