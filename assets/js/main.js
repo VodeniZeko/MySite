@@ -9,7 +9,7 @@
     normal: ["961px", "1620px"],
     narrow: ["961px", "1320px"],
     narrower: ["737px", "960px"],
-    mobile: ["360", "736px"]
+    mobile: [null, "736px"]
   });
 
   // Play initial animations on page load.
@@ -52,8 +52,8 @@
       // Scrollex.
       $section.scrollex({
         mode: "middle",
-        top: "-150vh",
-        bottom: "1vh",
+        top: "-15vh",
+        bottom: "-5vh",
         initialize: function() {
           // Deactivate section.
           // $section.addClass('inactive');
