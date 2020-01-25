@@ -1,7 +1,7 @@
 $(document).scroll(function() {
-  if (checkVisible($(".projects"))) {
-    $(".projects").css("background", "#000");
-    $(".projects").css("transition", "1s");
+  if (checkVisible($(".projects-inner"))) {
+    $(".projects-inner").css("background", "#000");
+    $(".projects-inner").css("transition", "1s");
     $(".hidden").css("background", "#000");
     $(".hidden").css("transition", "1s");
     $(".w").css("color", "#fff");
@@ -16,8 +16,8 @@ $(document).scroll(function() {
     $(".card").css("transition", "1s");
     $("#scroll-down").css("display", "none");
   } else {
-    $(".projects").css("background", "#fff");
-    $(".projects").css("transition", "1s");
+    $(".projects-inner").css("background", "#fff");
+    $(".projects-inner").css("transition", "1s");
     $(".hidden").css("background", "#fff");
     $(".hidden").css("transition", "1s");
     $(".w").css("color", "#fff");
@@ -28,7 +28,7 @@ $(document).scroll(function() {
     $(".two").css("transition", "1s");
     $(".one").css("background", "#fff");
     $(".one").css("transition", "1s");
-    $(".card").css("transform", "scale(0.5)");
+    $(".card").css("transform", "scale(0.9)");
     $(".card").css("transition", "1s");
     $("#scroll-down").css("display", "block");
   }
@@ -64,8 +64,8 @@ $(document).scroll(function() {
 });
 $(document).scroll(function() {
   if (checkVisible($(".viewport"))) {
-    $(".projects").css("background", "#000");
-    $("projects").css("transition", ".1s");
+    $(".projects-inner").css("background", "#000");
+    $("projects-inner").css("transition", ".1s");
   }
 });
 
