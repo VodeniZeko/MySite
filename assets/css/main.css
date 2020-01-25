@@ -3218,11 +3218,14 @@ input, select, textarea {
 							padding-bottom: 20rem;
 							margin: -1px;
 					}
-
+					/* TODO: make this card bellow at @media (tablet) to fit 2 in a row then one big one then two again*/
+					
 					.projects-inner .card{
 					 padding:2em;
 					 overflow: hidden;
 					}
+         /* ============ end of TODO: */
+
 
 					.projects-inner .card .face{
 					    width: 360px;
