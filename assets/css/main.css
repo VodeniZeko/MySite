@@ -477,14 +477,6 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-			/* ul.icons a {
-				background-color: #fff;
-			} */
-
-			/* #header .icons #tw {
-					  color: #55acee;
-					   z-index: 11;
-				} */
 
 				#header .icons #fb {
 					color: #0e76a8;
@@ -498,14 +490,11 @@ input, select, textarea {
 					color: #ffb732;
 					   z-index: 11;
 				}
-				/* #header .icons #rs {
-					color: #ff0000;
-					   z-index: 11;
-				} */
+
 			}
 
 
-		}
+		
 
 		@media screen and (max-width: 960px) {
 
@@ -533,11 +522,6 @@ input, select, textarea {
 				background-color: #fff;
 			}
 
-			/* #header .icons #tw {
-					  color: #55acee;
-					   z-index: 11;
-				} */
-
 				#header .icons #fb {
 					color: #0e76a8;
 					   z-index: 11;
@@ -550,10 +534,6 @@ input, select, textarea {
 					color: #ffb732;
 					   z-index: 11;
 				}
-				/* #header .icons #rs {
-					color: #ff0000;
-					   z-index: 11;
-				} */
 
 		}
 
@@ -2578,7 +2558,7 @@ input, select, textarea {
 				font-weight: 900;
 				content: "\f061";
 				color:#000;
-				margin-left: 2.5px;
+				margin-left: 2px;
 			}
 
 			#main > section.two {
@@ -3215,8 +3195,8 @@ input, select, textarea {
 					    display: flex;
 					    flex-wrap: wrap;
 							justify-content: center;
-							padding-bottom: 20rem;
 							margin: -1px;
+							padding-bottom: 5em;
 					}
 					/* TODO: make this card bellow at @media (tablet) to fit 2 in a row then one big one then two again*/
 					
@@ -3276,7 +3256,6 @@ input, select, textarea {
 
 					.projects-inner .card .face.face2{
 					    position: relative;
-					    /* background: #000; */
 					    display: flex;
 					    justify-content: center;
 					    align-items: center;
@@ -3289,42 +3268,166 @@ input, select, textarea {
 					    margin: 0;
 					    padding: 0;
 							color: #fff;
-							font-size: 1em;
-							line-height: 1em;
-							
+							/* font-size: 1em;	 */
 					}
 
-					.projects-inner .card .face.face2 .content a{
-						color: #fff;
-						text-decoration: none;
-						font-family: sans-serif;
-					}
-					
-					.projects-inner .card .face.face2 .content a:hover,
-					.projects-inner .card .face.face2 .content a :focus {
-						color:#fff;
-						font-family: sans-serif;
-						
-					}
+					/* water button begins here */
 
-					button {
-					  background: none;
-					  border: none;
-					  font-size: .7em;
-						margin:1em;
-						padding:.5em
-						transition:ease-in-out 0.15s;
-						font-family: sans-serif;
-					}
+.water-button {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-					.raise:hover,
-					.raise:focus {
-						transform: translateY(0.05em);
-						transition:ease-in-out 0.15s;
-					}
-					.projects-inner .card:hover .raise{
-						box-shadow: 1px 1px 1px #ffa500;
-					}
+.watter-button-a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.watter-button-a span {
+  position: relative;
+  color: #fff;
+	z-index: 1;
+	font-size: initial;
+}
+
+.watter-button-a .liquid {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+	transition: .5s;
+	top: -115px;
+}
+
+.watter-button-a .liquid::after,
+.watter-button-a .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.watter-button-a .liquid::before {
+  
+  border-radius: 45%;
+  background: #000;
+  animation: animate 5s linear infinite;
+}
+
+.watter-button-a .liquid::after {
+  
+  border-radius: 40%;
+  background: #000;
+  animation: animate 10s linear infinite;
+}
+
+.watter-button-a:hover .liquid{
+  top: -85px;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+/* SEE ALL WORK LIQUID BUTTON  */
+
+.voda {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	padding: 10em 0em;
+  background: #000;
+}
+
+.voda-a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  overflow: hidden;
+	border-radius: 40px;
+	padding:.1em;
+}
+
+.voda-a span {
+  position: relative;
+  color: #fff;
+	z-index: 1;
+	font-size: initial;
+}
+
+.voda-a .vodeni {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+	transition: .5s;
+	top: -90px;
+}
+
+.voda-a .vodeni::after,
+.voda-a .vodeni::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.voda-a .vodeni::before {
+  
+  border-radius: 45%;
+  background: #000;
+  animation: animate 5s linear infinite;
+}
+
+.voda-a .vodeni::after {
+  
+  border-radius: 40%;
+  background: #000;
+  animation: animate 10s linear infinite;
+}
+
+.voda-a:hover .vodeni{
+  top: -115px;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+/* SEE ALL WORK LIQUID BUTTON ENDS HERE  */
+
+/* watter button end here */
+
 
 /* Mobile */
 
@@ -3391,154 +3494,6 @@ input, select, textarea {
 		}
 
 	}
-
-/* =======================================================================================================================
-	
-/* SOME RANDOME IMAGES WITH EFFECTS FOR A "MAYBE" PROJECT  */
-/* 
-	@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-figure.snip1477 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  background-color: #000000;
-}
-figure.snip1477 *,
-figure.snip1477 *:before,
-figure.snip1477 *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.55s ease;
-  transition: all 0.55s ease;
-}
-figure.snip1477 img {
-  max-width: 100%;
-  backface-visibility: hidden;
-  vertical-align: top;
-  opacity: 0.9;
-}
-figure.snip1477 .title {
-  position: absolute;
-  top: 58%;
-  left: 25px;
-  padding: 5px 10px 10px;
-}
-figure.snip1477 .title:before,
-figure.snip1477 .title:after {
-  height: 2px;
-  width: 400px;
-  position: absolute;
-  content: '';
-  background-color: #ffffff;
-}
-figure.snip1477 .title:before {
-  top: 0;
-  left: 10px;
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-figure.snip1477 .title:after {
-  bottom: 0;
-  right: 10px;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-figure.snip1477 .title div:before,
-figure.snip1477 .title div:after {
-  width: 2px;
-  height: 300px;
-  position: absolute;
-  content: '';
-  background-color: #ffffff;
-}
-figure.snip1477 .title div:before {
-  top: 10px;
-  right: 0;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
-figure.snip1477 .title div:after {
-  bottom: 10px;
-  left: 0;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-figure.snip1477 h2,
-figure.snip1477 h4 {
-  margin: 0;
-  text-transform: uppercase;
-}
-figure.snip1477 h2 {
-  font-weight: 400;
-}
-figure.snip1477 h4 {
-  display: block;
-  font-weight: 700;
-  background-color: #ffffff;
-  padding: 5px 10px;
-  color: #000000;
-}
-figure.snip1477 figcaption {
-  position: absolute;
-  bottom: 42%;
-  left: 25px;
-  text-align: left;
-  opacity: 0;
-  padding: 5px 60px 5px 10px;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-}
-figure.snip1477 figcaption p {
-  margin: 0;
-}
-figure.snip1477 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-figure.snip1477:hover img,
-figure.snip1477.hover img {
-  zoom: 1;
-  filter: alpha(opacity=35);
-  -webkit-opacity: 0.35;
-  opacity: 0.35;
-}
-figure.snip1477:hover .title:before,
-figure.snip1477.hover .title:before,
-figure.snip1477:hover .title:after,
-figure.snip1477.hover .title:after,
-figure.snip1477:hover .title div:before,
-figure.snip1477.hover .title div:before,
-figure.snip1477:hover .title div:after,
-figure.snip1477.hover .title div:after {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-figure.snip1477:hover .title:before,
-figure.snip1477.hover .title:before,
-figure.snip1477:hover .title:after,
-figure.snip1477.hover .title:after {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-figure.snip1477:hover figcaption,
-figure.snip1477.hover figcaption {
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
- */
 
 
 
