@@ -3283,7 +3283,7 @@ input, select, textarea {
   position: relative;
   display: block;
   text-decoration: none;
-  width: 200px;
+  width: 150px;
   overflow: hidden;
   border-radius: 40px;
 }
