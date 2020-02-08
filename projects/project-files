@@ -1,0 +1,303 @@
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top alt animated fadeInUp">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/edvin.png" alt="" /></span>
+							<h1  id="title ">Edvin Saletovic</h1>
+							<p>Full Stack Developer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<!-- <li><a  href="#" rel="noopener noreferrer" onclick='window.open("https://twitter.com/vodenizeko");return false;' class="icon brands fa-twitter" id="tw"></a></li> -->
+							<!-- <li><a href="" rel="noopener noreferrer" onclick='window.open("./assets/Resume-1.pdf");return false;' download="Edvin's resume" class="far fa-file-pdf" id="rs"></a></li> -->
+							<li><a href="#" rel="noopener noreferrer" onclick='window.open("https://github.com/VodeniZeko");return false;' class="icon brands fa-github" id="gh"></a></li>
+							<li><a href="#" rel="noopener noreferrer" onclick='window.open("https://www.linkedin.com/in/edvin-saletovic-298392156/");return false;' class="fab fa-linkedin-in" id="fb"></a></li>
+							<li><a href="#" rel="noopener noreferrer" onclick='window.open("mailto:salexy.es@gmail.com?subject=Hi, I am your website visitor");return false;' class="icon solid fa-envelope" id="em"></a></li>
+						</ul>
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				<div class = "hidden"style="height: 250px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
+				</div>
+					<section id="top" class="one dark cover">
+						<div id='wavy' class="container">
+							<header>
+								<h2 class="alt animated fadeInDown">Hello, I'm Edvin and I help start-ups, small businesses, and agencies achieve high quality websites and exceptional user experience.
+								</h2>
+								<p class=" alt animated fadeInDown text-muted"> view my porfolio.
+								</p>
+							</header>
+
+							<footer>
+									<div class="alt animated fadeInDown" id="wrapp ">
+											<div id="wrapp-inner ">
+										<div id="scroll-down">
+											<span class="arrow-down">
+											<!-- css generated icon -->
+											</span>
+											<span id="scroll-title">
+											<a href="#portfolio" class="scrolly" id="scrolly"><i class="las la-mouse">&#xf8cc;</i></a>
+											</span>
+										</div>
+											</div>
+											</div>
+							</footer>			
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+<section id="portfolio" class="two" >
+	<div class="container-second">
+
+								<header >
+									<h2 class="w">Welcome to my Portfolio.</h2>
+								</header>
+
+<div class="projects-body">
+
+<div class="projects-inner">
+        <div class="card">
+            <div class="face face1">
+                <div id="content-img" class="content">
+										<video width="500" height="360" controls autoplay>
+												<!-- MP4 must be first for iPad! -->
+												<source src="/assets/video/trim.mp4" type="video/mp4" /><!-- WebKit video    -->
+												<source src="/assets/video/trim.mp4." type="video/webm" /><!-- Chrome / Newest versions of Firefox and Opera -->
+												<source src="/assets/video/trim.mp4" type="video/ogg" /><!-- Firefox / Opera -->
+												<!-- fallback to Flash: -->
+												<object width="640" height="384" type="application/x-shockwave-flash" data="/assets/video/trim.mp4">
+														<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+														<param name="movie" value="/assets/video/trim.mp4.SWF" />
+														<param name="flashvars" value="image=__POSTER__.JPG&amp;file=/assets/video/trim.mp4.MP4" />
+														<!-- fallback image. note the title field below, put the title of the video there -->
+														<img src="/assets/video/trim.mp4.JPG" width="500" height="360" alt="Nasa image of the day"
+																 title="No video playback capabilities, please download the video below" />
+												</object>
+										</video>
+                    <!-- <img class="image fit" src="images/nasa.jpg" alt="Astronomy picture of the day" /> -->
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="projects-p">Nasa API:</br>Astronomy picture of the day, default today but you can choose any date.</p>
+                </div>
+						</div>
+						<div class="water-button">
+								<a class="watter-button-a" target="blank" href="https://image-of-the-day.netlify.com//">
+										<span class="watter-button-span">Demo</span>
+										<div class="liquid"></div>
+									</a>
+						</div>
+				</div>
+				<div class="card">
+            <div class="face face1">
+                <div  id="content-img" class="content">
+										<video width="500" height="360" controls autoplay>
+												<!-- MP4 must be first for iPad! -->
+												<source src="/assets/video/trim4.mp4" type="video/mp4" /><!-- WebKit video    -->
+												<source src="/assets/video/trim4.mp4." type="video/webm" /><!-- Chrome / Newest versions of Firefox and Opera -->
+												<source src="/assets/video/trim4.mp4" type="video/ogg" /><!-- Firefox / Opera -->
+												<!-- fallback to Flash: -->
+												<object width="640" height="384" type="application/x-shockwave-flash" data="/assets/video/trim4.mp4">
+														<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+														<param name="movie" value="/assets/video/trim4.mp4.SWF" />
+														<param name="flashvars" value="image=__POSTER__.JPG&amp;file=/assets/video/trim4.mp4.MP4" />
+														<!-- fallback image. note the title field below, put the title of the video there -->
+														<img src="/assets/video/trim4.mp4.JPG" width="500" height="360" alt="Nasa image of the day"
+																 title="No video playback capabilities, please download the video below" />
+												</object>
+										</video>
+                   <!-- <img class="image fit" src="images/googly.jpg" alt="searching" /> -->
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="projects-p">Rent your Tech:</br>Turo for your Tech, Peer to Peer renting platform.</p>
+                </div>
+						</div>
+						<div class="water-button">
+								<a class="watter-button-a" target="blank" href="https://vodenizeko.github.io/googly/">
+										<span class="watter-button-span">Demo</span>
+										<div class="liquid"></div>
+									</a>
+						</div>
+        </div>
+				<div class="card">
+            <div class="face face1">
+                <div  id="content-img" class="content">
+										<video width="500" height="360" controls autoplay>
+												<!-- MP4 must be first for iPad! -->
+												<source src="/assets/video/trimed1.mp4" type="video/mp4" /><!-- WebKit video    -->
+												<source src="/assets/video/trimed1.mp4." type="video/webm" /><!-- Chrome / Newest versions of Firefox and Opera -->
+												<source src="/assets/video/trimed1.mp4" type="video/ogg" /><!-- Firefox / Opera -->
+												<!-- fallback to Flash: -->
+												<object width="640" height="384" type="application/x-shockwave-flash" data="/assets/video/trimed1.mp4">
+														<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+														<param name="movie" value="/assets/video/trimed1.mp4.SWF" />
+														<param name="flashvars" value="image=__POSTER__.JPG&amp;file=/assets/video/trimed1.mp4.MP4" />
+														<!-- fallback image. note the title field below, put the title of the video there -->
+														<img src="/assets/video/trimed1.mp4.JPG" width="500" height="360" alt="Nasa image of the day"
+																 title="No video playback capabilities, please download the video below" />
+												</object>
+										</video>
+                    <!-- <img class="image fit" src="images/store.jpg" alt="E-commerce" /> -->
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="projects-p">E-commerce:</br> Single Page App built using React and Bootstrap with PayPal integrated shopping cart.</p>
+                </div>
+						</div>
+						<div class="water-button">
+								<a class="watter-button-a" target="blank" href="https://telefon.netlify.com/">
+										<span class="watter-button-span">Demo</span>
+										<div class="liquid"></div>
+									</a>
+						</div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div  id="content-img" class="content">
+										<video width="500" height="360" controls autoplay>
+												<!-- MP4 must be first for iPad! -->
+												<source src="/assets/video/trimm3.mp4" type="video/mp4" /><!-- WebKit video    -->
+												<source src="/assets/video/trimm3.mp4." type="video/webm" /><!-- Chrome / Newest versions of Firefox and Opera -->
+												<source src="/assets/video/trimm3.mp4" type="video/ogg" /><!-- Firefox / Opera -->
+												<!-- fallback to Flash: -->
+												<object width="640" height="384" type="application/x-shockwave-flash" data="/assets/video/trim3.mp4">
+														<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+														<param name="movie" value="/assets/video/trimm3.mp4.SWF" />
+														<param name="flashvars" value="image=__POSTER__.JPG&amp;file=/assets/video/trimm3.mp4.MP4" />
+														<!-- fallback image. note the title field below, put the title of the video there -->
+														<img src="/assets/video/trimm3.mp4.JPG" width="500" height="360" alt="Nasa image of the day"
+																 title="No video playback capabilities, please download the video below" />
+												</object>
+										</video>
+                   <!-- <img class="image fit" src="images/face-app.jpg" alt="face recognition" /> -->
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="projects-p">Face detection app:</br>Full stack web app connects to Clarifai API and uses machine learning to detect face. </p>
+                </div>
+						</div>
+						<div class="water-button">
+								<a class="watter-button-a" target="blank" href="https://projekat.netlify.com/">
+										<span class="watter-button-span">Demo</span>
+										<div class="liquid"></div>
+									</a>
+						</div>
+				</div>
+</section>
+<div class="voda">
+		<a class="voda-a" href="../index.html">
+				<span class="voda-span">SEE ALL WORK</span>
+				<div class="vodeni"></div>
+			</a>
+</div>
+
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						
+				<!-- <div style="height: 180px; overflow: hidden;" ><svg viewBox="150 0 1200 120" preserveAspectRatio="none" style="height: 50%; width: 190%;"><path d="M208.08,0.00 C152.69,67.09 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
+				</div> -->
+						<!-- <div class="container"> -->
+
+					<div class="macbook">
+						 <div class="screen">
+							 <div class="viewport">
+
+								<div class="jumbo"> 
+							               <div id="particles-js">      
+					                        <div id="typed-strings"><div id="topbox">text editor</div><div id="innerEditor"><span  id="typed"></span></div></div>
+				                           </div> 
+												 </div>
+												 
+									    	
+							 </div>
+						 </div>
+						 
+						<div class="base"></div>
+						<div class="notch"></div>
+					</div>
+					<div id="wrapper">
+						<div id="wrapper-inner">
+					<div id="scroll-down">
+						<span class="arrow-down">
+						<!-- css generated icon -->
+						</span>
+						<span id="scroll-title">
+							Scroll down
+						</span>
+					</div>
+						</div>
+						</div>
+			
+						<!-- </div> -->
+				<!-- <div class="last" style="height: 150px; overflow: hidden;" ><svg viewBox="10 0 210 120" preserveAspectRatio="none" style="height: 100%; width: 100%; "><path d="M213.19,0.00 C152.69,70.06 270.03,70.06 202.98,150.00 L500.00,150.00 L500.00,0.00 Z" style="stroke: none; fill: #000;"></path></svg>
+				</div> -->
+				
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+								<div class="container-third">
+										<header>
+												<h2 class="me">Contact me</h2>
+										<p class="ds-bp">Please feel free to get in touch anytime, whether for work inquiries or just to say "hi",</br> I will get back to you as soon as possible.</p>
+										</header>
+
+
+										<form id="contact" netlify-honeypot="bot-field" data-netlify="true" method="post" autofocus>
+											<div class="row">
+												<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+												<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+												<div class="col-12">
+													<textarea name="message" placeholder="Message"></textarea>
+												</div>
+												<div class="col-12">
+													<input class="btn" type="submit" value=" Send Message "  />	
+												</div>
+											</div>
+										</form>
+									</div>
+
+						</div>
+
+					</section>
+					<div class="bottom"style="height: 120px; overflow: hidden;" ><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
+
+			</div>
+          <div id="footer">
+      <!-- Copyright -->
+      <ul class="copyright">
+        <li>&copy; Copyright Edvin Saletovic. All rights reserved.</li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
