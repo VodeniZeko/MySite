@@ -228,6 +228,12 @@ input, select, textarea {
 		width: 1400px;
 	}
 
+	.container .text-muted {
+		background-image: url("/assets/images/welcome.svg");
+		background-repeat: no-repeat;
+		background-size: 99% 57%;
+	}
+
 	.jumbo {
 		display: flex;
 		align-items: center;
@@ -246,9 +252,9 @@ input, select, textarea {
 		font-family: monospace;
 		font-size: .8em;
 		color: #fff;
-		-webkit-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+		/* -webkit-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
 		-moz-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
-		box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
+		box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75); */
 		
 	}
 
@@ -290,18 +296,7 @@ input, select, textarea {
 				animation-delay: 1.5s;
 			}
 	
-	
 
-		@media only screen and (min-width : 1824px) {
-			
-			.content .projects-p {
-				padding: 0;
-				margin: 0;
-				font-size: .8em;
-				line-height: 1em;
-			}
-
-		}
 
 		@media screen and (min-width: 961px) and (max-width: 2800px) {
 
@@ -2175,7 +2170,7 @@ input, select, textarea {
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
 		color: #000;
-		font-weight: 900;
+		font-weight: 600;
 	}
 
 		form input[type="text"]:focus,
@@ -2196,7 +2191,7 @@ input, select, textarea {
 
 	::placeholder{
 		color:#000;
-		font-weight: 900;
+		font-weight: 100;
 	}
 
 
@@ -2313,9 +2308,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #000; 
-		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, .3);
-		color: #fff;
+		background: #fff; 
+		/* box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, .3);
+		color: #000; */
 		height: 100%;
 		left: 0;
 		overflow-y: auto;
@@ -2386,7 +2381,7 @@ input, select, textarea {
 
 		#logo h1 {
 			position: relative;
-			color: #fff;
+			color: #000;
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
@@ -2396,7 +2391,7 @@ input, select, textarea {
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: #fff;
+			color: #000;
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2422,7 +2417,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: #fff;
+				color:#000;
 				text-decoration: none;
 				outline: 0;
 				border: 0;
@@ -2442,21 +2437,24 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #fff;
+						color: #000;
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
 					}
 
-				#nav ul li a.active {
-					background: rgba(0, 0, 0, 0.15);
+				/* #nav ul li a.active {   SHADOW OVER LI TEXT ON ACTIVE */
+					/* background: rgba(0, 0, 0, 0.15);
 					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
-					color: #ffa500;
+					color: #000; */
 
-				}
+				/* } */
 
 					#nav ul li a.active span:before {
-						color: #ffa500;
+						color: #000;
+					}
+					#nav span:hover {
+						font-weight: bold;
 					}
 
 
@@ -2466,7 +2464,7 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #000;
+		/* background-color: #000; */
 		padding: 0 0 5em 0;
 		font-size: 0.8em;
 	}
@@ -2489,6 +2487,7 @@ input, select, textarea {
 					border-left: 0;
 					padding-left: 0;
 					margin-left: 0;
+					color:#000;
 				}
 
 		footer #scrolly {
@@ -3192,7 +3191,6 @@ input, select, textarea {
 					    display: flex;
 					    justify-content: center;
 					    align-items: center;
-							font-family: consolas;
 							
 					}
 
@@ -3204,33 +3202,25 @@ input, select, textarea {
 							margin: -1px;
 							padding-bottom: 5em;
 					}
-					/* TODO: make this card bellow at @media (tablet) to fit 2 in a row then one big one then two again*/
+				
 					
 					.projects-inner .card{
 					 padding:2em;
 					 overflow: hidden;
 					 width: 600px;
 					}
-         /* ============ end of TODO: */
+         
 
 
 					.projects-inner .card .face{
-					  
-					    
+
 							transition: 0.5s;
 							overflow: hidden;
-
 					}
-				
-					@media screen and (max-width: 360px) {
-						.projects-inner .card .face {
-							width: 300px;
-						}
-					}
+		
 
 					.projects-inner .card .face.face1{
 					    position: relative;
-					    /* background: #333; */
 					    display: flex;
 					    justify-content: center;
 					    align-items: center;
@@ -3252,7 +3242,6 @@ input, select, textarea {
 					}
 					.image.fit {
 						width: 100%;
-					
 						transition: ease-in-out .35s;
 		
 					}
@@ -3268,53 +3257,60 @@ input, select, textarea {
 					    align-items: center;
 					    padding: 30px;
 							box-sizing: border-box;
-						
+					}
+					@media screen and (max-width:450px) {
+						.projects-inner .card .face.face2{	padding: 30px 87px;}
 					}
 
 					.projects-inner .card .face.face2 .content p{
 					    margin: 0;
 					    padding: 0;
-							height: 100px;
-							/* font-size: 1em;	 */
+							height: 150px;
+							line-height: 1.5em;
 					}
+
+
+
 
 					/* water button begins here */
 
 .water-button {
 	display: flex;
   align-items: center;
-  justify-content: center;
+	justify-content: center;
+	outline-color: transparent;
+
 }
 
-.watter-button-a {
+.water-button-a {
   position: relative;
   display: block;
   text-decoration: none;
   width: 150px;
   overflow: hidden;
-  border-radius: 40px;
+	border-radius: 40px;
+	
 }
 
-.watter-button-a span {
+.water-button-a span {
   position: relative;
   color: #fff;
 	z-index: 1;
 	font-size: initial;
 }
 
-.watter-button-a .liquid {
+.water-button-a .liquid {
   position: absolute;
   left: 0;
   width: 200px;
   height: 200px;
   background: #4973ff;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
 	transition: .5s;
 	top: -115px;
 }
 
-.watter-button-a .liquid::after,
-.watter-button-a .liquid::before {
+.water-button-a .liquid::after,
+.water-button-a .liquid::before {
   content: '';
   width: 200%;
   height: 200%;
@@ -3322,25 +3318,31 @@ input, select, textarea {
   top: 0;
   left: 50%;
   transform: translate(-50%, -75%);
-  background: #000;
+	background: #fff;
+	
 }
 
-.watter-button-a .liquid::before {
+.water-button-a .liquid::before {
   
   border-radius: 45%;
-  background: #000;
+  background: #fff;
   animation: animate 5s linear infinite;
 }
 
-.watter-button-a .liquid::after {
+.water-button-a .liquid::after {
   
-  border-radius: 40%;
-  background: #000;
+	border-radius: 40%;
+  background: #fff;
   animation: animate 10s linear infinite;
 }
 
-.watter-button-a:hover .liquid{
-  top: -85px;
+.water-button-a:hover .liquid{
+	top: -70px;
+	
+}
+.water-button-a:hover span {
+	color: #000;
+	font-weight: bolder;
 }
 
 
@@ -3391,7 +3393,7 @@ input, select, textarea {
   background: #4973ff;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
 	transition: .5s;
-	top: -90px;
+	top: -99px;
 }
 
 .voda-a .vodeni::after,
@@ -3403,26 +3405,26 @@ input, select, textarea {
   top: 0;
   left: 50%;
   transform: translate(-50%, -75%);
-  background: #000;
+  background: #fff;
 }
 
 .voda-a .vodeni::before {
   
   border-radius: 45%;
-  background: #000;
+  background: #fff;
   animation: animate 5s linear infinite;
 }
 
 .voda-a .vodeni::after {
   
   border-radius: 40%;
-  background: #000;
+  background: #fff;
   animation: animate 10s linear infinite;
 }
 
 .voda-a:hover .vodeni{
   top: -115px;
-}
+} 
 
 
 @keyframes animate {
