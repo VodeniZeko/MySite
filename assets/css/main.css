@@ -2203,7 +2203,9 @@ input, select, textarea {
     	cursor:pointer;
 			color:#000;
 			margin-top: 1em;
-
+			font-weight: 600;
+			background: #ffb732;
+			transition: all 0.2s ease-in-out;
 		}
 
     .btn:hover {
