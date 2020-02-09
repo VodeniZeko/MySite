@@ -3213,6 +3213,8 @@ input, select, textarea {
 					 padding:2em;
 					 overflow: hidden;
 					 width: 600px;
+					 height:500px;
+					 margin-top:2em;
 					}
          
 
@@ -3283,8 +3285,12 @@ input, select, textarea {
 	display: flex;
   align-items: center;
 	justify-content: center;
-	outline-color: transparent;
+}
 
+@media screen and (min-width:1880px){
+	.water-button{
+		padding-top:1em;
+	}
 }
 
 .water-button-a {
