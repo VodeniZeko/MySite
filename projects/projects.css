@@ -1,7 +1,7 @@
 html {
   font-family: "Lato", sans-serif;
 }
-@keyframes scaleUp {
+/* @keyframes scaleUp {
   0% {
     transform: scale(1.2) translateY(50px);
     opacity: 0;
@@ -53,7 +53,7 @@ html {
     opacity: 0;
   }
 }
-@keyframes scaleCard {
+@keyframes scalekarta {
   0% {
     top: 5px;
   }
@@ -86,32 +86,32 @@ html {
   padding-top: 7em;
   height: 100vh;
 }
-.container .card-stack {
+.container .karta-stack {
   width: 800px;
   height: 500px;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (max-width: 800px) {
-  .container .card-stack {
+  .container .karta-stack {
     width: 600px;
   }
 }
 @media screen and (max-width: 500px) {
-  .container .card-stack {
+  .container .karta-stack {
     width: 400px;
     height: 250px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .container .card-stack {
+  .container .karta-stack {
     width: 300px;
     height: 200px;
   }
 }
 
-.container .card-stack .buttons {
+.container .karta-stack .buttons {
   display: none;
   position: absolute;
   background: rgba(0, 0, 0, 0.46);
@@ -130,43 +130,43 @@ html {
   outline: none;
   transition: all 0.2s ease;
 }
-.container .card-stack .buttons:hover {
+.container .karta-stack .buttons:hover {
   transform: scale(1.3, 1.3);
 }
-.container .card-stack .prev {
+.container .karta-stack .prev {
   left: 15px;
   right: auto;
 }
-.container .card-stack .next {
+.container .karta-stack .next {
   left: auto;
   right: 15px;
 }
-.container .card-stack .carousel .buttons:hover {
+.container .karta-stack .carousel .buttons:hover {
   color: #c01313;
   background: #fff;
 }
-.container .card-stack .card-list {
+.container .karta-stack .karta-list {
   width: 300px;
 }
-.container .card-stack .card-list__image {
+.container .karta-stack .karta-list__image {
   height: 272px;
 }
 
 @media screen and (max-width: 800px) {
-  .container .card-stack .card-list__image {
+  .container .karta-stack .karta-list__image {
     height: 200px;
   }
 }
 @media screen and (max-width: 500px) {
-  .container .card-stack .card-list__image {
+  .container .karta-stack .karta-list__image {
     height: 100px;
   }
 }
-.container .card-stack .card-list__text {
+.container .karta-stack .karta-list__text {
   color: #fff;
   font-weight: 300;
 }
-.container .card-stack .card-list li {
+.container .karta-stack .karta-list li {
   align-items: center;
   justify-content: center;
   transition: all 100ms ease-in-out;
@@ -182,32 +182,31 @@ html {
   -webkit-box-shadow: 0 2px 15px 1px rgba(225, 225, 225, 0.5);
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.5);
 }
-.container .card-stack .card-list li:nth-child(1) {
+.container .karta-stack .karta-list li:nth-child(1) {
   top: 24px;
   width: 60%;
-  /* animation: scaleCard 100ms; */
 }
-.container .card-stack .card-list li:nth-child(2) {
+.container .karta-stack .karta-list li:nth-child(2) {
   top: 36px;
   width: 70%;
 }
-.container .card-stack .card-list li:nth-child(3) {
+.container .karta-stack .karta-list li:nth-child(3) {
   top: 48px;
   width: 80%;
 }
-.container .card-stack .card-list li:nth-child(4) {
+.container .karta-stack .karta-list li:nth-child(4) {
   top: 60px;
   width: 90%;
 }
-.container .card-stack .card-list li:nth-child(5) {
+.container .karta-stack .karta-list li:nth-child(5) {
   top: 72px;
   width: 100%;
 }
-.container .card-stack:hover > .buttons.prev {
+.container .karta-stack:hover > .buttons.prev {
   display: block;
   animation: bounceInLeft 200ms;
 }
-.container .card-stack:hover > .buttons.next {
+.container .karta-stack:hover > .buttons.next {
   display: block;
   animation: bounceInRight 200ms;
 }
@@ -217,4 +216,4 @@ html {
 .transformPrev {
   animation: scaleUp 100ms;
   display: none;
-}
+} */
