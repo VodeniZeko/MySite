@@ -301,3 +301,8 @@
         <li><a href="#"></a></li>
       </ul>
     </div>
+
+
+i changed #header 
+i changed 	#nav ul li a.active and before
+i changed 	#nav ul li a span:before
