@@ -2544,6 +2544,7 @@ input, select, textarea {
 				background-size: cover;
 				background-position: center;
 				height: 100vh;
+				padding-top: 8em;
 			}
 
 			#main > section.one {
@@ -3478,7 +3479,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 0em 0em;
+				padding: 8em 0em;
 			}
 
 				#main section.cover header {
@@ -3504,8 +3505,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 360px) {
 		#main section.cover {
-			padding: 0em 0em;
-			margin: -26px;
+			padding: 8em 0em;
 		}
 
 	}
