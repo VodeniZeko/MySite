@@ -5,6 +5,7 @@ html {
   background-color: #fff;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 7em;
   height: 100vh;
 }
 .container .card-stack {
