@@ -2611,7 +2611,7 @@ input, select, textarea {
 		
 		 .modal-content {
 			margin:0 auto;
-			height: 80vh;
+			height: 88vh;
 			background-image: url(../images/modal.svg);
 			background-size: 100% 116%;
 			background-repeat: no-repeat;
@@ -2625,7 +2625,7 @@ input, select, textarea {
 		}
 		@media screen and (max-width:500px) {
 			.modal-content {
-				height: 75vh;
+				height: 73vh;
 				background-size: 93% 116%;
 			}
 		}
@@ -2656,16 +2656,16 @@ input, select, textarea {
 		}
 		@media screen and (max-width:500px) {
 			.section li {
-				width: 355px;
+				width: 345px;
         height: 270px;
 			}
 			ul {
 				padding-left: 0;
 			}
 		}
-		@media screen and (max-width:400px) {
+		@media screen and (max-width:393px) {
 			.section li {
-				width: 293px;
+				width: 320px;
         height: 270px;
 			}
 			ul {
@@ -2726,18 +2726,24 @@ input, select, textarea {
 		.section span {
 			position: relative;
 			margin: 0 auto;
-			left: 11.3em;
-			top: 20em;
+			left: 12.3em;
+    top: 17em;
 		}
-		@media screen and (max-width:500px){
+		@media screen and (min-width:1880px){
 			.section span{
-				left: 8.3em;
+				left: 9.3em;
 				top: 18em;
 			}
 		}
-		@media screen and (max-width:400px){
+		@media screen and (max-width:500px){
 			.section span{
-				left: 6.5em;
+				left: 7.7em;
+				top: 18em;
+			}
+		}
+		@media screen and (max-width:393px){
+			.section span{
+				left: 7em;
 				top: 18em;
 			}
 		}
@@ -2752,6 +2758,40 @@ input, select, textarea {
 			outline: none;
 		}
 
+		#coolBtn {
+			border: 1px solid #ffa500;
+			position: absolute;
+			cursor: pointer;
+			background-color:transparent;
+			border-radius: 15%;
+			margin: 2em;
+			background: transparent;
+			color: #ffa500;
+			}
+			#coolBtn:hover {
+				animation: s 1s ease;
+				animation-iteration-count: 1;
+				}
+				@keyframes s {
+				15% {
+				transform: translateX(5px);
+				}
+				30% {
+				transform: translateX(-5px);
+				}
+				50% {
+				transform: translateX(3px);
+				}
+				65% {
+				transform: translateX(-3px);
+				}
+				80% {
+				transform: translateX(2px);
+				}
+				100% {
+				transform: translateX(0);
+				}
+			}
 		
 		/* The Close Button */
 		.close {
