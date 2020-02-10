@@ -84,7 +84,7 @@
 
 //
 
-var autoSwap = setInterval(swap, 350);
+var autoSwap = setInterval(swap, 0);
 
 //pause slideshow and reinstantiate on mouseout
 $("ul, span").hover(
