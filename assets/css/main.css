@@ -2604,25 +2604,35 @@ input, select, textarea {
 			top: 0;
 			width: 100%; /* Full width */
 			height: 100%; /* Full height */
-			overflow: auto; /* Enable scroll if needed */
+			/* overflow: auto; Enable scroll if needed */
 			background-color: rgb(0,0,0); /* Fallback color */
 			background-color:#fff; /* Black w/ opacity */
 		}
 		
 		 .modal-content {
-			margin: auto;
-			height: 100vh;
-			padding: 20px;
+			margin:0 auto;
+			height: 80vh;
 			background-image: url(../images/modal.svg);
 			background-size: 100% 116%;
 			background-repeat: no-repeat;
-			width: 30em;
+			max-width: 900px;
+		}
+		@media screen and (max-width:800px) {
+			.modal-content {
+				height: 96vh;
+				background-size: 93% 116%;
+			}
+		}
+		@media screen and (max-width:500px) {
+			.modal-content {
+				height: 75vh;
+				background-size: 93% 116%;
+			}
 		}
 
 		.section {
-			width: 30em;
-			height: 25em;
 			margin: 0 auto;
+			width:40rem;
 			position: relative;
 		}
 		
@@ -2638,6 +2648,35 @@ input, select, textarea {
 			/* background-image: url("/images/game.jpg");
 			background-size: 100% 100%;
 			background-repeat: no-repeat; */
+		}
+		@media screen and (max-width:800px) {
+			.section li {
+				width: 500px;
+			}
+		}
+		@media screen and (max-width:500px) {
+			.section li {
+				width: 355px;
+        height: 270px;
+			}
+			ul {
+				padding-left: 0;
+			}
+		}
+		@media screen and (max-width:400px) {
+			.section li {
+				width: 293px;
+        height: 270px;
+			}
+			ul {
+				padding-left: 0;
+			}
+		}
+		@media screen and (max-width:322px) {
+			.section li {
+				width: 250px;
+				height: 270px;
+			}
 		}
 		
 		.section li p {
@@ -2689,6 +2728,24 @@ input, select, textarea {
 			margin: 0 auto;
 			left: 11.3em;
 			top: 20em;
+		}
+		@media screen and (max-width:500px){
+			.section span{
+				left: 8.3em;
+				top: 18em;
+			}
+		}
+		@media screen and (max-width:400px){
+			.section span{
+				left: 6.5em;
+				top: 18em;
+			}
+		}
+		@media screen and (max-width:320px){
+			.section span{
+				left: 5.3em;
+				top: 18em;
+			}
 		}
 
 		#prev, #next:focus {
