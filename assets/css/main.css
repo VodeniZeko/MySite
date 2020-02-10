@@ -2722,11 +2722,12 @@ input, select, textarea {
 				width:100%;
 				height:100%;
 			}
-			@media (min-width:320px) {
-				#wrapp {
-					padding-top: 0;
+			@media screen and (max-width:500px) {
+				#wrapper {
+					padding-top: 8rem;
 				}
-			}
+			}			
+
 			
 			#wrapper-inner, #wrapp-inner {
 				vertical-align:middle;
@@ -2740,6 +2741,7 @@ input, select, textarea {
 					padding-top: 79px;
 				text-align:center;
 			}
+		
 			.arrow-down {
 					display: block;
 					margin: 0 auto;
@@ -3299,7 +3301,7 @@ input, select, textarea {
 				}
 
 				#main section.cover {
-					padding: 4em 0;
+					padding: 2em 0;
 				}
 
 	}
@@ -3432,7 +3434,7 @@ input, select, textarea {
   height: 200px;
   background: #4973ff;
 	transition: .5s;
-	top: -115px;
+	top: -120px;
 }
 
 .water-button-a .liquid::after,
@@ -3549,7 +3551,7 @@ input, select, textarea {
 }
 
 .voda-a:hover .vodeni{
-  top: -115px;
+  top: -120px;
 } 
 
 
@@ -3601,7 +3603,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 8em 0em;
+				padding: 3em 0em;
 			}
 
 				#main section.cover header {
@@ -3627,7 +3629,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 360px) {
 		#main section.cover {
-			padding: 8em 0em;
+			padding: 3em 0em;
 		}
 
 	}
