@@ -2754,8 +2754,14 @@ input, select, textarea {
 			}
 		}
 
-		#prev, #next:focus {
+		#prev, #next {
 			outline: none;
+			border: 1px solid #ffa500;
+			cursor: pointer;
+			background-color:transparent;
+			border-radius: 15%;
+			background: transparent;
+			color: #ffa500;
 		}
 
 		#coolBtn {
@@ -2796,9 +2802,10 @@ input, select, textarea {
 		/* The Close Button */
 		.close {
 			color: #aaaaaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
+    float: right;
+    font-size: 56px;
+    font-weight: bold;
+    margin: -1em;
 		}
 		
 		.close:hover,

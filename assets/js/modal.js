@@ -5,12 +5,10 @@ var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-var notch = document.getElementsByClassName("notch");
-console.log(notch);
+
 // When the user clicks the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
-  notch.style.display = "none";
 };
 
 // When the user clicks on <span> (x), close the modal
