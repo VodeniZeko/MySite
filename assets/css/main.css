@@ -2758,17 +2758,18 @@ input, select, textarea {
 			outline: none;
 			border: 1px solid #ffa500;
 			cursor: pointer;
-			background-color:transparent;
+			background-color:#fff;
 			border-radius: 15%;
-			background: transparent;
 			color: #ffa500;
+		}
+		#next {
+			background-color:#fff;
 		}
 
 		#coolBtn {
 			border: 1px solid #ffa500;
 			position: absolute;
 			cursor: pointer;
-			background-color:transparent;
 			border-radius: 15%;
 			margin: 2em;
 			background: transparent;
@@ -3608,6 +3609,7 @@ input, select, textarea {
   overflow: hidden;
 	border-radius: 40px;
 	padding:.1em;
+	cursor: pointer;
 }
 
 .voda-a span {
