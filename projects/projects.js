@@ -205,3 +205,33 @@ $("li").click(function() {
     swap("clockwise");
   }
 });
+$("#video-trim").on("click", function() {
+  $(this)
+    .html(
+      '<iframe src="/assets/video/trim.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+
+$("#video-trim4").on("click", function() {
+  $(this)
+    .html(
+      '<iframe src="/assets/video/trim4.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$("#video-trimed1").on("click", function() {
+  $(this)
+    .html(
+      '<iframe src="/assets/video/trimed1.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+
+$("#video-trimm3").on("click", function() {
+  $(this)
+    .html(
+      '<iframe src="/assets/video/trimm3.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});

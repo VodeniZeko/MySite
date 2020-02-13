@@ -3457,6 +3457,10 @@ input, select, textarea {
 							height: 300px;
 							overflow: hidden;
 							width:100%;
+							color:red;
+							font-size: 2rem;
+							background-image: url("../images/preview.svg");
+							background-size: 100% 100%;
 					}
 
 
