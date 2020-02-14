@@ -2563,7 +2563,7 @@ input, select, textarea {
 				user-select: none;
 				transform: scale(2.5);
 				cursor: pointer;
-			}
+			} 
 
 			.mode {
 				margin: 0 auto;
