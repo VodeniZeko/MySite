@@ -2562,8 +2562,8 @@ input, select, textarea {
 				user-select: none;
 				transform: scale(2);
 				cursor: pointer;
-				margin: 0 auto;
-				padding: 2em;
+				margin: 3rem auto;
+				width:10px;
 			} 
 
 			@media screen and (max-width:960px) {

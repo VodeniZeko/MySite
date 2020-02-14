@@ -237,9 +237,9 @@ $("#video-trimm3").on("click", function() {
 });
 
 //changing icons on toggle
-$(".switch").on("click", function() {
-  $(".on ,.off").toggle();
-});
+// $(".switch").on("click", function() {
+//   $(".on ,.off").toggle();
+// });
 
 //toggle dark mode on and off and persisting with local storage
 
