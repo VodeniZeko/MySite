@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -2520,17 +2521,12 @@ input, select, textarea {
 			margin: -1px;
 			overflow: hidden;
 			text-align: center;
-			/* padding: 6em 0 0 0; */
-		
+			/* padding: 6em 0 0 0; */	
 		}
-
-			#main > section.dark {
-				color: #000;
-
-			}
+    
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-					color: inherit;
+					/* color: inherit; */
 				}
 
 			#main > section.container {
@@ -2546,18 +2542,57 @@ input, select, textarea {
 				padding-top: 8em;
 			}
 
-			#main > section.one {
+			/* #main > section.one {
 				background-color:#fff;
-			}
+			} */
 
 			.la-mouse {
 				font-family:'Font Awesome\ 5 Free';
 				font-style: normal;
 				font-weight: 900;
-				content: "\f061";
+
 				color:#000;
 				margin-left: 2px;
 			}
+			.switch{
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				transform: scale(2.5);
+				cursor: pointer;
+			}
+
+			.mode {
+				margin: 0 auto;
+				padding: 2em;
+			}
+/* 
+			@media screen and (max-width:960px) {
+				.mode{
+					display: none;
+				}
+			} */
+	
+			.mode.dark-mode{
+				background-color: #000;
+			}
+			@media screen and (max-width:960px) {
+				.mode{
+					margin: 0 5rem;
+				
+				}
+			} 
+			.la-sun {
+				font-family:'Font Awesome\ 5 Free';
+				font-style: normal;
+				font-weight: 900;
+				content: "&#xf185";
+				font-size: 2rem;
+				cursor: pointer;
+			} 
 
 			#main > section.two {
 				/* background: #fff; */
@@ -3752,12 +3787,44 @@ input, select, textarea {
 		text-align: center;
 	}
 
+/* //////////////////////THIS IS DARK MORE EFFECTS/////////////////////////////// */
+
+#header.dark{
+	background-color: #2f3337;
+}
+
+body.dark {
+	background-color: #2f3337;
+}
+
+html.dark{
+	color: #fff;
+}
+
+section.dark {
+	color: #fff;
+}
 
 
+span.dark, h1.dark, h2.dark, p.dark {
+	color: #fff;
+}
+#logo >p.dark{
+	color:#fff
+}
 
+#title.dark {
+	color:#fff;
+}
+#wavy.dark{
+	background-color: #2f3337;
+}
 
-
-
-
+#main section.top {
+	background-color: #2f3337;
+}
+.las.dark{
+	color:#fff
+}
 
 
