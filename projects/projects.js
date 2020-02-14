@@ -243,6 +243,8 @@ $(".switch").on("click", function() {
 
 //toggle dark mode on and off and persisting with local storage
 
+localStorage.setItem("mode", "light");
+
 $(document).ready(function() {
   if (localStorage.getItem("mode") == "dark") {
     $("#header,#title,#wavy,.las,body, section, span, h1, h2, p").addClass(
@@ -256,7 +258,7 @@ $(document).ready(function() {
     $(".switch").text(`\u263C`);
   }
 });
-localStorage.setItem("mode", "light");
+
 $(".switch").on("click", function() {
   if (
     $("#header,#title,#wavy,.las,body, section, span, h1, h2, p").hasClass(
