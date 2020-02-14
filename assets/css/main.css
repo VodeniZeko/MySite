@@ -2550,7 +2550,6 @@ input, select, textarea {
 				font-family:'Font Awesome\ 5 Free';
 				font-style: normal;
 				font-weight: 900;
-
 				color:#000;
 				margin-left: 2px;
 			}
@@ -2564,6 +2563,10 @@ input, select, textarea {
 				transform: scale(2.5);
 				cursor: pointer;
 			} 
+
+			.switch:focus{
+				outline: none;
+			}
 
 			.mode {
 				margin: 0 auto;
