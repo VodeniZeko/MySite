@@ -2839,6 +2839,12 @@ input, select, textarea {
 			background: transparent;
 			color: #ffa500;
 			}
+			@media screen and (max-width:500px) {
+				#otherCoolBtn{
+					left: 75%;
+					top: 8.5%;
+				}
+			}
 		
 		/* The Close Button */
 		.close {
