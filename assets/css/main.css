@@ -2861,6 +2861,15 @@ input, select, textarea {
 			text-decoration: none;
 			cursor: pointer;
 		}
+
+		iframe{
+			width:500px;
+		}
+		@media screen and (max-width:500px) {
+			iframe{
+				width:345px;
+			}
+		}
 		 /* Modal ends  */
 		
 

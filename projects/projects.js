@@ -156,49 +156,49 @@ $("#video-trimm3").on("click", function() {
 $(".firstVideo").on("click", function() {
   $("#1")
     .html(
-      '<iframe src="/assets/video/soundEffects.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/soundEffects.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 $(".secondVideo").on("click", function() {
   $("#2")
     .html(
-      '<iframe src="/assets/video/trim4.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/trim4.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 $(".thirdVideo").on("click", function() {
   $("#3")
     .html(
-      '<iframe src="/assets/video/trimed1.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/trimed1.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 $(".fourthVideo").on("click", function() {
   $("#4")
     .html(
-      '<iframe src="/assets/video/trimm3.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/trimm3.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 $(".fifthVideo").on("click", function() {
   $("#5")
     .html(
-      '<iframe src="/assets/video/trim.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/trim.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 $(".sixthVideo").on("click", function() {
   $("#6")
     .html(
-      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 $(".seventhVideo").on("click", function() {
   $("#7")
     .html(
-      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
