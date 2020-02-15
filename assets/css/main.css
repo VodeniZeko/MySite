@@ -2559,6 +2559,7 @@ input, select, textarea {
 				-khtml-user-select: none;
 				-moz-user-select: none;
 				-ms-user-select: none;
+				-webkit-tap-highlight-color: transparent;
 				user-select: none;
 				transform: scale(2);
 				cursor: pointer;
