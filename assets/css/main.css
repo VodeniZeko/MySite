@@ -2565,6 +2565,7 @@ input, select, textarea {
 				cursor: pointer;
 				margin: 3rem auto;
 				width:10px;
+				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			} 
 
 			@media screen and (max-width:960px) {
