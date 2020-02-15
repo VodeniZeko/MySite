@@ -236,26 +236,7 @@ $("#video-trimm3").on("click", function() {
     .css("background", "none");
 });
 
-//changing icons on toggle
-// $(".switch").on("click", function() {
-//   $(".on ,.off").toggle();
-// });
-
-//toggle dark mode on and off and persisting with local storage
-
-$(document).ready(function() {
-  if (localStorage.getItem("mode") == "dark") {
-    $("#header,#title,#wavy,.las,body, section, span, h1, h2, p").addClass(
-      "dark"
-    );
-    $(".switch").text(`\u263E`);
-  } else if (localStorage.getItem("mode") == "light") {
-    $("#header,#title,#wavy,.las,body, section, span, h1, h2, p").removeClass(
-      "dark"
-    );
-    $(".switch").text(`\u263C`);
-  }
-});
+// toggle dark mode on and off and persisting with local storage
 
 $(".switch").on("click", function() {
   if (
@@ -274,5 +255,19 @@ $(".switch").on("click", function() {
     );
     $(".switch").text(`\u263E`);
     localStorage.setItem("mode", "dark");
+  }
+});
+
+$(document).ready(function() {
+  if (localStorage.getItem("mode") === "dark") {
+    $("#header,#title,#wavy,.las,body, section, span, h1, h2, p").addClass(
+      "dark"
+    );
+    $(".switch").text(`\u263E`);
+  } else if (localStorage.getItem("mode") === "light") {
+    $("#header,#title,#wavy,.las,body, section, span, h1, h2, p").removeClass(
+      "dark"
+    );
+    $(".switch").text(`\u263C`);
   }
 });

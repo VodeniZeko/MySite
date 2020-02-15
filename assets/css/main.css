@@ -2542,10 +2542,6 @@ input, select, textarea {
 				padding-top: 8em;
 			}
 
-			/* #main > section.one {
-				background-color:#fff;
-			} */
-
 			.la-mouse {
 				font-family:'Font Awesome\ 5 Free';
 				font-style: normal;
@@ -2565,31 +2561,13 @@ input, select, textarea {
 				cursor: pointer;
 				margin: 3rem auto;
 				width:10px;
-				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			} 
 
 			@media screen and (max-width:960px) {
 				.switch{
-					padding: 0em 0.4em;
+					padding: 0em 1.4em;
 				}
 			}
-	
-			@media screen and (max-width:736px) {
-				.switch{
-					padding: .5em .8em;
-				}
-			}
-
-			/* .mode {
-				margin: 0 auto;
-				padding: 2em;
-			} */
-/* 
-			@media screen and (max-width:960px) {
-				.mode{
-					display: none;
-				}
-			} */
 	
 			.mode.dark-mode{
 				background-color: #000;
@@ -2605,7 +2583,7 @@ input, select, textarea {
 				font-style: normal;
 				font-weight: 900;
 				content: "&#xf185";
-				font-size: 2rem;
+				font-size: 1rem;
 				cursor: pointer;
 			} 
 
