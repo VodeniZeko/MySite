@@ -3497,7 +3497,6 @@ input, select, textarea {
 					@media screen and (min-width:1881px) {
 						.projects-inner .card{
 							padding:0;
-							height:600px;
 						 }
 					}
 					.projects-inner .card .face{
@@ -3568,6 +3567,15 @@ input, select, textarea {
 						text-decoration: none;
 						display: block;
 						cursor: pointer;
+					}
+
+					.water-button-div {
+					 margin-left:6em;
+					}
+					@media screen and (max-width:800px) {
+						.water-button-div {
+							margin-left:8em;
+						 }
 					}
 					
 					.water-button{
