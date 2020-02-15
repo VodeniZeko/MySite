@@ -3493,9 +3493,13 @@ input, select, textarea {
 					 height:550px;
 					 margin-top:2em;
 					}
-         
 
-
+					@media screen and (min-width:1881px) {
+						.projects-inner .card{
+							padding:0;
+							height:600px;
+						 }
+					}
 					.projects-inner .card .face{
 
 							transition: 0.5s;
@@ -3576,9 +3580,12 @@ input, select, textarea {
 						width: 140px;
 						text-align: center;
 						margin:0 auto;
-					
 					}
-					
+					@media screen and (min-width:1881px) {
+						.water-button{
+							letter-spacing: .1em;
+						 }
+					}
 					.water-button:hover{
 						letter-spacing: 0;
 						color: white
