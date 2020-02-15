@@ -3558,9 +3558,6 @@ input, select, textarea {
 							line-height: 1.5em;
 					}
 
-
-
-
 					/* water button/ project buttons begin here */
 
 					#water-button-a, #myBtn{
@@ -3572,7 +3569,6 @@ input, select, textarea {
 					.water-button{
 						color: #222;
 						transform: translate(-50%, -50%);
-					
 						letter-spacing: .2em;
 						-webkit-transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 						transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -3627,7 +3623,7 @@ input, select, textarea {
 	font-weight: 300;
 	font-size: 20px;
 	letter-spacing: 1px;
-	background:  #6284FF;
+	background-color: #000;
 	-webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
 	mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
 	-webkit-mask-size: 2300% 100%;
@@ -3635,12 +3631,12 @@ input, select, textarea {
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	-webkit-animation: ani2 0.7s steps(22) forwards;
-	animation: ani2 0.7s steps(22) forwards;
+	-webkit-animation: ani2 0.2s steps(22) forwards;
+	animation: ani2 0.2s steps(22) forwards;
 }
 .button-container-1 button:hover {
-	-webkit-animation: ani 0.7s steps(22) forwards;
-	animation: ani 0.7s steps(22) forwards;
+	-webkit-animation: ani 1s steps(22) forwards;
+	animation: ani 1s steps(22) forwards;
 }
 .button-container-2 {
 	position: relative;
@@ -3660,13 +3656,11 @@ input, select, textarea {
 	font-weight: 300;
 	font-size: 20px;
 	letter-spacing: 1px;
-	background:   #6284FF;
 	-webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
 	mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
 	-webkit-mask-size: 3000% 100%;
 	mask-size: 3000% 100%;
 	border: none;
-	color: #fff;
 	cursor: pointer;
 	-webkit-animation: ani2 0.7s steps(29) forwards;
 	animation: ani2 0.7s steps(29) forwards;
@@ -3693,13 +3687,11 @@ input, select, textarea {
 	font-weight: 300;
 	font-size: 20px;
 	letter-spacing: 1px;
-	background: #6284FF;
 	-webkit-mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
 	mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
 	-webkit-mask-size: 7100% 100%;
 	mask-size: 7100% 100%;
 	border: none;
-	color: #fff;
 	cursor: pointer;
 	-webkit-animation: ani2 0.7s steps(70) forwards;
 	animation: ani2 0.7s steps(70) forwards;
@@ -3710,12 +3702,12 @@ input, select, textarea {
 }
 .mas {
 	position: absolute;
-	color: #6284FF;
+	color: #000;
 	text-align: center;
-	width: 101%;
+	width: 100%;
 	font-weight: 300;
 	position: absolute;
-	font-size: 20px;
+	font-size: 22px;
 	margin-top: 5px;
 	overflow: hidden;
 }
@@ -3765,17 +3757,6 @@ input, select, textarea {
 		font-weight: 300;
 	}
 }
-
-
-
-/* .voda {
-	background-image: url("/assets/images/projects.svg");
-	background-size: 95% 41%;
-	background-repeat: no-repeat;
-	text-align: center;
-} */
-
-
 
 /* SEE ALL WORK LIQUID BUTTON ENDS HERE  */
 
@@ -3837,14 +3818,12 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
-
 	}
 
 	@media screen and (max-width: 360px) {
 		#main section.cover {
 			padding: 3em 0em;
 		}
-
 	}
 
 	.construction {
@@ -3857,45 +3836,14 @@ input, select, textarea {
 
 /* //////////////////////THIS IS DARK MORE EFFECTS/////////////////////////////// */
 
-#header.dark{
-	background-color: #2f3337;
-}
-
-body.dark {
-	background-color: #2f3337;
-}
-
-html.dark{
+html.dark,section.dark, #title.dark, #logo >p.dark, span.dark, h1.dark, h2.dark, p.dark,.las.dark, .water-button.dark,#footer .copyright .copy.dark {
 	color: #fff;
 }
-
-section.dark {
-	color: #fff;
-}
-
-
-span.dark, h1.dark, h2.dark, p.dark {
-	color: #fff;
-}
-#logo >p.dark{
-	color:#fff
-}
-
-#title.dark {
-	color:#fff;
-}
-#wavy.dark{
+#wavy.dark, #header.dark,body.dark,#main section.top{
 	background-color: #2f3337;
 }
-
-#main section.top {
-	background-color: #2f3337;
+#work.dark {
+	background:#fff;
+	color:#2f3337;
 }
-.las.dark, .water-button.dark{
-	color:#fff
-}
-#footer .copyright .copy.dark{
-	color: #fff;
-}
-
 
