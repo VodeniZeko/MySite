@@ -3819,5 +3819,8 @@ span.dark, h1.dark, h2.dark, p.dark {
 .las.dark{
 	color:#fff
 }
+#footer .copyright .copy.dark{
+	color: #fff;
+}
 
 
