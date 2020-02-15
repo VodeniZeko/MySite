@@ -1,90 +1,4 @@
-// var $card = $(".card");
-// var lastCard = $(".card-list .card").length - 1;
-
-// $(".next").click(function() {
-//   var prependList = function() {
-//     if ($(".card").hasClass("activeNow")) {
-//       var $slicedCard = $(".card")
-//         .slice(lastCard)
-//         .removeClass("transformThis activeNow");
-//       $("ul").prepend($slicedCard);
-//     }
-//   };
-//   $("li")
-//     .last()
-//     .removeClass("transformPrev")
-//     .addClass("transformThis")
-//     .prev()
-//     .addClass("activeNow");
-//   setTimeout(function() {
-//     prependList();
-//   }, 150);
-// });
-
-// $(".prev").click(function() {
-//   var appendToList = function() {
-//     if ($(".card").hasClass("activeNow")) {
-//       var $slicedCard = $(".card")
-//         .slice(0, 1)
-//         .addClass("transformPrev");
-//       $(".card-list").append($slicedCard);
-//     }
-//   };
-
-//   $("li")
-//     .removeClass("transformPrev")
-//     .last()
-//     .addClass("activeNow")
-//     .prevAll()
-//     .removeClass("activeNow");
-//   setTimeout(function() {
-//     appendToList();
-//   }, 150);
-// });
-
-// -=================================================
-// $(document).ready(function() {
-//   var zindex = 10;
-
-//   $("div.card").click(function(e) {
-//     e.preventDefault();
-
-//     var isShowing = false;
-
-//     if ($(this).hasClass("show")) {
-//       isShowing = true;
-//     }
-
-//     if ($("div.cards").hasClass("showing")) {
-//       // a card is already in view
-//       $("div.card.show").removeClass("show");
-
-//       if (isShowing) {
-//         // this card was showing - reset the grid
-//         $("div.cards").removeClass("showing");
-//       } else {
-//         // this card isn't showing - get in with it
-//         $(this)
-//           .css({ zIndex: zindex })
-//           .addClass("show");
-//       }
-
-//       zindex++;
-//     } else {
-//       // no cards in view
-//       $("div.cards").addClass("showing");
-//       $(this)
-//         .css({ zIndex: zindex })
-//         .addClass("show");
-
-//       zindex++;
-//     }
-//   });
-// });
-
-//
-
-var autoSwap = setInterval(swap, 3500);
+var autoSwap = setInterval(swap, 500);
 
 //pause slideshow and reinstantiate on mouseout
 $("ul, span").hover(
@@ -108,7 +22,6 @@ var resetCount = itemCount;
 $("li.items").each(function(index) {
   items[index] = $(this).text();
 });
-
 //swap images function
 function swap(action) {
   var direction = action;
@@ -198,13 +111,15 @@ $("#prev").click(function() {
 });
 
 //if any visible items are clicked
-$("li").click(function() {
-  if ($(this).attr("class") == "items left-pos") {
-    swap("counter-clockwise");
-  } else {
-    swap("clockwise");
-  }
-});
+// $("li").click(function() {
+//   if ($(this).attr("class") == "items left-pos") {
+//     swap("counter-clockwise");
+//   } else {
+//     swap("clockwise");
+//   }
+// });
+
+// featured/portfolio videos loads on click to save initial load time
 $("#video-trim").on("click", function() {
   $(this)
     .html(
@@ -232,6 +147,58 @@ $("#video-trimm3").on("click", function() {
   $(this)
     .html(
       '<iframe src="/assets/video/trimm3.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+
+// Modal videos loads on click to save initial load time
+
+$(".firstVideo").on("click", function() {
+  $("#1")
+    .html(
+      '<iframe src="/assets/video/soundEffects.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".secondVideo").on("click", function() {
+  $("#2")
+    .html(
+      '<iframe src="/assets/video/trim4.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".thirdVideo").on("click", function() {
+  $("#3")
+    .html(
+      '<iframe src="/assets/video/trimed1.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".fourthVideo").on("click", function() {
+  $("#4")
+    .html(
+      '<iframe src="/assets/video/trimm3.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".fifthVideo").on("click", function() {
+  $("#5")
+    .html(
+      '<iframe src="/assets/video/trim.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".sixthVideo").on("click", function() {
+  $("#6")
+    .html(
+      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".seventhVideo").on("click", function() {
+  $("#7")
+    .html(
+      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });

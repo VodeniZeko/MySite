@@ -2803,7 +2803,8 @@ input, select, textarea {
 			background: transparent;
 			color: #ffa500;
 			}
-			#coolBtn:hover {
+			#coolBtn:hover,
+			#otherCoolBtn:hover {
 				animation: s 1s ease;
 				animation-iteration-count: 1;
 				}
@@ -2826,6 +2827,17 @@ input, select, textarea {
 				100% {
 				transform: translateX(0);
 				}
+			}
+
+			#otherCoolBtn{
+				position: absolute;
+				left: 86%;
+				top: 8%;
+				border: 1px solid #ffa500;
+			cursor: pointer;
+			border-radius: 15%;
+			background: transparent;
+			color: #ffa500;
 			}
 		
 		/* The Close Button */
