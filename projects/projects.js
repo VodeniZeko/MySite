@@ -1,4 +1,4 @@
-var autoSwap = setInterval(swap, 500);
+var autoSwap = setInterval(swap, 1500);
 
 //pause slideshow and reinstantiate on mouseout
 $("ul, span").hover(
@@ -6,7 +6,7 @@ $("ul, span").hover(
     clearInterval(autoSwap);
   },
   function() {
-    autoSwap = setInterval(swap, 3500);
+    autoSwap = setInterval(swap, 1500);
   }
 );
 
@@ -207,24 +207,24 @@ $(".seventhVideo").on("click", function() {
 
 $(document).ready(function() {
   $(
-    "#header,#title,#wavy,.las,.copy,body, section, span, h1, h2, p"
+    "#header,#title,#wavy,.las,.copy,.water-button,body, section, span, h1, h2, p"
   ).removeClass("dark");
 });
 
 $(".switch").on("click", function() {
   if (
     $(
-      "#header,#title,#wavy,.las,.copy,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).hasClass("dark")
   ) {
     $(
-      "#header,#title,#wavy,.las,.copy,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).removeClass("dark");
     $(".switch").text(`\u263C`);
     localStorage.setItem("mode", "light");
   } else {
     $(
-      "#header,#title,#wavy,.las,.copy,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).addClass("dark");
     $(".switch").text(`\u263E`);
     localStorage.setItem("mode", "dark");
@@ -234,12 +234,12 @@ $(".switch").on("click", function() {
 $(document).ready(function() {
   if (localStorage.getItem("mode") === "dark") {
     $(
-      "#header,#title,#wavy,.las,.copy,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).addClass("dark");
     $(".switch").text(`\u263E`);
   } else if (localStorage.getItem("mode") === "light") {
     $(
-      "#header,#title,#wavy,.las,.copy, body, section, span, h1, h2, p"
+      "#header,#title,#wavy,.las,.copy,.water-button, body, section, span, h1, h2, p"
     ).removeClass("dark");
     $(".switch").text(`\u263C`);
   }

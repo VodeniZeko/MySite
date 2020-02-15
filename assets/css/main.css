@@ -3527,6 +3527,7 @@ input, select, textarea {
 						overflow: hidden;
 						transition: ease-in-out .35s;
 						width:600px;
+						cursor: pointer;
 					}
 					.image.fit {
 						width: 100%;
@@ -3560,174 +3561,61 @@ input, select, textarea {
 
 
 
-					/* water button begins here */
+					/* water button/ project buttons begin here */
 
-.water-button {
-	display: flex;
-  align-items: center;
-	justify-content: center;
-}
-
-@media screen and (min-width:1880px){
-	.water-button{
-		padding-top:1em;
-	}
-}
-
-.water-button-a {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  width: 150px;
-  overflow: hidden;
-	border-radius: 40px;
-	
-}
-
-.water-button-a span {
-  position: relative;
-  color: #fff;
-	z-index: 1;
-	font-size: initial;
-}
-
-.water-button-a .liquid {
-  position: absolute;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #4973ff;
-	transition: .5s;
-	top: -120px;
-}
-
-.water-button-a .liquid::after,
-.water-button-a .liquid::before {
-  content: '';
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-	background: #fff;
-	
-}
-
-.water-button-a .liquid::before {
-  
-  border-radius: 45%;
-  background: #fff;
-  animation: animate 5s linear infinite;
-}
-
-.water-button-a .liquid::after {
-  
-	border-radius: 40%;
-  background: #fff;
-  animation: animate 10s linear infinite;
-}
-
-.water-button-a:hover .liquid{
-	top: -70px;
-	
-}
-.water-button-a:hover span {
-	color: #000;
-	font-weight: bolder;
-}
+					#water-button-a, #myBtn{
+						text-decoration: none;
+						display: block;
+						cursor: pointer;
+					}
+					
+					.water-button{
+						color: #222;
+						transform: translate(-50%, -50%);
+					
+						letter-spacing: .2em;
+						-webkit-transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+						transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+						font-size: 0.8em;
+						width: 140px;
+						text-align: center;
+						margin:0 auto;
+					
+					}
+					
+					.water-button:hover{
+						letter-spacing: 0;
+						color: white
+					}
+					
+					 .water-button:after{
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						height: 0;
+						background: #6284FF;
+						z-index: -1;
+						-webkit-transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+						transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+					}
+					
+					.water-button:hover:after{
+						height: 100%;
+					}
+					
+/* SEE ALL WORK  BUTTON HERE */
 
 
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
-
-/* SEE ALL WORK LIQUID BUTTON  */
-
-.voda {
-	display: flex;
-  align-items: center;
-  justify-content: center;
-	padding: 10em 0em;
+/* .voda {
 	background-image: url("/assets/images/projects.svg");
 	background-size: 95% 41%;
 	background-repeat: no-repeat;
 	text-align: center;
-}
-
-.voda-a {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  width: 200px;
-  overflow: hidden;
-	border-radius: 40px;
-	padding:.1em;
-	cursor: pointer;
-}
-
-.voda-a span {
-  position: relative;
-  color: #fff;
-	z-index: 1;
-	font-size: initial;
-}
-
-.voda-a .vodeni {
-  position: absolute;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #4973ff;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-	transition: .5s;
-	top: -99px;
-}
-
-.voda-a .vodeni::after,
-.voda-a .vodeni::before {
-  content: '';
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  background: #fff;
-}
-
-.voda-a .vodeni::before {
-  
-  border-radius: 45%;
-  background: #fff;
-  animation: animate 5s linear infinite;
-}
-
-.voda-a .vodeni::after {
-  
-  border-radius: 40%;
-  background: #fff;
-  animation: animate 10s linear infinite;
-}
-
-.voda-a:hover .vodeni{
-  top: -120px;
-} 
+} */
 
 
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
 
 /* SEE ALL WORK LIQUID BUTTON ENDS HERE  */
 
@@ -3741,7 +3629,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt; */
+				font-size: 14pt; 
 			}
 
 			h2 {
@@ -3843,7 +3731,7 @@ span.dark, h1.dark, h2.dark, p.dark {
 #main section.top {
 	background-color: #2f3337;
 }
-.las.dark{
+.las.dark, .water-button.dark{
 	color:#fff
 }
 #footer .copyright .copy.dark{
