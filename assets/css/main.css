@@ -298,9 +298,7 @@ input, select, textarea {
 				animation-delay: 1.5s;
 			}
 	
-
-
-		@media screen and (min-width: 961px) and (max-width: 2800px) {
+		@media screen and (min-width: 1024px)  {
 
 			.container {
 				width: 1200px;
@@ -330,7 +328,7 @@ input, select, textarea {
 			  content: "";
 			  display: block;
 			  /* for aspect ratio ~67:100 */
-			  padding-top: 67%;
+				padding-top: 67%;
 			}
 
 			.screen:after {
@@ -340,7 +338,8 @@ input, select, textarea {
 			  bottom: 0.75%;
 			  left: 0.5%;
 			  padding-top: 1%;
-			  width: 99%;
+				width: 99%;
+				
 			}
 
 			.viewport {
@@ -349,8 +348,7 @@ input, select, textarea {
 			  left: 0;
 			  right: 0;
 			  top: 0;
-			  margin: 4.3% 3.2%;
-			  background: #333;
+				margin: 4.3% 3.2%;
 			}
 
 			.base {
@@ -403,6 +401,11 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			height: 100%;
+			background-image: url(https://photos5.appleinsider.com/gallery/31534-52870-dashboard-catalina-xl.jpg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				z-index: 1000;
+				opacity: .8;
 			/*padding: 1em;*/
 
 	}
@@ -410,15 +413,15 @@ input, select, textarea {
 		    .jumbo #typed-strings {
 				width: 20em;
 				height: 20em;
-				border: none;
-				background-color: transparent;
+				z-index: 1001;
+				background-color: #2f3337;
 				font-family: monospace;
-				font-size: .8em;
+				font-size: .6.5em;
 				color: #fff;
+				margin-bottom: 4em;
 				-webkit-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
 				-moz-box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
-				box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);
-				
+				box-shadow: -5px 9px 85px -10px rgba(0,0,0,0.75);	
 			}
 
 			.jumbo #innerEditor {
