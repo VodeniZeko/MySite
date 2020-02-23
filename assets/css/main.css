@@ -2370,10 +2370,10 @@ input, select, textarea {
 					color: #ffb732;
 					   z-index: 11;
 				}
-				/* #header .icons #rs {
+				#header .icons #rs {
 					color: #ff0000;
 					   z-index: 11;
-				} */
+				}
 	/* } */
 
 
