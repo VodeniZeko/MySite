@@ -1,7 +1,7 @@
 var autoSwap = setInterval(swap, 1500);
 
 //pause slideshow and reinstantiate on mouseout
-$("ul, span").hover(
+$(".carousel").hover(
   function() {
     clearInterval(autoSwap);
   },
