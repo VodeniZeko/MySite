@@ -2147,11 +2147,15 @@ input, select, textarea {
 			padding-bottom:6 em;
 		}
 			 }
-
+  form {
+		max-width: 900px;
+    margin: 0 auto;
+	}
 	form label {
 		display: block;
 		text-align: left;
 		margin-bottom: 0.5em;
+
 	}
 
 	form input[type="text"],
