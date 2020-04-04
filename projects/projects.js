@@ -209,6 +209,9 @@ $(document).ready(function() {
   $(
     "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
   ).removeClass("dark");
+  $(".switch")
+    .text(`\u263C`)
+    .css({ color: "#FCEC6D" });
 });
 
 $(".switch").on("click", function() {
@@ -220,13 +223,17 @@ $(".switch").on("click", function() {
     $(
       "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).removeClass("dark");
-    $(".switch").text(`\u263C`);
+    $(".switch")
+      .text(`\u263C`)
+      .css({ color: "#FCEC6D" });
     localStorage.setItem("mode", "light");
   } else {
     $(
       "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).addClass("dark");
-    $(".switch").text(`\u263E`);
+    $(".switch")
+      .text(`\u263E`)
+      .css({ color: "#f2f2f2" });
     localStorage.setItem("mode", "dark");
   }
 });
@@ -236,11 +243,15 @@ $(document).ready(function() {
     $(
       "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
     ).addClass("dark");
-    $(".switch").text(`\u263E`);
+    $(".switch")
+      .text(`\u263E`)
+      .css({ color: "#f2f2f2" });
   } else if (localStorage.getItem("mode") === "light") {
     $(
       "#header,#title,#wavy,#work,#time,.las,.copy, .water-button, body, section, span, h1, h2, p"
     ).removeClass("dark");
-    $(".switch").text(`\u263C`);
+    $(".switch")
+      .text(`\u263C`)
+      .css({ color: "#FCEC6D" });
   }
 });

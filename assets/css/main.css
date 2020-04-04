@@ -2502,7 +2502,8 @@ input, select, textarea {
 				}
 				#footer .copyright > #time {
 					color:#000;
-					opacity: .3;
+					opacity: .2;
+					line-height: 2rem;
 				}
 
 		footer #scrolly {
@@ -2573,6 +2574,7 @@ input, select, textarea {
 				cursor: pointer;
 				margin: 3rem auto;
 				width:10px;
+				text-shadow: 0.5px 1px 2px grey;
 			} 
 
 			@media screen and (max-width:960px) {
@@ -2590,14 +2592,19 @@ input, select, textarea {
 				
 				}
 			} 
-			.la-sun {
+			@media screen and (min-width:961px) {
+				.switch{
+					font-size: 1.8rem;
+				}
+			}
+			/* .on {
 				font-family:'Font Awesome\ 5 Free';
 				font-style: normal;
 				font-weight: 900;
 				content: "&#xf185";
 				font-size: 1rem;
 				cursor: pointer;
-			} 
+			}  */
 
 			#main > section.two {
 				/* background: #fff; */
