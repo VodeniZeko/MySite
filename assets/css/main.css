@@ -2482,6 +2482,7 @@ input, select, textarea {
 		#footer .copyright {
 			cursor: default;
 			margin: -1px;
+			display: grid;
 		}
 
 			#footer .copyright li {
@@ -2498,6 +2499,10 @@ input, select, textarea {
 					padding-left: 0;
 					margin-left: 0;
 					color:#000;
+				}
+				#footer .copyright > #time {
+					color:#000;
+					opacity: .3;
 				}
 
 		footer #scrolly {
@@ -3858,7 +3863,7 @@ input, select, textarea {
 
 /* //////////////////////THIS IS DARK MORE EFFECTS/////////////////////////////// */
 
-html.dark,section.dark, #title.dark, #logo >p.dark, span.dark, h1.dark, h2.dark, p.dark,.las.dark, .water-button.dark,#footer .copyright .copy.dark {
+html.dark,section.dark, #title.dark, #logo >p.dark, span.dark, h1.dark, h2.dark, p.dark,.las.dark, .water-button.dark,#footer .copyright .copy.dark,#footer .copyright > #time.dark {
 	color: #fff;
 }
 #wavy.dark, #header.dark,body.dark,#main section.top{

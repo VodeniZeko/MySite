@@ -324,7 +324,8 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li class="copy">&copy;</script> Copyright Edvin Saletovic. All rights reserved.</li>
+						<li class="copy"> Copyright &copy;</script> <span id="date"></span>  Edvin Saletovic. All rights reserved.</li>
+						<li id="time"></li>
 					</ul>
 
 			</div>
@@ -353,5 +354,31 @@
                 loopCount: Infinity,
 			  });
 			</script>
+			<script language="javascript"> 
+				months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+				// var d=new Date();
+				var weekday=new Array(7);
+				weekday[0]="Sunday";
+				weekday[1]="Monday";
+				weekday[2]="Tuesday";
+				weekday[3]="Wednesday";
+				weekday[4]="Thursday";
+				weekday[5]="Friday";
+				weekday[6]="Saturday";
+				
+				var d = new Date();
+				(d.getFullYear());
+				//date
+				var date = document.getElementById("date")
+				date.append(d.getFullYear())
+				//updated time
+				var theDate = new Date(document.lastModified);
+				var time = document.getElementById("time");
+				theDate.setTime((theDate.getTime()+(60*60)) ) 
+				with (theDate) { 
+				time.append("Last updated "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()+''+getHours()+':'+getMinutes()+" GMT")
+				} 
+				/*'+getHours()+':'+getMinutes()+" GMT" this to add time as well */  
+				</script> 
 	</body>
 </html>
