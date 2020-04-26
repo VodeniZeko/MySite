@@ -221,6 +221,20 @@ input, select, textarea {
 
 
 	/* back to the top button */
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+#backToTheTop {
+  animation: MoveUpDown 1.5s linear infinite;
+  position: absolute;
+ 
+}
 	#backToTheTop, .la-angle-up {
 		display: inline-block;
 		font-family:'Font Awesome\ 5 Free';
