@@ -219,6 +219,31 @@ input, select, textarea {
 		color: gray;
 	}
 
+
+	/* back to the top button */
+	#backToTheTop, .la-angle-up {
+		display: inline-block;
+		font-family:'Font Awesome\ 5 Free';
+		font-style: normal;
+		font-weight: 900;
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1000;
+		font-size: 3rem;
+	}
+
+	#backToTheTop:hover, .la-angle-up:hover {
+		cursor: pointer;
+	}
+	#backToTheTop.show, .la-angle-up.show {
+		opacity: 1;
+		visibility: visible;
+	}
+	/* back to the top button */
+	
 /* Container */
 
 	.container {
@@ -2323,7 +2348,8 @@ input, select, textarea {
 		color: #000; */
 		height: 100%;
 		left: 0;
-		overflow-y: auto;
+		overflow: hidden;
+		/* overflow-y: auto; */
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2331,6 +2357,7 @@ input, select, textarea {
 	}
 
 		#header .top {
+			margin-top: 150px;
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
@@ -2338,6 +2365,7 @@ input, select, textarea {
 		}
 
 		#header .bottom {
+			
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
@@ -2349,38 +2377,30 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
-		#header .icons {
+		/* #header .icons {
 			font-size: .8em;
 			text-align: center;
-		}
+		} */
 
-
-/* @media (hover:hover) and (pointer:fine) { */
-
-				/* #header .icons #tw {
-					  color: #55acee;
-					   z-index: 11;
-				} */
-
-				#header .icons #fb {
+				#logo  #fb {
 					color: #0e76a8;
-					   z-index: 11;
+					   /* z-index: 11; */
 				}
-				#header .icons #gh {
-					color: #fff;
-					   z-index: 11;
+				#logo  #gh {
+					color: #000;
+					   /* z-index: 11; */
 				}
-				#header .icons #em {
+				#logo  #em {
 					color: #ffb732;
-					   z-index: 11;
+					   /* z-index: 11; */
 				}
-				#header .icons #rs {
+				#logo #rs {
 					color: #ff0000;
-					   z-index: 11;
+					   /* z-index: 11; */
 				}
 	/* } */
 
-
+/* PROFILE IMAGE AREA */
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
@@ -2388,6 +2408,255 @@ input, select, textarea {
 		cursor: default;
 	}
 
+	#logo  .LogoProfile {
+    width: 203px;
+    height: 130px;
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    animation: show-profile .5s forwards ease-in-out;
+}
+
+
+@keyframes show-profile {
+    0% {
+        width: 0;
+    }
+}
+@media (max-width:1320px) and (min-width:961px) {
+	#logo  .LogoProfile {
+		width: 180px;
+		font-size: 1rem;
+	}
+	#logo .LogoPhoto {
+		width: 50px;
+    height: 50px;
+	}
+}​
+
+#logo .LogoProfile .LogoPhoto, #logo >.LogoProfile .LogoContent {
+    box-sizing: border-box;
+}
+
+#logo .LogoProfile .LogoPhoto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -50px;
+    box-shadow: 0 0 .5rem #babbbc;
+    animation: rotate-photo .5s forwards ease-in-out;
+}
+
+@keyframes rotate-photo {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#logo .LogoProfile .LogoPhoto img {
+    width: 100%;
+}
+
+#logo .LogoProfile .LogoContent {
+	padding: 10px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#logo .LogoProfile .LogoContent::before {
+    content: '';
+    position: absolute;
+		left: 0;
+		top:-20;
+    z-index: -1;
+    transform: rotate(-8deg);
+}
+
+#logo .LogoProfile .LogoContent .LogoText {
+	margin-top: 32px;
+	margin-left: 24px;
+    
+}
+#logo .LogoText h6 {
+	text-shadow: .5px .5px #fff;
+}
+#logo .LogoProfile .LogoContent, #logo >.LogoProfile .LogoContent {
+    font-weight: normal;
+    letter-spacing: .5px;
+    white-space: nowrap;
+}
+#logo .LogoText h6 {
+	font-size: 1rem;
+}
+#logo .LogoProfile .LogoContent .LogoBtn {
+	background-color: #babbbc ;
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 5px;
+	left: 29px;
+	border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+	transition-duration: .3s;
+	animation: pop-btn .3s both ease-in-out .5s;
+
+}
+
+
+
+
+@keyframes pop-btn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn:hover {
+    box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn span {
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    animation: to-hamburger .3s forwards ease-in-out;
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn span::before, .LogoProfile .LogoContent .LogoBtn span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    transition-duration: .3s;
+    transform: rotate(0deg);
+    right: 0;
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn span::before {
+    margin-top: -7px;
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn span::after {
+    margin-top: 7px;
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn.active span {
+    animation: to-arrow .3s forwards ease-in-out;
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn.active span::before, #logo >.LogoProfile .LogoContent .LogoBtn.active span::after {
+    width: 60%;
+    right: -1px;
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn.active span::before {
+    transform: rotate(45deg);
+}
+
+#logo .LogoProfile .LogoContent .LogoBtn.active span::after {
+    transform: rotate(-45deg);
+}
+
+@keyframes to-hamburger {
+    from {
+        transform: translateY(-50%) rotate(-180deg);
+    }
+}
+
+@keyframes to-arrow {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
+
+#logo .LogoProfile .LogoBox {
+    width: 203px;
+    height: 100px;
+    opacity: 0;
+    border-radius: 50%;
+		position: absolute;
+		top: -19px;
+    right: -59%;
+    transform: translate(-75%, -55%);
+    transition-duration: .3s;
+}
+
+#logo .LogoProfile .LogoBox i {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #ececec;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	left: 58px;
+    top: calc(75px - -2px/2);
+	box-shadow: 0 0 0.5rem #babbbc;
+	transition-duration: .3s;
+}
+
+#logo .LogoProfile .LogoBox i:hover {
+    transition-delay: initial !important;
+    box-shadow: 0 0 0 5px #babbbc;
+}
+
+#logo .LogoProfile .LogoBox.open {
+    opacity: 1;
+}
+
+#logo .LogoProfile .LogoBox.open i {
+    left: 80px;
+}
+
+#logo .LogoProfile .LogoBox.open i:nth-of-type(1) {
+    transform: rotate(-90deg) translateX(70px) rotate(90deg);
+    transition-delay: 0s;
+}
+
+#logo .LogoProfile .LogoBox.open i:nth-of-type(2) {
+    transform: rotate(-45deg) translateX(70px) rotate(45deg);
+    transition-delay: 0.1s;
+}
+
+#logo .LogoProfile .LogoBox.open i:nth-of-type(3) {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+    transition-delay: 0.2s;
+}
+
+#logo .LogoProfile .LogoBox.open i:nth-of-type(4) {
+    transform: rotate(45deg) translateX(70px) rotate(-45deg);
+    transition-delay: 0.3s;
+}
+
+#logo .LogoProfile .LogoBox.open i:nth-of-type(5) {
+    transform: rotate(90deg) translateX(70px) rotate(-90deg);
+    transition-delay: 0.4s;
+}
+
+
+/* PROFILE IMAGE AREA ENDS */
+/* 
 
 		#logo h1 {
 			position: relative;
@@ -2410,7 +2679,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
-		}
+		} */
 
 	#nav ul {
 		list-style: none;
