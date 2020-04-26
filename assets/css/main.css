@@ -2398,6 +2398,10 @@ input, select, textarea {
 					color: #ff0000;
 					   /* z-index: 11; */
 				}
+				#logo #sk {
+					color: #ee750b;
+					   /* z-index: 11; */
+				}
 	/* } */
 
 /* PROFILE IMAGE AREA */
@@ -2532,7 +2536,7 @@ input, select, textarea {
     width: 60%;
     height: 2px;
     position: absolute;
-    background-color: black;
+    background-color: white;
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
@@ -2544,7 +2548,7 @@ input, select, textarea {
     width: 100%;
     height: 2px;
     position: absolute;
-    background-color: black;
+    background-color: white;
     transition-duration: .3s;
     transform: rotate(0deg);
     right: 0;
@@ -2555,7 +2559,8 @@ input, select, textarea {
 }
 
 #logo .LogoProfile .LogoContent .LogoBtn span::after {
-    margin-top: 7px;
+		margin-top: 7px;
+
 }
 
 #logo .LogoProfile .LogoContent .LogoBtn.active span {
@@ -2564,15 +2569,17 @@ input, select, textarea {
 
 #logo .LogoProfile .LogoContent .LogoBtn.active span::before, #logo >.LogoProfile .LogoContent .LogoBtn.active span::after {
     width: 60%;
-    right: -1px;
+		right: -1px;
 }
 
 #logo .LogoProfile .LogoContent .LogoBtn.active span::before {
-    transform: rotate(45deg);
+		transform: rotate(45deg);
+		background-color:red;
 }
 
 #logo .LogoProfile .LogoContent .LogoBtn.active span::after {
-    transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		background-color:red;
 }
 
 @keyframes to-hamburger {
@@ -2583,10 +2590,12 @@ input, select, textarea {
 
 @keyframes to-arrow {
     from {
-        transform: translateY(-50%) rotate(0deg);
+				transform: translateY(-50%) rotate(0deg);
+
     }
     to {
-        transform: translateY(-50%) rotate(180deg);
+				transform: translateY(-50%) rotate(180deg);
+				background-color:red;
     }
 }
 
@@ -2618,7 +2627,7 @@ input, select, textarea {
 
 #logo .LogoProfile .LogoBox i:hover {
     transition-delay: initial !important;
-    box-shadow: 0 0 0 5px #babbbc;
+		background-color: #adaeae;
 }
 
 #logo .LogoProfile .LogoBox.open {
