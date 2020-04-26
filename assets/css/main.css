@@ -2874,7 +2874,8 @@ input, select, textarea {
 
 			@media screen and (max-width:960px) {
 				.switch{
-					padding: 0em 1.4em;
+					padding: 0em 1em;
+    font-size: 1.6rem;
 				}
 			}
 	
@@ -2883,7 +2884,7 @@ input, select, textarea {
 			}
 			@media screen and (max-width:960px) {
 				.mode{
-					margin: 0 5rem;
+					margin: 3rem 5rem;
 				
 				}
 			} 
