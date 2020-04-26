@@ -235,6 +235,10 @@ input, select, textarea {
 		font-size: 3rem;
 	}
 
+#backToTheTop, .la-angle-up:focus{
+	outline: none;
+}
+
 	#backToTheTop:hover, .la-angle-up:hover {
 		cursor: pointer;
 	}
