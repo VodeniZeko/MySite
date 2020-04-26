@@ -22,3 +22,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+// PROFILE IMAGE POPUP
+$(".LogoBtn").click(function() {
+  $(this).toggleClass("active");
+  return $(".LogoBox").toggleClass("open");
+});
