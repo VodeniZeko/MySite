@@ -219,6 +219,31 @@ input, select, textarea {
 		color: gray;
 	}
 
+
+	/* back to the top button */
+	#backToTheTop, .la-angle-up {
+		display: inline-block;
+		font-family:'Font Awesome\ 5 Free';
+		font-style: normal;
+		font-weight: 900;
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1000;
+		font-size: 3rem;
+	}
+
+	#backToTheTop:hover, .la-angle-up:hover {
+		cursor: pointer;
+	}
+	#backToTheTop.show, .la-angle-up.show {
+		opacity: 1;
+		visibility: visible;
+	}
+	/* back to the top button */
+	
 /* Container */
 
 	.container {
