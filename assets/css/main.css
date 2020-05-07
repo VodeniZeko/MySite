@@ -2847,7 +2847,7 @@ input, select, textarea {
 				background-size: cover;
 				background-position: center;
 				height: 100vh;
-				padding-top: 8em;
+				padding-top: 2rem;
 			}
 
 			.la-mouse {
@@ -3802,9 +3802,10 @@ input, select, textarea {
 				
 					
 					.projects-inner .card{
-					 padding:2em;
+					 /* padding:1.5em; */
+					 margin:0.3rem;
 					 overflow: hidden;
-					 width: 600px;
+					 width: 400px;
 					 height:550px;
 					 margin-top:2em;
 					}
