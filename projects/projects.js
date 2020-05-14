@@ -120,6 +120,13 @@ $("#prev").click(function() {
 // });
 
 // featured/portfolio videos loads on click to save initial load time
+$("#video-allay").on("click", function() {
+  $(this)
+    .html(
+      '<iframe src="/assets/video/allay.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
 $("#video-trim").on("click", function() {
   $(this)
     .html(
@@ -191,7 +198,7 @@ $(".fifthVideo").on("click", function() {
 $(".sixthVideo").on("click", function() {
   $("#6")
     .html(
-      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/allay.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
