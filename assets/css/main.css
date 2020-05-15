@@ -3815,6 +3815,7 @@ input, select, textarea {
 							padding:0;
 						 }
 					}
+
 					.projects-inner .card .face{
 
 							transition: 0.5s;
@@ -3863,7 +3864,7 @@ input, select, textarea {
 					    display: flex;
 					    justify-content: center;
 					    align-items: center;
-					    padding: 30px;
+					    padding-top: 30px;
 							box-sizing: border-box;
 					}
 					@media screen and (max-width:450px) {
@@ -3872,9 +3873,16 @@ input, select, textarea {
 
 					.projects-inner .card .face.face2 .content p{
 					    margin: 0;
-					    padding: 0;
-							height: 150px;
+							padding: 0;	
 							line-height: 1.5em;
+					}
+					@media screen and (min-width:1880px) {
+						.projects-inner .card .face.face2 .content p{
+					    margin: 0;
+							padding: 0;	
+							font-size: 1.5rem;
+							line-height: 1.5em;
+					}
 					}
 
 					/* water button/ project buttons begin here */
@@ -3883,6 +3891,8 @@ input, select, textarea {
 						text-decoration: none;
 						display: block;
 						cursor: pointer;
+						border:.1px solid;
+						opacity:.7;
 					}
 
 					.water-button-div {
