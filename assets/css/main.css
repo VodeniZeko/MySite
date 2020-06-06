@@ -3895,6 +3895,12 @@ input, select, textarea {
 						opacity:.7;
 					}
 
+					@media screen and (min-width:1320px){
+						#water-button-a, #myBtn{
+							width:141px
+						}
+					}
+
 					.water-button-div {
 					 margin-left:6em;
 					}
