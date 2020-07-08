@@ -26,13 +26,13 @@
       ding.play();
       left_door.classList.remove("an-stop-left");
       right_door.classList.remove("an-stop-right");
-    }, 6000);
+    }, 10000);
   }
 
   btn.on("click", function(e) {
     e.preventDefault();
     playsound();
-    $("html, body").animate({ scrollTop: 0 }, 6000);
+    $("html, body").animate({ scrollTop: 0 }, 10000);
   });
 
   $(window).scroll(function() {
