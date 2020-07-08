@@ -230,6 +230,246 @@ input, select, textarea {
     bottom: 10px;
   }
 }
+/* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  *//* ELEVATOR CODE  */
+
+.container-animation {
+    font-size: 100px;
+    transform: scale(.2);
+  }
+  @media screen and (max-width: 425px) {
+	.container-animation {
+		transform: scale(.14);
+	}
+  } 
+  .container-animation .front {
+	width: 2.3em;
+    height: 4em;
+    position: relative;
+  }
+  .container-animation .interior {
+	-webkit-perspective: 200px;
+	perspective: 200px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .container-animation .interior [class^="side"] {
+	position: absolute;
+  }
+  .container-animation .interior .side-left {
+	left: 0;
+    width: 1em;
+    height: 100%;
+    background: #ccc;
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: rotateY(90deg);
+    transform-origin: 0 50%;
+    transform: rotateY(90deg);
+  }
+  .container-animation .interior .side-left:after {
+	content: "";
+	width: 100%;
+	height: 0.4em;
+	background: #fff;
+	position: absolute;
+	bottom: 1.3em;
+  }
+  .container-animation .interior .side-back {
+	left: 0.01em;
+	width: 2.5em;
+	height: 100%;
+	background: #666;
+	-webkit-transform-origin: 0 50%;
+	-webkit-transform: translateZ(-1em);
+	transform-origin: 0 50%;
+	transform: translateZ(-1em);
+  }
+  .container-animation .interior .side-back:after {
+	content: "";
+	width: 100%;
+	height: 0.4em;
+	background: #ddd;
+	position: absolute;
+	bottom: 1.3em;
+  }
+  .container-animation .interior .side-right {
+	right: 0;
+	width: 1em;
+	height: 100%;
+	background: #ccc;
+	-webkit-transform-origin: 100% 50%;
+	-webkit-transform: rotateY(-90deg);
+	transform-origin: 100% 50%;
+	transform: rotateY(-90deg);
+  }
+  .container-animation .interior .side-right:after {
+	content: "";
+	width: 100%;
+	height: 0.4em;
+	background: #fff;
+	position: absolute;
+	bottom: 1.3em;
+  }
+  .container-animation .interior .side-top {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1em;
+	background: #aaa;
+	-webkit-transform-origin: 50% 0;
+	-webkit-transform: rotateX(-90deg);
+	transform-origin: 50% 0;
+	transform: rotateX(-90deg);
+  }
+  .container-animation .interior .side-bottom {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1em;
+	background: #f1f1f1;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-transform: rotateX(90deg);
+	transform-origin: 50% 100%;
+	transform: rotateX(90deg);
+  }
+  .container-animation .mask-door-left  {
+	position: absolute;
+    height: 100%;
+    width: 1.4em;
+    bottom: 0;
+	background: #fff;
+    z-index: 10;
+  }
+  .container-animation .mask-door-right  {
+	position: absolute;
+    height: 100%;
+    width: 1.4em;
+    bottom: 0;
+	background: #fff;
+    z-index: 10;
+  }
+  .container-animation .mask-door-left {
+	left: -1.4em;
+	border-right: 10px solid #333;
+  }
+
+  .container-animation .mask-door-right {
+	right: -1.4em;
+	border-left: 10px solid #333;
+  }
+  .container-animation [class^="door"] {
+	position: absolute;
+	height: 100%;
+	width: 1.15em;
+	top: 0px;
+	z-index: 9;
+  }
+  @-webkit-keyframes move-door-left {
+	0% {
+	  -webkit-transform: translate3D(0, 0, 0);
+	}
+	20% {
+	  -webkit-transform: translate3D(-1.35em, 0, 0);
+	}
+	50% {
+	  -webkit-transform: translate3D(-1.35em, 0, 0);
+	}
+	70% {
+	  -webkit-transform: translate3D(0, 0, 0);
+	}
+	100% {
+	  -webkit-transform: translate3D(0, 0, 0);
+	}
+  }
+  @-webkit-keyframes move-door-right {
+	0% {
+	  -webkit-transform: translate3D(0, 0, 0);
+	}
+	20% {
+	  -webkit-transform: translate3D(1.35em, 0, 0);
+	}
+	50% {
+	  -webkit-transform: translate3D(1.35em, 0, 0);
+	}
+	70% {
+	  -webkit-transform: translate3D(0, 0, 0);
+	}
+	100% {
+	  -webkit-transform: translate3D(0, 0, 0);
+	}
+  }
+  @keyframes move-door-left {
+	0% {
+	  transform: translate3D(0, 0, 0);
+	}
+	20% {
+	  transform: translate3D(-1.35em, 0, 0);
+	}
+	50% {
+	  transform: translate3D(-1.35em, 0, 0);
+	}
+	70% {
+	  transform: translate3D(0, 0, 0);
+	}
+	100% {
+	  transform: translate3D(0, 0, 0);
+	}
+  }
+  @keyframes move-door-right {
+	0% {
+	  transform: translate3D(0, 0, 0);
+	}
+	20% {
+	  transform: translate3D(1.35em, 0, 0);
+	}
+	50% {
+	  transform: translate3D(1.35em, 0, 0);
+	}
+	70% {
+	  transform: translate3D(0, 0, 0);
+	}
+	100% {
+	  transform: translate3D(0, 0, 0);
+	}
+  }
+
+  .container-animation .door-left {
+	background: #666;
+	left: 0;
+	-webkit-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+	border-right: 3px solid #000;
+	-webkit-animation: move-door-left 7s ease 2s infinite;
+	animation: move-door-left 7s ease 2s infinite;
+  }
+  .container-animation .an-stop-left {
+	background: #666;
+	left: 0;
+	-webkit-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+	border-right: 3px solid #000;
+	-webkit-animation: move-door-left 5s ;
+	animation: move-door-left 5s;
+  }
+  .container-animation .door-right {
+	background: #666;
+	right: 0;
+	-webkit-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+	border-left: 3px solid #000;
+	-webkit-animation: move-door-right 7s ease 2s infinite;
+	animation: move-door-right 7s ease 2s infinite;
+  }
+  .container-animation .an-stop-right {
+	background: #666;
+	right: 0;
+	-webkit-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+	border-left: 3px solid #000;
+	-webkit-animation: move-door-right 5s;
+	animation: move-door-right 5s;
+}
+  
 #backToTheTop {
   animation: MoveUpDown 1.5s linear infinite;
   position: absolute;
@@ -248,8 +488,8 @@ input, select, textarea {
 		opacity: 0;
 		visibility: hidden;
 		z-index: 1000;
-		font-size: 3rem;
-		transform: scale(.7);
+		width: 100px;
+		height: 150px;
 	}
 	@media screen and (max-width: 425px) {
 		#backToTheTop {
@@ -266,8 +506,17 @@ input, select, textarea {
 	}
 
 #elevatorText {
-	font-size: 1.1rem;
+	font-size: 4.6rem;
+    padding-top: 49px;
+	line-height: 80px;
+	padding-right: 20px;
+	text-shadow: 5px 3px #222729;
+	font-family: fantasy;
+	color: white;
 }
+
+/*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  *//*  ELEVATOR CODE ENDS  */
+
 	/* back to the top button */
 	
 /* Container */
@@ -282,9 +531,9 @@ input, select, textarea {
 		background-image: url("/assets/images/welcome.svg");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-    height: 100px;
-    width: 153px;
-    margin: 40px auto;
+        height: 100px;
+        width: 153px;
+        margin: 40px auto;
 	}
 
 	.jumbo {
@@ -4189,7 +4438,7 @@ input, select, textarea {
 html.dark,section.dark, #title.dark, #logo >p.dark, span.dark, h1.dark, h2.dark, p.dark,.las.dark, .water-button.dark,#footer .copyright .copy.dark,#footer .copyright > #time.dark {
 	color: #fff;
 }
-#wavy.dark, #header.dark,body.dark,#main section.top{
+#wavy.dark, #header.dark,body.dark,#main section.top,.mask-door-left.dark,.mask-door-right.dark{
 	background-color: #2f3337;
 }
 #work.dark {

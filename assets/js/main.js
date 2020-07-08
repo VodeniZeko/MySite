@@ -14,16 +14,19 @@
 
   // ELEVATOR BUTTON AND MUSIC  STARTS//
   const btn = $("#backToTheTop");
-  //mobile phones with setTimeout workaround//
-  function foo() {
-    const ding = document.querySelector("#ding");
-    setTimeout(() => ding.play(), 6000);
-  }
   function playsound(e) {
-    const elevatorMusic = document.querySelector("#elevatorMusic");
+    const left_door = document.querySelector(".door-left");
+    const right_door = document.querySelector(".door-right");
+
     elevatorMusic.currentTime = 1;
     elevatorMusic.play();
-    foo();
+    left_door.classList.add("an-stop-left");
+    right_door.classList.add("an-stop-right");
+    setTimeout(() => {
+      ding.play();
+      left_door.classList.remove("an-stop-left");
+      right_door.classList.remove("an-stop-right");
+    }, 6000);
   }
 
   btn.on("click", function(e) {
