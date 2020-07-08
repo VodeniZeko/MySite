@@ -214,7 +214,7 @@ $(".seventhVideo").on("click", function() {
 
 $(document).ready(function() {
   $(
-    "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
+    "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,.mask-door-left, .mask-door-right ,body, section, span, h1, h2, p"
   ).removeClass("dark");
   $(".switch")
     .text(`\u263C`)
@@ -224,11 +224,11 @@ $(document).ready(function() {
 $(".switch").on("click", function() {
   if (
     $(
-      "#header,#title,#wavy,#work,#time,.las,.copy, .water-button,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,#work,#time,.las,.copy, .water-button,.mask-door-left, .mask-door-right,body, section, span, h1, h2, p"
     ).hasClass("dark")
   ) {
     $(
-      "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,.mask-door-left, .mask-door-right,body, section, span, h1, h2, p"
     ).removeClass("dark");
     $(".switch")
       .text(`\u263C`)
@@ -236,7 +236,7 @@ $(".switch").on("click", function() {
     localStorage.setItem("mode", "light");
   } else {
     $(
-      "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,.mask-door-left, .mask-door-right,body, section, span, h1, h2, p"
     ).addClass("dark");
     $(".switch")
       .text(`\u263E`)
@@ -248,14 +248,14 @@ $(".switch").on("click", function() {
 $(document).ready(function() {
   if (localStorage.getItem("mode") === "dark") {
     $(
-      "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,body, section, span, h1, h2, p"
+      "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,.mask-door-left, .mask-door-right,body, section, span, h1, h2, p"
     ).addClass("dark");
     $(".switch")
       .text(`\u263E`)
       .css({ color: "#f2f2f2" });
   } else if (localStorage.getItem("mode") === "light") {
     $(
-      "#header,#title,#wavy,#work,#time,.las,.copy, .water-button, body, section, span, h1, h2, p"
+      "#header,#title,#wavy,#work,#time,.las,.copy, .water-button,.mask-door-left, .mask-door-right, body, section, span, h1, h2, p"
     ).removeClass("dark");
     $(".switch")
       .text(`\u263C`)
