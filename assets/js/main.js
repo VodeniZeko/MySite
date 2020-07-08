@@ -14,17 +14,16 @@
 
   // ELEVATOR BUTTON AND MUSIC  STARTS//
   const btn = $("#backToTheTop");
-
+  //mobile phones with setTimeout workaround//
+  function foo() {
+    const ding = document.querySelector("#ding");
+    setTimeout(() => ding.play(), 6000);
+  }
   function playsound(e) {
     const elevatorMusic = document.querySelector("#elevatorMusic");
-    const ding = document.querySelector("#ding");
     elevatorMusic.currentTime = 1;
     elevatorMusic.play();
-    //timeout inside of a function asigned to a variable because setTimeout would NOT execute on mobile phones//
-    function foo() {
-      ding.play();
-    }
-    window.setTimeout(foo, 6000);
+    foo();
   }
 
   btn.on("click", function(e) {
