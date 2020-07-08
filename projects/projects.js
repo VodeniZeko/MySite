@@ -232,6 +232,7 @@ $(".switch").on("click", function() {
     ).removeClass("dark");
     $(".switch")
       .text(`\u263C`)
+      .prop("title", "switch to dark mode")
       .css({ color: "#FCEC6D" });
     localStorage.setItem("mode", "light");
   } else {
@@ -240,6 +241,7 @@ $(".switch").on("click", function() {
     ).addClass("dark");
     $(".switch")
       .text(`\u263E`)
+      .prop("title", "switch to light mode")
       .css({ color: "#f2f2f2" });
     localStorage.setItem("mode", "dark");
   }
@@ -252,6 +254,7 @@ $(document).ready(function() {
     ).addClass("dark");
     $(".switch")
       .text(`\u263E`)
+      .prop("title", "switch to light mode")
       .css({ color: "#f2f2f2" });
   } else if (localStorage.getItem("mode") === "light") {
     $(
@@ -259,6 +262,7 @@ $(document).ready(function() {
     ).removeClass("dark");
     $(".switch")
       .text(`\u263C`)
+      .prop("title", "switch to dark mode")
       .css({ color: "#FCEC6D" });
   }
 });
