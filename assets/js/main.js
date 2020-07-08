@@ -21,10 +21,10 @@
     elevatorMusic.currentTime = 1;
     elevatorMusic.play();
     //timeout inside of a function asigned to a variable because setTimeout would NOT execute on mobile phones//
-    var dingSound = function() {
-      setTimeout(() => ding.play(), 6000);
-    };
-    dingSound();
+    function foo() {
+      ding.play();
+    }
+    window.setTimeout(foo, 6000);
   }
 
   btn.on("click", function(e) {
