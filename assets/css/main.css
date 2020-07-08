@@ -237,7 +237,7 @@ input, select, textarea {
   flex-direction: column;
   text-align: center;
 }
-	#backToTheTop, .la-angle-up {
+	#backToTheTop {
 		display: inline-block;
 		font-family:'Font Awesome\ 5 Free';
 		font-style: normal;
@@ -251,15 +251,16 @@ input, select, textarea {
 		font-size: 3rem;
 		transform: scale(.7);
 	}
+	@media screen and (max-width: 425px) {
+		#backToTheTop {
+			right: 0px;
+		}
+	}	
 
-#backToTheTop, .la-angle-up:focus{
-	outline: none;
-}
-
-	#backToTheTop:hover, .la-angle-up:hover {
+	#backToTheTop:hover{
 		cursor: pointer;
 	}
-	#backToTheTop.show, .la-angle-up.show {
+	#backToTheTop.show {
 		opacity: 1;
 		visibility: visible;
 	}
