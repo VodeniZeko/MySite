@@ -20,9 +20,11 @@
     const ding = document.querySelector("#ding");
     elevatorMusic.currentTime = 1;
     elevatorMusic.play();
-    setTimeout(function() {
-      ding.play();
-    }, 6000);
+    //timeout inside of a function asigned to a variable because setTimeout would NOT execute on mobile phones//
+    var dingSound = function() {
+      setTimeout(() => ding.play(), 6000);
+    };
+    dingSound();
   }
 
   btn.on("click", function(e) {
