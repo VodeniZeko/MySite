@@ -20,7 +20,9 @@
     const ding = document.querySelector("#ding");
     elevatorMusic.currentTime = 1;
     elevatorMusic.play();
-    setTimeout(() => ding.play(), 6000);
+    setTimeout(function() {
+      ding.play();
+    }, 6000);
   }
 
   btn.on("click", function(e) {
@@ -30,10 +32,11 @@
   });
 
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
+    if ($(window).scrollTop() > 200) {
       btn.addClass("show");
-    } else {
+    } else if ($(window).scrollTop() < 10) {
       elevatorMusic.pause();
+    } else {
       btn.removeClass("show");
     }
   });
