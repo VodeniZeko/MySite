@@ -12,23 +12,33 @@
     mobile: [null, "736px"]
   });
 
-  //
-  var btn = $("#backToTheTop");
+  // ELEVATOR BUTTON AND MUSIC  STARTS//
+  const btn = $("#backToTheTop");
+
+  function playsound(e) {
+    const elevatorMusic = document.querySelector("#elevatorMusic");
+    const ding = document.querySelector("#ding");
+    elevatorMusic.currentTime = 1;
+    elevatorMusic.play();
+    setTimeout(() => ding.play(), 6000);
+  }
+
+  btn.on("click", function(e) {
+    e.preventDefault();
+    playsound();
+    $("html, body").animate({ scrollTop: 0 }, 6000);
+  });
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
       btn.addClass("show");
     } else {
+      elevatorMusic.pause();
       btn.removeClass("show");
     }
   });
 
-  btn.on("click", function(e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "300");
-  });
-
-  //
+  // ELEVATOR BUTTON AND MUSIC  ENDS//
 
   // Play initial animations on page load.
 
