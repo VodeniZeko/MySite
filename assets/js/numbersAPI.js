@@ -4,10 +4,12 @@ $(document).ready(function() {
   var today = new Date();
   var dd = Number(today.getDate());
   var mm = Number(today.getMonth());
+  var obj = {};
   $.ajax({
     url: `http://numbersapi.com/${mm}/${dd}/date`,
     success: function(result) {
-      $("#numbersText").html(result);
+      obj = result;
+      $("#numbersText").html(obj);
     }
   });
   myInputBtn = $("#my-input-btn");
@@ -19,17 +21,20 @@ $(document).ready(function() {
       day = date[0].replace(/ /g, "");
       month = date[1].replace(/ /g, "");
       year = date[2].replace(/ /g, "");
-
+      md = {};
+      ye = {};
       $.ajax({
         url: `http://numbersapi.com/${month}/${day}/date`,
         success: function(x) {
-          $("#month-day-text").html(x);
+          md = x;
+          $("#month-day-text").html(md);
         }
       }),
         $.ajax({
           url: `http://numbersapi.com/${year}/year`,
           success: function(y) {
-            $("#year-text").html(y);
+            ye = y;
+            $("#year-text").html(ye);
           }
         });
     } else {
