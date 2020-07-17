@@ -110,15 +110,6 @@ $("#prev").click(function() {
   swap("counter-clockwise");
 });
 
-//if any visible items are clicked
-// $("li").click(function() {
-//   if ($(this).attr("class") == "items left-pos") {
-//     swap("counter-clockwise");
-//   } else {
-//     swap("clockwise");
-//   }
-// });
-
 // featured/portfolio videos loads on click to save initial load time
 $("#video-allay").on("click", function() {
   $(this)

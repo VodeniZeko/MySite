@@ -2430,6 +2430,69 @@ input, select, textarea {
 				background: #3a3939;
 		}
 
+/* 
+		numbers api stuff */
+		
+		.numberApiDiv {
+			text-align: center;
+			height: 70vh;
+			margin:5rem;
+		}
+		.numberApiDiv > i {
+			font-size: small;
+		}
+
+		@media screen and (max-width: 961px) {
+			.numberApiDiv {
+				margin:0;
+			}
+		}
+		.numberApiDiv-child {
+			display: flex;
+			justify-content: center;
+			margin:1rem;
+		}
+		.div-column {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.showMe {
+			background-image: url("/assets/images/White-in-Jumper5.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			height: 100px;
+			width: 180px;
+		}
+		.numbersText {
+			padding:.5rem;
+			padding-top: 3rem;
+		}
+
+		#my-input {
+			text-align: center;
+			align-self: end;
+			background: transparent;
+			color: #007eff;
+			font-size: 1.5rem;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			width: 150px;
+            text-shadow: 0px 0px .1px #007eff;
+		}
+		#my-input-btn {
+			margin-top: 1rem;
+			background: transparent;
+			width: 80px;
+			align-self: center;
+			cursor: pointer;
+			background: #fff;
+		}
+		#my-input-btn:focus{
+			outline: none;
+			box-shadow: none;
+		}
 
 /* Form */
    .container-third {
@@ -3192,6 +3255,7 @@ input, select, textarea {
 				width: 100%;
 				height: auto;
 				min-height: 80vh;
+				 
 	
 			}
 		 /* Modal here */
@@ -3450,7 +3514,7 @@ input, select, textarea {
 			/* scroll down arrow  */
 
 			#wrapper, #wrapp {
-				padding-top: 12rem;
+				/* padding-top: 12rem; */
 				width:100%;
 				height:100%;
 			}
