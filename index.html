@@ -1,378 +1,463 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>	
-		<title> Edvin Saletovic || Full Stack Developer</title>
-			<meta charset="utf-8" />
-			<meta name="description" content="Edvin Saletovic, Full Stack developer">
-			<meta name="keywords" content="HTML,CSS,XML,JavaScript,React, Node.js, Flutter, React Native, Software engineer, Full Stack Developer">
-		    <meta name="author" content="Edvin Saletovic">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-			<link rel="stylesheet" href="assets/css/main.css" />
-			<link rel="stylesheet" href="projects/index.less" />
 
-			<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-			<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-			<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-			<link rel="manifest" href="/site.webmanifest">
-			<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-			<meta name="msapplication-TileColor" content="#da532c">
-			<meta name="theme-color" content="#ffffff">
-	</head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+	<title> Edvin Saletovic || Full Stack Developer</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Edvin Saletovic, Full Stack developer">
+	<meta name="keywords"
+		content="HTML,CSS,XML,JavaScript,React, Node.js, Flutter, React Native, Software engineer, Full Stack Developer">
+	<meta name="author" content="Edvin Saletovic">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="projects/index.less" />
+	<link rel="stylesheet" href="dist/the-datepicker.css">
 
-	<body class="is-preload">
-				
-		<div id="backToTheTop" class="container-animation">
-				<div class="front">	
-					<div class="interior">
-						<div class="side-left"></div>
-						<div class="side-back"><p id="elevatorText">Going Up?</p></div>
-						<div class="side-right"></div>
-						<div class="side-top"></div>
-						<div class="side-bottom"></div>
-					</div>
-					<div class="mask-door-left"></div>
-					<div class="mask-door-right"></div>
-					<div class="door-left"></div>
-					<div class="door-right"></div>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet"
+	href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body class="is-preload">
+
+	<div id="backToTheTop" class="container-animation">
+		<div class="front">
+			<div class="interior">
+				<div class="side-left"></div>
+				<div class="side-back">
+					<p id="elevatorText">Going Up?</p>
 				</div>
+				<div class="side-right"></div>
+				<div class="side-top"></div>
+				<div class="side-bottom"></div>
+			</div>
+			<div class="mask-door-left"></div>
+			<div class="mask-door-right"></div>
+			<div class="door-left"></div>
+			<div class="door-right"></div>
 		</div>
+	</div>
 
-		<audio id="elevatorMusic" src="./assets/bossanova.mp3"></audio>
-		<audio id="ding" src="./assets/ding.wav"></audio>
+	<audio id="elevatorMusic" src="./assets/bossanova.mp3"></audio>
+	<audio id="ding" src="./assets/ding.wav"></audio>
 
-			<!-- **** Header ****-->
-		<div id="header">
-			<div id= "mr" class="top alt">
+	<!-- **** Header ****-->
+	<div id="header">
+		<div id="mr" class="top alt">
 			<!-- Logo -->
-				<div id="logo">
-					<!-- Profile -->
-					<div class="LogoProfile">
-						<div class="LogoPhoto"><img data-piio="images/edvin.jpg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" /></div>
-						<div class="LogoContent">
-							<div class="LogoText">
-								<h1 id="title">Edvin Saletovic</h1>
-								<h6>Full Stack Developer</h6>
-							</div>
-							<div class="LogoBtn"><span></span></div>
+			<div id="logo">
+				<!-- Profile -->
+				<div class="LogoProfile">
+					<div class="LogoPhoto"><img data-piio="images/edvin.jpg"
+							src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" />
+					</div>
+					<div class="LogoContent">
+						<div class="LogoText">
+							<h1 id="title">Edvin Saletovic</h1>
+							<h6>Full Stack Developer</h6>
 						</div>
-						<div class="LogoBox">
-							<i title="github"><a href="https://github.com/VodeniZeko" target="_blank" rel=" noreferrer"  class="icon brands fa-github" id="gh"></a></i>
-							<i title="send an email"><a href="#" rel=" noreferrer" onclick='window.open("mailto:salexy.es@gmail.com?subject=Hi, I am your website visitor");return false;' class="icon solid fa-envelope" id="em"></a></i>
-							<i title="linkedIn"><a href="https://www.linkedin.com/in/edvin-saletovic/" target="_blank" rel=" noreferrer" class="fab fa-linkedin-in" id="fb"></a></i>
-							<i title="see resume"><a href="" rel=" noreferrer" onclick='window.open("./assets/Edvin_Resume.pdf");return false;' download="Edvin's resume" class="far fa-file-pdf" id="rs"></a></i>
-							<i title="stack overflow"><a href="https://stackoverflow.com/users/12594607/edvin-saletovic?tab=profile" target="_blank" rel=" noreferrer" class="fab fa-stack-overflow" id='sk'></a></i>
-						</div>
+						<div class="LogoBtn"><span></span></div>
+					</div>
+					<div class="LogoBox">
+						<i title="github"><a href="https://github.com/VodeniZeko" target="_blank" rel=" noreferrer"
+								class="icon brands fa-github" id="gh"></a></i>
+						<i title="send an email"><a href="#" rel=" noreferrer"
+								onclick='window.open("mailto:salexy.es@gmail.com?subject=Hi, I am your website visitor");return false;'
+								class="icon solid fa-envelope" id="em"></a></i>
+						<i title="linkedIn"><a href="https://www.linkedin.com/in/edvin-saletovic/" target="_blank"
+								rel=" noreferrer" class="fab fa-linkedin-in" id="fb"></a></i>
+						<i title="see resume"><a href="" rel=" noreferrer"
+								onclick='window.open("./assets/Edvin_Resume.pdf");return false;'
+								download="Edvin's resume" class="far fa-file-pdf" id="rs"></a></i>
+						<i title="stack overflow"><a
+								href="https://stackoverflow.com/users/12594607/edvin-saletovic?tab=profile"
+								target="_blank" rel=" noreferrer" class="fab fa-stack-overflow" id='sk'></a></i>
 					</div>
 				</div>
+			</div>
 
 			<!-- **** Nav (inside the header) ****-->
-				<nav id="nav">
-					<ul>
-						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-					</ul>
-				</nav>
+			<nav id="nav">
+				<ul>
+					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+					</li>
+					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
+					</li>
+				</ul>
+			</nav>
 
-			</div>
-				<div title="toggle mode" id="onMode" class="mode">
-					<span class="switch"></span>
-				</div>
-				<div class="bottom">
-					<ul class="icons"></ul>
-				</div>
 		</div>
+		<div title="toggle mode" id="onMode" class="mode">
+			<span class="switch"></span>
+		</div>
+		<div class="bottom">
+			<ul class="icons"></ul>
+		</div>
+	</div>
 
-			<!-- **** MAIN **** -->
-		<div id="main">
-					<!-- **** Intro **** -->
-			<section id="top" class="one dark cover">
-				<div id='wavy' class="container">
-					<header >
-						<h2 >Hello, I'm Edvin and I help start-ups, businesses, and agencies achieve high quality websites and exceptional user experience.
-						</h2>
-						<p class=" text-muted"> view my porfolio.</p>
-						<div class="welcome"></div>
-					</header>
+	<!-- **** MAIN **** -->
+	<div id="main">
+		<!-- **** Intro **** -->
+		<section id="top" class="one dark cover">
+			<div id='wavy' class="container">
+				<header>
+					<h2>Hello, I'm Edvin and I help start-ups, businesses, and agencies achieve high quality websites
+						and exceptional user experience.
+					</h2>
+					<p class=" text-muted"> view my porfolio.</p>
+					<div class="welcome"></div>
+				</header>
 
-					<footer>
-						<div class="alt animated fadeInDown" id="wrapp "></div>	
-					</footer>			
-				</div>
-			</section>
+				<footer>
+					<div class="alt animated fadeInDown" id="wrapp "></div>
+				</footer>
+			</div>
+		</section>
 
-					<!-- Portfolio -->
-			<section id="portfolio" class="two" >
-				<div class="container-second">
-					<header >
-						<h2 class="w">Welcome to my Portfolio.</h2>
-					</header>
+		<!-- Portfolio -->
+		<section id="portfolio" class="two">
+			<div class="container-second">
+				<header>
+					<h2 class="w">Welcome to my Portfolio.</h2>
+				</header>
 
-					<div class="projects-body">
-						<div class="projects-inner">
+				<div class="projects-body">
+					<div class="projects-inner">
 
-							<!-- CARD BEGINS  -->
-							<div>
-						        <div class="card">
-						            <div id="video-allay" class="face face1">
-						                <div id="content-img" class="content">
+						<!-- CARD BEGINS  -->
+						<div>
+							<div class="card">
+								<div id="video-allay" class="face face1">
+									<div id="content-img" class="content">
 										Click for preview
-						                </div>
-						            </div>
-						            <div class="face face2">
-						                <div class="content">
-						                    <p class="projects-p"><span style="font-weight: bold;">Allay:</span></br> Allay is a job portal for Lambda students and alumni to network and talk about their place of employment, hiring process, and salary range</p>
-						                </div>
 									</div>
 								</div>
-								<div class="water-button-div"><a id="water-button-a" href="https://labs21-allay-fe.herokuapp.com/" title="Go to website" target="_blank" class="water-button">To website..</a>
-								</div>
-							</div>
-					        <!-- CARD BEGINS  -->
-							<div>
-							    <div class="card">
-						            <div id="video-trim4" class="face face1">
-						                <div  id="content-img" class="content">
-										Click for preview
-						                </div>
-						            </div>
-						            <div class="face face2">
-						                <div class="content">
-						                    <p class="projects-p"><span style="font-weight: bold;">Tech sharing App:</span></br>Peer to Peer renting platform, CRUD app made with react.</p>
-						                </div>
+								<div class="face face2">
+									<div class="content">
+										<p class="projects-p"><span style="font-weight: bold;">Allay:</span></br> Allay
+											is a job portal for Lambda students and alumni to network and talk about
+											their place of employment, hiring process, and salary range</p>
 									</div>
 								</div>
-								<div class="water-button-div"><a id="water-button-a" title="Go to website" href="https://shareable.netlify.com/"target="_blank" class="water-button">To website..</a>
-								</div>
 							</div>
-							<!-- CARD BEGINS  -->
-							<div>
-								<div class="card">
-						            <div id="video-trimed1" class="face face1">
-						                <div  id="content-img" class="content">
-										Click for preview
-						                </div>
-						            </div>
-						            <div class="face face2">
-						                <div class="content">
-						                    <p class="projects-p"><span style="font-weight: bold;">E-commerce website:</span></> Single Page App built using React and Bootstrap with PayPal integrated shopping cart.</p>
-						                </div>
-									</div>
-								</div>
-								<div class="water-button-div"><a id="water-button-a" title="Go to website" href="https://telefon.netlify.com/" target="_blank" class="water-button">To website..</a>
-								</div>
+							<div class="water-button-div"><a id="water-button-a"
+									href="https://labs21-allay-fe.herokuapp.com/" title="Go to website" target="_blank"
+									class="water-button">To website..</a>
 							</div>
-							<!-- CARD BEGINS  -->
-							<div>
-						        <div class="card">
-						            <div id="video-trimm3" class="face face1">
-						                <div  id="content-img" class="content">
-										Click for preview				
-						                </div>
-						            </div>
-						            <div class="face face2">
-						                <div class="content">
-						                    <p class="projects-p"><span style="font-weight:bold;">Face detection app:</span></br>Full stack web app connects to Clarifai API and uses machine learning to detect face. </p>
-						                </div>
-									</div>				
-								</div>
-								<div class="water-button-div"><a id="water-button-a" title="Go to website" href="https://projekat.netlify.com/" target="_blank" class="water-button">To website..</a>
-								</div>
-							</div>
-							<!-- CARD BEGINS  -->
-							<div>
-						        <div class="card">
-						            <div id="video-trim" class="face face1">
-						                <div id="content-img" class="content">
-										Click for preview
-						                </div>
-						            </div>
-						            <div class="face face2">
-						                <div class="content">
-						                    <p class="projects-p"><span style="font-weight: bold;">Nasa API:</span></br>Astronomy picture of the day, default today but you can choose any date.</p>
-						                </div>
-									</div>
-								</div>
-								<div class="water-button-div"><a id="water-button-a" href="https://image-of-the-day.netlify.com/" title="Go to website" target="_blank" class="water-button">To website..</a>
-								</div>
-							</div>
-						<!-- 	project inner ends -->
 						</div>
-					<!-- 	project body ends -->
+						<!-- CARD BEGINS  -->
+						<div>
+							<div class="card">
+								<div id="video-trim4" class="face face1">
+									<div id="content-img" class="content">
+										Click for preview
+									</div>
+								</div>
+								<div class="face face2">
+									<div class="content">
+										<p class="projects-p"><span style="font-weight: bold;">Tech sharing
+												App:</span></br>Peer to Peer renting platform, CRUD app made with react.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="water-button-div"><a id="water-button-a" title="Go to website"
+									href="https://shareable.netlify.com/" target="_blank" class="water-button">To
+									website..</a>
+							</div>
+						</div>
+						<!-- CARD BEGINS  -->
+						<div>
+							<div class="card">
+								<div id="video-trimed1" class="face face1">
+									<div id="content-img" class="content">
+										Click for preview
+									</div>
+								</div>
+								<div class="face face2">
+									<div class="content">
+										<p class="projects-p"><span style="font-weight: bold;">E-commerce
+												website:</span></> Single Page App built using React and Bootstrap with
+											PayPal integrated shopping cart.</p>
+									</div>
+								</div>
+							</div>
+							<div class="water-button-div"><a id="water-button-a" title="Go to website"
+									href="https://telefon.netlify.com/" target="_blank" class="water-button">To
+									website..</a>
+							</div>
+						</div>
+						<!-- CARD BEGINS  -->
+						<div>
+							<div class="card">
+								<div id="video-trimm3" class="face face1">
+									<div id="content-img" class="content">
+										Click for preview
+									</div>
+								</div>
+								<div class="face face2">
+									<div class="content">
+										<p class="projects-p"><span style="font-weight:bold;">Face detection
+												app:</span></br>Full stack web app connects to Clarifai API and uses
+											machine learning to detect face. </p>
+									</div>
+								</div>
+							</div>
+							<div class="water-button-div"><a id="water-button-a" title="Go to website"
+									href="https://projekat.netlify.com/" target="_blank" class="water-button">To
+									website..</a>
+							</div>
+						</div>
+						<!-- CARD BEGINS  -->
+						<div>
+							<div class="card">
+								<div id="video-trim" class="face face1">
+									<div id="content-img" class="content">
+										Click for preview
+									</div>
+								</div>
+								<div class="face face2">
+									<div class="content">
+										<p class="projects-p"><span style="font-weight: bold;">Nasa
+												API:</span></br>Astronomy picture of the day, default today but you can
+											choose any date.</p>
+									</div>
+								</div>
+							</div>
+							<div class="water-button-div"><a id="water-button-a"
+									href="https://image-of-the-day.netlify.com/" title="Go to website" target="_blank"
+									class="water-button">To website..</a>
+							</div>
+						</div>
+						<!-- 	project inner ends -->
 					</div>
-				<!-- 	container second ends -->
+					<!-- 	project body ends -->
 				</div>
-				<!-- Portfolio ENDS-->
-			</section>
+				<!-- 	container second ends -->
+			</div>
+			<!-- Portfolio ENDS-->
+		</section>
 
-	        <!-- button that opens the modal -->
+		<!-- button that opens the modal -->
 		<div id="myBtn" class="button-container-1">
 			<span class="mas">🙌</span>
-		<button id='work' title="See all projects" type="button" name="Hover">See all Work</button>
+			<button id='work' title="See all projects" type="button" name="Hover">See all Work</button>
 		</div>
 
-	        <!-- MODAL STARTS HERE -->
+		<!-- MODAL STARTS HERE -->
 		<div id="myModal" class="modal">
-				<!-- Modal content -->
+			<!-- Modal content -->
 			<div class="modal-content">
 				<span class="close">&times;</span>
 
 				<div class="section">
-				  <ul class="carousel">
-						<li class="items back-pos" id="1"><a target="blank"  href="https://soundsfx.netlify.com" ><button id="coolBtn" >Demo</button></a>
+					<ul class="carousel">
+						<li class="items back-pos" id="1"><a target="blank" href="https://soundsfx.netlify.com"><button
+									id="coolBtn">Demo</button></a>
 							<button id="otherCoolBtn" class="firstVideo">Preview</button>
-							<img data-piio="/images/sounds.jpg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+							<img data-piio="/images/sounds.jpg"
+								src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-						<li class="items back-pos" id="2"><a target="blank"  href="https://shareable.netlify.com/" ><button id="coolBtn" >Demo</button></a>
+						<li class="items back-pos" id="2"><a target="blank"
+								href="https://shareable.netlify.com/"><button id="coolBtn">Demo</button></a>
 							<button id="otherCoolBtn" class="secondVideo">Preview</button>
-							<img data-piio="/images/shareable.jpg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+							<img data-piio="/images/shareable.jpg"
+								src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-						<li class="items back-pos" id="3"><a target="blank"  href="https://telefon.netlify.com/" ><button id="coolBtn" >Demo</button></a>
+						<li class="items back-pos" id="3"><a target="blank" href="https://telefon.netlify.com/"><button
+									id="coolBtn">Demo</button></a>
 							<button id="otherCoolBtn" class="thirdVideo">Preview</button>
-							<img data-piio="/images/store.jpg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+							<img data-piio="/images/store.jpg"
+								src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-						<li class="items back-pos" id="4"><a target="blank"  href="https://projekat.netlify.com/" ><button id="coolBtn" >Demo</button></a>
-						<button id="otherCoolBtn" class="fourthVideo">Preview</button>
-							<img data-piio="/images/face-app.jpg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+						<li class="items back-pos" id="4"><a target="blank" href="https://projekat.netlify.com/"><button
+									id="coolBtn">Demo</button></a>
+							<button id="otherCoolBtn" class="fourthVideo">Preview</button>
+							<img data-piio="/images/face-app.jpg"
+								src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-						<li class="items back-pos" id="5"><a target="blank"  href="https://image-of-the-day.netlify.com/" ><button id="coolBtn" >Demo</button></a><button id="otherCoolBtn" class="fifthVideo">Preview</button>
-							<img data-piio="/images/nasa.jpg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+						<li class="items back-pos" id="5"><a target="blank"
+								href="https://image-of-the-day.netlify.com/"><button
+									id="coolBtn">Demo</button></a><button id="otherCoolBtn"
+								class="fifthVideo">Preview</button>
+							<img data-piio="/images/nasa.jpg"
+								src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-						<li class="items back-pos" id="6"><a target="blank"  href="https://labs21-allay-fe.herokuapp.com/" ><button id="coolBtn" >Demo</button></a><button id="otherCoolBtn" class="sixthVideo">Preview</button>
-							<img data-piio="/images/allay.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+						<li class="items back-pos" id="6"><a target="blank"
+								href="https://labs21-allay-fe.herokuapp.com/"><button
+									id="coolBtn">Demo</button></a><button id="otherCoolBtn"
+								class="sixthVideo">Preview</button>
+							<img data-piio="/images/allay.jpg"
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-					    <li class="items back-pos" id="7"><a target="blank" href="https://takija.io/#contact" ><button id="coolBtn" >Demo</button></a><button id="otherCoolBtn" class="seventhVideo">Preview</button>
-						<img data-piio="/images/soon.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="  width="100%" height="100%" />
+						<li class="items back-pos" id="7"><a target="blank" href="https://takija.io/#contact"><button
+									id="coolBtn">Demo</button></a><button id="otherCoolBtn"
+								class="seventhVideo">Preview</button>
+							<img data-piio="/images/soon.png"
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg=="
+								width="100%" height="100%" />
 						</li>
-				  </ul>
+					</ul>
 
-				<span>
-				  <input type="button" value="Prev" id="prev">
-				  <input type="button" value="Next" id="next">
-				</span>
-	<!-- 				modal section ends
-	-->			</div>
-	<!-- 			modal content ends
-	-->		</div>
-	<!-- 		modal ends	
-	-->	</div>
+					<span>
+						<input type="button" value="Prev" id="prev">
+						<input type="button" value="Next" id="next">
+					</span>
+					<!-- 				modal section ends
+	-->
+				</div>
+				<!-- 			modal content ends
+	-->
+			</div>
+			<!-- 		modal ends	
+	-->
+		</div>
 
-			<!-- About Me -->
-			<section id="about" class="three">		
-						<div class="macbook">
-							 <div class="screen">
-								 <div class="viewport">
-									<div class="jumbo"> 
-										<div id="particles-js">      
-										<div id="typed-strings"><div id="topbox">text editor</div><div id="innerEditor"><span  id="typed"></span></div></div>
-										</div> 
-									</div>	    	
-								 </div>
-							 </div>
-							<div class="base"></div>
-							<div class="notch"></div>
-						</div>
-		    <!--about me section ends -->
-			</section>
-
-			<!-- Contact -->
-			<section id="contact" class="four">
-				<div class="container">
-					<div class="container-third">
-						<header>
-								<h2 class="me">Contact me</h2>
-						<p class="ds-bp">Please feel free to get in touch anytime, whether for work inquiries or just to say "hi",</br> I will get back to you as soon as possible.</p>
-						</header>
-
-						<form id="contact" netlify-honeypot="bot-field" data-netlify="true" method="post" autofocus>
-							<div class="row">
-								<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-								<div class="col-12">
-									<textarea name="message" placeholder="Message"></textarea>
-								</div>
-								<div class="col-12">
-									<input class="btn" type="submit" value=" Send Message "  />	
+		<!-- About Me -->
+		<section id="about" class="three">
+			<div class="macbook">
+				<div class="screen">
+					<div class="viewport">
+						<div class="jumbo">
+							<div id="particles-js">
+								<div id="typed-strings">
+									<div id="topbox">text editor</div>
+									<div id="innerEditor"><span id="typed"></span></div>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-			</section>
+				<div class="base"></div>
+				<div class="notch"></div>
+			</div>
+			<!--about me section ends -->
+		</section>
+
+		<!-- calendar for number api -->
+		<div class="numberApiDiv">
+			<h2>Did you know ?</h2>
+			<p id="numbersText" class="numbersText">
+			</p>
+			<i>use calendar and see what happened on your birthday</i>
+			<div class="numberApiDiv-child">
+				<div class="div-column">
+					<input type="text" id="my-input" placeholder=" 📅 " style="color: transparent" />
+					<button id="my-input-btn">Show me</button>
+				</div>
+				<div class="showMe"></div>
+			</div>
+			<p class="numbersText">
+				<span id="month-day-text"></span><br>
+				<span id="year-text"></span>
+			</p>
+		</div>
+
+
+		<!-- Contact -->
+		<section id="contact" class="four">
+			<div class="container">
+				<div class="container-third">
+					<header>
+						<h2 class="me">Contact me</h2>
+						<p class="ds-bp">Please feel free to get in touch anytime, whether for work inquiries or
+							just to
+							say "hi",</br> I will get back to you as soon as possible.</p>
+					</header>
+
+					<form id="contact" netlify-honeypot="bot-field" data-netlify="true" method="post" autofocus>
+						<div class="row">
+							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message"></textarea>
+							</div>
+							<div class="col-12">
+								<input class="btn" type="submit" value=" Send Message " />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
 		<!-- **** MAIN ENDS HERE **** -->
-	 	</div>
+	</div>
 
 	<!-- Footer -->
 	<div id="footer">
 		<!-- Copyright -->
 		<ul class="copyright">
-			<li class="copy"> Copyright &copy;</script> <span id="date"></span>  Edvin Saletovic. All rights reserved.</li>
+			<li class="copy"> Copyright &copy;</script> <span id="date"></span> Edvin Saletovic. All rights
+				reserved.
+			</li>
 			<li id="time"></li>
 		</ul>
 	</div>
 
-			<!-- Scripts -->
-			<script src="assets/js/modal.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="projects/projects.js"></script>
-			<script src="./assets/typed.js"></script>
-			<script >
-				var typed = new Typed('#typed', {
-				  strings:["let <span class='violet'>developer</span> =  <span class='white'>\u007B^400 </span>\n    <span class='violet'>firstName</span><span class='white'>:</span> <span class='green'>'Edvin'</span><span class='white'>,</span> \n    <span class='violet'>lastName</span><span class='white'>:</span> <span class='green'>'Saletovic'</span><span class='white'>,</span> \n    <span class='violet'>skills</span><span class='white'>:</span> \n     <span class='violet'>HTML5/CSS3</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>JavaScript</span><span class='white'>: </span><span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>Python</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>React</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>React Native</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>Node.js</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>tools</span><span class='white'>:</span> \n    <span class='violet'>Git</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span>\n    <span class='violet'>Jest</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n    <span class='violet'>npm</span><span class='white'>:</span> <span class='yellow'>true</span>\n <span class='white'>\u007D</span>", "hire(developer)<span class='white'>;</span>^1000"],
-				    typeSpeed: 10,
-				    backSpeed: 1,
-				    bindInputFocusEvents: true,
-				    loop: true,
-	                loopCount: Infinity,
-				  });
-			</script>
-			<!-- ///for image optimazation -->
-			<script>
-				(function(i,m,a,g,e) {
-					e = i.getElementsByTagName(m)[0], (g = i.createElement(m)).src = "//pcdn.piiojs.com/"+a+"/image.min.js",
-					g.onerror = function() {
-							(g = i.createElement(m)).src = "https://fs.piio.co/image-failover.min.js",
-							e.parentNode.insertBefore(g, e);
-					}, e.parentNode.insertBefore(g, e);
-					}(document, "script", "rhrxk9"));
-			</script>
-			<!-- bottom of the website date update -->
-			<script language="javascript"> 
-				months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
-				// var d=new Date();
-				var weekday=new Array(7);
-				weekday[0]="Sunday";
-				weekday[1]="Monday";
-				weekday[2]="Tuesday";
-				weekday[3]="Wednesday";
-				weekday[4]="Thursday";
-				weekday[5]="Friday";
-				weekday[6]="Saturday";
-				var d = new Date();
-				(d.getFullYear());
-				//date
-				var date = document.getElementById("date")
-				date.append(d.getFullYear())
-				//updated time
-				var theDate = new Date(document.lastModified);
-				var time = document.getElementById("time");
-				theDate.setTime((theDate.getTime()+(60*60)) ) 
-				with (theDate) { 
-				time.append("Last updated "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear())
-				} 
-				/*'+getHours()+':'+getMinutes()+" GMT" this to add time as well */  
-			</script> 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/modal.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="projects/projects.js"></script>
+	<script src="./assets/typed.js"></script>
+	<script src="dist/the-datepicker.min.js"></script>
+	<script>
+		var typed = new Typed('#typed', {
+			strings: [
+				"let <span class='violet'>developer</span> =  <span class='white'>\u007B^400 </span>\n    <span class='violet'>firstName</span><span class='white'>:</span> <span class='green'>'Edvin'</span><span class='white'>,</span> \n    <span class='violet'>lastName</span><span class='white'>:</span> <span class='green'>'Saletovic'</span><span class='white'>,</span> \n    <span class='violet'>skills</span><span class='white'>:</span> \n     <span class='violet'>HTML5/CSS3</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>JavaScript</span><span class='white'>: </span><span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>Python</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>React</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>React Native</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n     <span class='violet'>Node.js</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n   <span class='violet'>tools</span><span class='white'>:</span> \n    <span class='violet'>Git</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span>\n    <span class='violet'>Jest</span><span class='white'>:</span> <span class='yellow'>true</span><span class='white'>,</span> \n    <span class='violet'>npm</span><span class='white'>:</span> <span class='yellow'>true</span>\n <span class='white'>\u007D</span>",
+				"hire(developer)<span class='white'>;</span>^1000"
+			],
+			typeSpeed: 10,
+			backSpeed: 1,
+			bindInputFocusEvents: true,
+			loop: true,
+			loopCount: Infinity,
+		});
+	</script>
+	<!-- ///for image optimazation -->
+	<script>
+		(function (i, m, a, g, e) {
+			e = i.getElementsByTagName(m)[0], (g = i.createElement(m)).src = "//pcdn.piiojs.com/" + a + "/image.min.js",
+				g.onerror = function () {
+					(g = i.createElement(m)).src = "https://fs.piio.co/image-failover.min.js",
+						e.parentNode.insertBefore(g, e);
+				}, e.parentNode.insertBefore(g, e);
+		}(document, "script", "rhrxk9"));
+	</script>
+	<!-- bottom of the website date update -->
+	-->
+	<script>
+		(function () {
+			const input = document.getElementById('my-input');
+			const datepicker = new TheDatepicker.Datepicker(input);
+			datepicker.render();
+		})();
+	</script>
+</body>
+
 </html>

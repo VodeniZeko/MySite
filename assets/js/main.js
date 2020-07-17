@@ -47,6 +47,99 @@
 
   // ELEVATOR BUTTON AND MUSIC  ENDS//
 
+  // DATE FOR THE BOTTOM OF THE WEBSITE //
+
+  months = [
+    "January",
+    "Febraury",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  // var d=new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+  var d = new Date();
+  d.getFullYear();
+  //date
+  var date = document.getElementById("date");
+  date.append(d.getFullYear());
+  //updated time
+  var theDate = new Date(document.lastModified);
+  var time = document.getElementById("time");
+  theDate.setTime(theDate.getTime() + 60 * 60);
+  with (theDate) {
+    time.append(
+      "Last updated " +
+        weekday[getDay()] +
+        " " +
+        getDate() +
+        " " +
+        months[getMonth()] +
+        " " +
+        d.getFullYear()
+    );
+  }
+  /*'+getHours()+':'+getMinutes()+" GMT" this to add time as well */
+
+  // DATE FOR THE BOTTOM OF THE WEBSITE ENDS//
+
+  // NUMBERS API NUMBER API //
+
+  $(document).ready(function() {
+    var today = new Date();
+    var dd = Number(today.getDate());
+    var mm = Number(today.getMonth());
+    $.ajax({
+      url: `http://numbersapi.com/${mm}/${dd}/date`,
+      success: function(result) {
+        $("#numbersText").html(result);
+      }
+    });
+  });
+
+  myInputBtn = $("#my-input-btn");
+  myInputBtn.on("click", function() {
+    var value = document.getElementById("my-input").value;
+
+    if (value) {
+      date = value.split(".");
+      day = date[0].replace(/ /g, "");
+      month = date[1].replace(/ /g, "");
+      year = date[2].replace(/ /g, "");
+
+      $.ajax({
+        url: `http://numbersapi.com/${month}/${day}/date`,
+        success: function(x) {
+          $("#month-day-text").html(x);
+        }
+      }),
+        $.ajax({
+          url: `http://numbersapi.com/${year}/year`,
+          success: function(y) {
+            $("#year-text").html(y);
+          }
+        });
+    } else {
+      alert("Click on the 📅 (calendar) and choose a date first. ");
+    }
+  });
+
+  // NUMBERS API NUMBER API  ENDS//
+
   // Play initial animations on page load.
 
   $window.on("load", function() {
