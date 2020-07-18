@@ -4,8 +4,8 @@
 //   $.ajax({
 //     url: `https://1kfit61c36.execute-api.us-east-2.amazonaws.com/production/1990/year`,
 //     headers: {
-//       accessKey: "AKIAUQETXRJDBBF4HRG2",
-//       secretKey: "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"
+//       accessKey: key,
+//       secretKey: key
 //     },
 //     success: function(res) {
 //       console.log(res);
