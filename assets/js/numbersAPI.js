@@ -1,18 +1,18 @@
 // NUMBERS API NUMBER API //
 
 $(document).ready(function() {
-  var rapidApiKey = config.MY_KEY;
-  var today = new Date();
-  var dd = Number(today.getDate());
-  var mm = Number(today.getMonth());
-  var settings = {
+  // let rapidApiKey = config.MY_KEY;
+  let today = new Date();
+  let dd = Number(today.getDate());
+  let mm = Number(today.getMonth());
+  let settings = {
     async: true,
     crossDomain: true,
     url: `https://numbersapi.p.rapidapi.com/${mm}/${dd}/date?fragment=true&json=true`,
     method: "GET",
     headers: {
       "x-rapidapi-host": "numbersapi.p.rapidapi.com",
-      "x-rapidapi-key": rapidApiKey
+      "x-rapidapi-key": "fd9a24e86cmsh816f800e1d8f6d5p187c22jsn4a7f07564250"
     }
   };
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 myInputBtn = $("#my-input-btn");
 myInputBtn.on("click", function() {
-  let rapidApiKey = config.MY_KEY;
+  // let rapidApiKey = config.MY_KEY;
   let value = document.getElementById("my-input").value;
 
   if (value) {
@@ -44,7 +44,7 @@ myInputBtn.on("click", function() {
       method: "GET",
       headers: {
         "x-rapidapi-host": "numbersapi.p.rapidapi.com",
-        "x-rapidapi-key": rapidApiKey
+        "x-rapidapi-key": "fd9a24e86cmsh816f800e1d8f6d5p187c22jsn4a7f07564250"
       }
     };
 
@@ -61,7 +61,7 @@ myInputBtn.on("click", function() {
       method: "GET",
       headers: {
         "x-rapidapi-host": "numbersapi.p.rapidapi.com",
-        "x-rapidapi-key": rapidApiKey
+        "x-rapidapi-key": "fd9a24e86cmsh816f800e1d8f6d5p187c22jsn4a7f07564250"
       }
     };
 
