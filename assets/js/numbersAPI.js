@@ -1,7 +1,6 @@
 // NUMBERS API NUMBER API //
 
 $(document).ready(function() {
-  // let rapidApiKey = config.MY_KEY;
   let today = new Date();
   let dd = Number(today.getDate());
   let mm = Number(today.getMonth());
@@ -25,7 +24,6 @@ $(document).ready(function() {
 
 myInputBtn = $("#my-input-btn");
 myInputBtn.on("click", function() {
-  // let rapidApiKey = config.MY_KEY;
   let value = document.getElementById("my-input").value;
 
   if (value) {
@@ -33,10 +31,62 @@ myInputBtn.on("click", function() {
     day = date[0].replace(/ /g, "");
     month = date[1].replace(/ /g, "");
     year = date[2].replace(/ /g, "");
-    md = {};
-    ye = {};
-    // TODO: make the dates readable such as 3rd and months are being
-    // actual names of months instead of integers
+
+    const dayPicker = d => {
+      switch (d) {
+        case "1":
+          return d + "st";
+          break;
+        case "2":
+          return d + "nd";
+          break;
+        case "3":
+          return d + "rd";
+          break;
+        default:
+          return d + "th";
+      }
+    };
+
+    const monthPicker = m => {
+      switch (m) {
+        case "1":
+          return "January";
+          break;
+        case "2":
+          return "February";
+          break;
+        case "3":
+          return "March";
+          break;
+        case "4":
+          return "April";
+          break;
+        case "5":
+          return "May";
+          break;
+        case "6":
+          return "June";
+          break;
+        case "7":
+          return "July";
+          break;
+        case "8":
+          return "August";
+          break;
+        case "9":
+          return "September";
+          break;
+        case "10":
+          return "October";
+          break;
+        case "11":
+          return "November";
+          break;
+        default:
+          return "December";
+      }
+    };
     let seeDate = {
       async: true,
       crossDomain: true,
@@ -49,7 +99,7 @@ myInputBtn.on("click", function() {
     };
 
     $.ajax(seeDate).done(function(res2) {
-      preDate = "On " + " " + day + " " + month + ",";
+      preDate = "On " + " " + monthPicker(month) + " " + dayPicker(day) + ",";
       myDate = preDate + " " + res2.text;
       $("#month-day-text").html(myDate);
     });
