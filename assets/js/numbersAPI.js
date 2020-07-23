@@ -121,7 +121,7 @@ myInputBtn.on("click", function() {
       $("#year-text").html(myYear);
     });
   } else {
-    alert("Click on the 📅 (calendar) and choose a date first. ");
+    alert("Click on 📅 (calendar icon) and choose the date first. ");
   }
 });
 
