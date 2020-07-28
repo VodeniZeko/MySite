@@ -20,6 +20,7 @@
   "homepage": "https://github.com/VodeniZeko/MySite#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "netlify-lambda": "^2.0.0"
   }
 }
