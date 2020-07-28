@@ -1,6 +1,8 @@
 // NUMBERS API NUMBER API //
-
+require("dotenv").config();
 $(document).ready(function() {
+  const API_KEY = process.env.NUMBERS_API;
+  console.log(API_KEY);
   let today = new Date();
   let dd = Number(today.getDate());
   let mm = Number(today.getMonth());
@@ -11,7 +13,7 @@ $(document).ready(function() {
     method: "GET",
     headers: {
       "x-rapidapi-host": "numbersapi.p.rapidapi.com",
-      "x-rapidapi-key": "fd9a24e86cmsh816f800e1d8f6d5p187c22jsn4a7f07564250"
+      "x-rapidapi-key": API_KEY
     }
   };
 
@@ -94,7 +96,7 @@ myInputBtn.on("click", function() {
       method: "GET",
       headers: {
         "x-rapidapi-host": "numbersapi.p.rapidapi.com",
-        "x-rapidapi-key": "fd9a24e86cmsh816f800e1d8f6d5p187c22jsn4a7f07564250"
+        "x-rapidapi-key": API_KEY
       }
     };
 
@@ -111,7 +113,7 @@ myInputBtn.on("click", function() {
       method: "GET",
       headers: {
         "x-rapidapi-host": "numbersapi.p.rapidapi.com",
-        "x-rapidapi-key": "fd9a24e86cmsh816f800e1d8f6d5p187c22jsn4a7f07564250"
+        "x-rapidapi-key": API_KEY
       }
     };
 

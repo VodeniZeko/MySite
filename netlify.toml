@@ -1,2 +1,3 @@
 [build]
 functions = "lambda"
+[context.production]
