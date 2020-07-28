@@ -1,6 +1,7 @@
 // NUMBERS API NUMBER API //
-require("dotenv").config();
+
 $(document).ready(function() {
+  require("dotenv").config();
   const API_KEY = process.env.NUMBERS_API;
   console.log(API_KEY);
   let today = new Date();
