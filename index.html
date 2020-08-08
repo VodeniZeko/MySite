@@ -385,18 +385,17 @@
 
 					<form id="contact" netlify-honeypot="bot-field" data-netlify="true" method="post" autofocus>
 						<div class="row">
-							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" />
+							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name"
+									required />
 							</div>
-							<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" />
+							<div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email"
+									required />
 							</div>
 							<div class="col-12">
-								<textarea name="message" placeholder="Message"></textarea>
+								<textarea name="message" type="text" placeholder="Message" required></textarea>
 							</div>
 							<div class="col-12">
 								<input class="btn" type="submit" value=" Send Message " />
-							</div>
-							<div>
-								<div data-netlify-recaptcha="true"></div>
 							</div>
 						</div>
 					</form>
