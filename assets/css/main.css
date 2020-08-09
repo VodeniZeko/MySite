@@ -2750,8 +2750,7 @@ form input[type="password"]:focus,
 form select:focus,
 form textarea:focus {
 	box-shadow: 0 0 2px 1px #ffa500;
-	background: transparent;
-	color: #ffa500;
+	background: white;
 	font-weight: 100;
 }
 
@@ -2763,7 +2762,6 @@ form select {
 }
 
 ::placeholder {
-	color: #ffa500;
 	font-weight: 100;
 }
 
@@ -3507,7 +3505,6 @@ section.three {
 	/* Full width */
 	height: 100%;
 	/* Full height */
-	/* overflow: auto; Enable scroll if needed */
 	background-color: rgb(0, 0, 0);
 	/* Fallback color */
 	background-color: #f2f2f2;
@@ -3521,6 +3518,7 @@ section.three {
 	background-size: 100% 116%;
 	background-repeat: no-repeat;
 	max-width: 900px;
+
 }
 
 @media screen and (max-width:800px) {
@@ -3780,19 +3778,14 @@ iframe {
 
 .m {
 	display: none;
-	/* Hidden by default */
 	position: fixed;
-	/* Stay in place */
 	z-index: 1;
-	/* Sit on top */
 	left: 0;
 	top: 0;
 	width: 100%;
 	/* Full width */
 	height: 100%;
 	/* Full height */
-	overflow: auto;
-	/* Enable scroll if needed */
 	background-color: rgb(0, 0, 0);
 	/* Fallback color */
 	background-color: rgba(0, 0, 0, 0.4);
@@ -3801,7 +3794,8 @@ iframe {
 	/* Fade in the background */
 	-webkit-animation-duration: 0.4s;
 	animation-name: fadeIn;
-	animation-duration: 0.4s
+	animation-duration: 0.4s;
+	overflow-y: hidden;
 }
 
 /* Modal Content/Box */
@@ -3817,7 +3811,6 @@ iframe {
 	-webkit-animation-duration: 0.4s;
 	animation-name: slideIn;
 	animation-duration: 0.4s;
-
 }
 
 
