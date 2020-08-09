@@ -28,3 +28,28 @@ $(".LogoBtn").click(function() {
   $(this).toggleClass("active");
   return $(".LogoBox").toggleClass("open");
 });
+
+// SUCCESS MODAL
+let testForm = document.querySelector("#contact form");
+
+testForm.addEventListener("submit", e => {
+  e.preventDefault();
+
+  const formData = new FormData(testForm);
+  fetch(testForm.getAttribute("action"), {
+    method: "POST",
+    headers: {
+      Accept: "application/x-www-form-urlencoded;charset=UTF-8",
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+    },
+    body: new URLSearchParams(formData).toString()
+  }).then(res => {
+    if (res) {
+      var successModal = document.getElementById("myM");
+      successModal.style.display = "block";
+      setTimeout(function() {
+        successModal.style.display = "none";
+      }, 3000);
+    }
+  });
+});
