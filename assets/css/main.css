@@ -2543,7 +2543,7 @@ input, select, textarea {
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
 		color: #000;
-		font-weight: 600;
+		font-weight: 100;
 	}
 
 		form input[type="text"]:focus,

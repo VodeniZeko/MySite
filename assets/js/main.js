@@ -182,4 +182,9 @@
   /*'+getHours()+':'+getMinutes()+" GMT" this to add time as well */
 
   // DATE FOR THE BOTTOM OF THE WEBSITE ENDS//
+
+  $("#contact").submit(function(e) {
+    e.preventDefault();
+    console.log("success");
+  });
 })(jQuery);
