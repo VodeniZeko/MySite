@@ -30,13 +30,13 @@ $(".LogoBtn").click(function() {
 });
 
 // SUCCESS MODAL
-let testForm = document.querySelector("#contact form");
+let ContactForm = document.querySelector("#contact form");
 
-testForm.addEventListener("submit", e => {
+ContactForm.addEventListener("submit", e => {
   e.preventDefault();
 
-  const formData = new FormData(testForm);
-  fetch(testForm.getAttribute("action"), {
+  const formData = new FormData(ContactForm);
+  fetch(ContactForm.getAttribute("action"), {
     method: "POST",
     headers: {
       Accept: "application/x-www-form-urlencoded;charset=UTF-8",
@@ -45,6 +45,7 @@ testForm.addEventListener("submit", e => {
     body: new URLSearchParams(formData).toString()
   }).then(res => {
     if (res) {
+      ContactForm.reset();
       var successModal = document.getElementById("myM");
       successModal.style.display = "block";
       setTimeout(function() {
