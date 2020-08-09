@@ -401,6 +401,16 @@
 							</div>
 						</div>
 					</form>
+
+					<!-- SUCCESS MODAL -->
+					<div id="myM" class="m">
+						<!-- Modal content -->
+						<div class="m-content">
+							Message sent, thank you!<br />
+							I will get back to you soon..
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</section>
@@ -430,7 +440,7 @@
 	<script src="projects/projects.js"></script>
 	<script src="./assets/typed.js"></script>
 	<script src="dist/the-datepicker.min.js"></script>
-	<script src="assets/js/numbersAPI.js"></script>
+	<!-- <script src="assets/js/numbersAPI.js"></script> -->
 	<script>
 		var typed = new Typed('#typed', {
 			strings: [
@@ -462,28 +472,7 @@
 			datepicker.render();
 		})();
 	</script>
-	<script>
-		let testForm = document.querySelector("#contact form");
 
-		testForm.addEventListener('submit', e => {
-			e.preventDefault();
-
-			const formData = new FormData(testForm);
-			fetch(testForm.getAttribute('action'), {
-					method: 'POST',
-					headers: {
-						'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-						'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-					},
-					body: new URLSearchParams(formData).toString()
-				})
-				.then(res => {
-					if (res) {
-						console.log("yrees")
-					}
-				});
-		});
-	</script>
 </body>
 
 </html>
