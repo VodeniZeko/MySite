@@ -2546,22 +2546,15 @@ input, select, textarea {
 		font-weight: 600;
 	}
 
-		form > div > input[type="text"]:valid,
-		form > div > input[type="email"]:valid,
-			{
-				background: url('https://webdevtrick.com/wp-content/uploads/check-icon.svg');
-				background-size: 20px;
-				background-repeat: no-repeat;
-				background-position: 415px 18px;
-			}
-
 		form input[type="text"]:focus,
 		form input[type="email"]:focus,
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
 			box-shadow: 0 0 2px 1px #ffa500;
-			background:transparent;		
+			background:transparent;	
+			color:  #ffa500;
+			font-weight: 100;	
 		}
 
 	form input[type="text"],
@@ -2572,7 +2565,7 @@ input, select, textarea {
 	}
 
 	::placeholder{
-		color:#000;
+		color:  #ffa500;
 		font-weight: 100;
 	}
 
