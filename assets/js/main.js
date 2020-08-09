@@ -183,8 +183,11 @@
 
   // DATE FOR THE BOTTOM OF THE WEBSITE ENDS//
 
-  $("#contact").submit(function(e) {
+  $("contact").submit(function(e) {
     e.preventDefault();
-    console.log("success");
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Thank you!");
+    });
   });
 })(jQuery);
