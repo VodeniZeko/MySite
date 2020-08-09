@@ -183,11 +183,27 @@
 
   // DATE FOR THE BOTTOM OF THE WEBSITE ENDS//
 
-  $("contact").submit(function(e) {
-    e.preventDefault();
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Thank you!");
-    });
-  });
+  // $("#contact").on("submit", async e => {
+  //   e.preventDefault();
+  //   var $form = $(this);
+  //   const formData = $("#contact");
+  //   console.log(new URLSearchParams(new FormData($form)));
+  // try {
+  //   const response = await fetch("/", {
+  //     method: "post",
+  //     headers: {
+  //       "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+  //     },
+  //     // parse and submit all included form data
+  //     body: new URLSearchParams(formData).toString()
+  //   });
+  //   if (response.status === 200) {
+  //     document.querySelector(".successMsg").hidden = false;
+  //   } else {
+  //     document.querySelector(".errorMsg").hidden = false;
+  //   }
+  // } catch (e) {
+  //   console.log(e);
+  // }
+  // });
 })(jQuery);
