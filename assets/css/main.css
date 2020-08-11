@@ -2723,12 +2723,10 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"],
 form select,
 form textarea {
 	position: relative;
-	-webkit-appearance: none;
-	display: block;
+	display: inline-block;
 	border: 0;
 	outline: 0;
 	width: 100%;
@@ -2742,21 +2740,23 @@ form textarea {
 	transition: all 0.35s ease-in-out;
 	color: #000;
 	font-weight: 100;
+	background: white;
 }
+
+
 
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form input[type="password"]:focus,
 form select:focus,
 form textarea:focus {
-	box-shadow: 0 0 2px 1px #ffa500;
-	background: white;
+	box-shadow: 0 0 2px 2px #f9be52;
 	font-weight: 100;
+	outline: none;
 }
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"],
 form select {
 	line-height: 1.25em;
 }
@@ -3795,7 +3795,7 @@ iframe {
 	-webkit-animation-duration: 0.4s;
 	animation-name: fadeIn;
 	animation-duration: 0.4s;
-	overflow-y: hidden;
+
 }
 
 /* Modal Content/Box */
@@ -4489,11 +4489,12 @@ iframe {
 
 
 .projects-body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 1500px;
 
 }
 
