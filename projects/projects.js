@@ -2,10 +2,10 @@ var autoSwap = setInterval(swap, 1500);
 
 //pause slideshow and reinstantiate on mouseout
 $(".carousel").hover(
-  function() {
+  function () {
     clearInterval(autoSwap);
   },
-  function() {
+  function () {
     autoSwap = setInterval(swap, 1500);
   }
 );
@@ -19,7 +19,7 @@ var leftpos = itemCount;
 var resetCount = itemCount;
 
 //unused: gather text inside items class
-$("li.items").each(function(index) {
+$("li.items").each(function (index) {
   items[index] = $(this).text();
 });
 //swap images function
@@ -33,15 +33,9 @@ function swap(action) {
       leftitem = itemCount;
     }
 
-    $(".right-pos")
-      .removeClass("right-pos")
-      .addClass("back-pos");
-    $(".main-pos")
-      .removeClass("main-pos")
-      .addClass("right-pos");
-    $(".left-pos")
-      .removeClass("left-pos")
-      .addClass("main-pos");
+    $(".right-pos").removeClass("right-pos").addClass("back-pos");
+    $(".main-pos").removeClass("main-pos").addClass("right-pos");
+    $(".left-pos").removeClass("left-pos").addClass("main-pos");
     $("#" + leftitem + "")
       .removeClass("back-pos")
       .addClass("left-pos");
@@ -101,24 +95,31 @@ function swap(action) {
 }
 
 //next button click function
-$("#next").click(function() {
+$("#next").click(function () {
   swap("clockwise");
 });
 
 //prev button click function
-$("#prev").click(function() {
+$("#prev").click(function () {
   swap("counter-clockwise");
 });
 
 // featured/portfolio videos loads on click to save initial load time
-$("#video-allay").on("click", function() {
+$("#video-BitcoinDiagrams").on("click", function () {
+  $(this)
+    .html(
+      '<iframe src="/assets/video/BitcoinDiagrams.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$("#video-allay").on("click", function () {
   $(this)
     .html(
       '<iframe src="/assets/video/allay.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$("#video-trim").on("click", function() {
+$("#video-trim").on("click", function () {
   $(this)
     .html(
       '<iframe src="/assets/video/trim.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
@@ -126,14 +127,14 @@ $("#video-trim").on("click", function() {
     .css("background", "none");
 });
 
-$("#video-trim4").on("click", function() {
+$("#video-trim4").on("click", function () {
   $(this)
     .html(
       '<iframe src="/assets/video/trim4.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$("#video-trimed1").on("click", function() {
+$("#video-trimed1").on("click", function () {
   $(this)
     .html(
       '<iframe src="/assets/video/trimed1.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
@@ -141,7 +142,7 @@ $("#video-trimed1").on("click", function() {
     .css("background", "none");
 });
 
-$("#video-trimm3").on("click", function() {
+$("#video-trimm3").on("click", function () {
   $(this)
     .html(
       '<iframe src="/assets/video/trimm3.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
@@ -151,68 +152,66 @@ $("#video-trimm3").on("click", function() {
 
 // Modal videos loads on click to save initial load time
 
-$(".firstVideo").on("click", function() {
+$(".firstVideo").on("click", function () {
   $("#1")
     .html(
       '<iframe src="/assets/video/soundEffects.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$(".secondVideo").on("click", function() {
+$(".secondVideo").on("click", function () {
   $("#2")
     .html(
       '<iframe src="/assets/video/trim4.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$(".thirdVideo").on("click", function() {
+$(".thirdVideo").on("click", function () {
   $("#3")
     .html(
       '<iframe src="/assets/video/trimed1.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$(".fourthVideo").on("click", function() {
+$(".fourthVideo").on("click", function () {
   $("#4")
     .html(
       '<iframe src="/assets/video/trimm3.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$(".fifthVideo").on("click", function() {
+$(".fifthVideo").on("click", function () {
   $("#5")
     .html(
       '<iframe src="/assets/video/trim.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$(".sixthVideo").on("click", function() {
+$(".sixthVideo").on("click", function () {
   $("#6")
     .html(
       '<iframe src="/assets/video/allay.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
-$(".seventhVideo").on("click", function() {
+$(".seventhVideo").on("click", function () {
   $("#7")
     .html(
-      '<iframe src="/assets/video/soon.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/BitcoinDiagrams.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
 
 // toggle dark mode on and off and persisting with local storage
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(
     "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,.mask-door-left, .mask-door-right ,body, section, span, h1, h2, p"
   ).removeClass("dark");
-  $(".switch")
-    .text(`\u263C`)
-    .css({ color: "#FCEC6D" });
+  $(".switch").text(`\u263C`).css({ color: "#FCEC6D" });
 });
 
-$(".switch").on("click", function() {
+$(".switch").on("click", function () {
   if (
     $(
       "#header,#title,#wavy,#work,#time,.las,.copy, .water-button,.mask-door-left, .mask-door-right,body, section, span, h1, h2, p"
@@ -238,7 +237,7 @@ $(".switch").on("click", function() {
   }
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   if (localStorage.getItem("mode") === "dark") {
     $(
       "#header,#title,#wavy,#work,#time,.las,.copy,.water-button,.mask-door-left, .mask-door-right,body, section, span, h1, h2, p"
