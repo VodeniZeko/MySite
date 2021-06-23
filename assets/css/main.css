@@ -3410,7 +3410,7 @@ footer #scrolly {
 	-ms-user-select: none;
 	-webkit-tap-highlight-color: transparent;
 	user-select: none;
-	transform: scale(2);
+	transform: scale(1.4);
 	cursor: pointer;
 	margin: 3rem auto;
 	width: 10px;
