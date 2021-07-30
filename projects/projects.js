@@ -119,10 +119,10 @@ $("#video-allay").on("click", function () {
     )
     .css("background", "none");
 });
-$("#video-trim").on("click", function () {
+$("#video-user").on("click", function () {
   $(this)
     .html(
-      '<iframe src="/assets/video/trim.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
+      '<iframe src="/assets/video/video-user_mngt-dash.mp4?autoplay=1" width="500" height="360" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
@@ -198,6 +198,13 @@ $(".seventhVideo").on("click", function () {
   $("#7")
     .html(
       '<iframe src="/assets/video/BitcoinDiagrams.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
+    )
+    .css("background", "none");
+});
+$(".eightVideo").on("click", function () {
+  $("#8")
+    .html(
+      '<iframe src="/assets/video/video-user_mngt-dash.mp4"?autoplay=1" width="auto" height="300" frameborder="0" allowfullscreen></iframe>'
     )
     .css("background", "none");
 });
