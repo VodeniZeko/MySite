@@ -2899,10 +2899,6 @@ input.btn {
 	margin-bottom: 0;
 }
 
-/* #header .icons {
-			font-size: .8em;
-			text-align: center;
-		} */
 
 #logo #fb {
 	color: #0e76a8;
@@ -2946,15 +2942,9 @@ input.btn {
 	left: 61%;
 	transform: translate(-50%, -50%);
 	border-radius: 5px;
-	animation: show-profile .5s forwards ease-in-out;
+	
 }
 
-
-@keyframes show-profile {
-	0% {
-		width: 0;
-	}
-}
 
 @media (max-width:1320px) and (min-width:961px) {
 	#logo .LogoProfile {
@@ -2979,16 +2969,8 @@ input.btn {
 	border-radius: 50%;
 	overflow: hidden;
 	margin-left: -50px;
-	box-shadow: 0 0 .5rem #babbbc;
 	animation: rotate-photo .5s forwards ease-in-out;
 }
-
-@keyframes rotate-photo {
-	100% {
-		transform: rotate(-360deg);
-	}
-}
-
 #logo .LogoProfile .LogoPhoto img {
 	width: 100%;
 }
@@ -3049,23 +3031,22 @@ input.btn {
 
 
 #logo .LogoProfile .LogoContent .LogoBtn {
-	width: 33px;
-	height: 33px;
 	position: absolute;
 	top: 5px;
 	left: 29px;
 	border-radius: 50%;
 	z-index: 1;
 	cursor: pointer;
-	transition-duration: .3s;
-	animation: pop-btn .3s both ease-in-out .5s;
+	background-color: #6c63ff;
+}
 
+.fa-info-circle{
+	color: white;
 }
 
 
 
-
-@keyframes pop-btn {
+/* @keyframes pop-btn {
 	0% {
 		transform: scale(0);
 	}
@@ -3077,90 +3058,16 @@ input.btn {
 	100% {
 		transform: scale(1);
 	}
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn:hover {
-	box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn span {
-	width: 60%;
-	height: 2px;
-	position: absolute;
-	background-color: green;
-	top: 50%;
-	left: 20%;
-	transform: translateY(-50%);
-	animation: to-hamburger .3s forwards ease-in-out;
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn span::before,
-.LogoProfile .LogoContent .LogoBtn span::after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	position: absolute;
-	background-color: green;
-	transition-duration: .3s;
-	transform: rotate(0deg);
-	right: 0;
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn span::before {
-	margin-top: -7px;
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn span::after {
-	margin-top: 7px;
-
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn.active span {
-	animation: to-arrow .3s forwards ease-in-out;
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn.active span::before,
-#logo>.LogoProfile .LogoContent .LogoBtn.active span::after {
-	width: 60%;
-	right: -1px;
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn.active span::before {
-	transform: rotate(45deg);
-	background-color: red;
-}
-
-#logo .LogoProfile .LogoContent .LogoBtn.active span::after {
-	transform: rotate(-45deg);
-	background-color: red;
-}
-
-@keyframes to-hamburger {
-	from {
-		transform: translateY(-50%) rotate(-180deg);
-	}
-}
-
-@keyframes to-arrow {
-	from {
-		transform: translateY(-50%) rotate(0deg);
-
-	}
-
-	to {
-		transform: translateY(-50%) rotate(180deg);
-		background-color: red;
-	}
-}
+} */
 
 #logo .LogoProfile .LogoBox {
 	width: 203px;
 	height: 100px;
-	opacity: 0;
+	opacity: 1;
 	border-radius: 50%;
 	position: absolute;
 	top: -19px;
-	right: -59%;
+	right: 39%;
 	transform: translate(-75%, -55%);
 	transition-duration: .3s;
 }
@@ -3169,23 +3076,18 @@ input.btn {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background-color: #ececec;
+	background-color:#fff;
 	text-align: center;
 	line-height: 40px;
 	position: absolute;
 	left: 58px;
 	top: calc(75px - -2px/2);
-	box-shadow: 0 0 0.5rem #babbbc;
 	transition-duration: .3s;
-}
-
-#logo .LogoProfile .LogoBox i:hover {
-	transition-delay: initial !important;
-	background-color: #adaeae;
 }
 
 #logo .LogoProfile .LogoBox.open {
 	opacity: 1;
+	right: -59%;
 }
 
 #logo .LogoProfile .LogoBox.open i {
@@ -3217,32 +3119,7 @@ input.btn {
 	transition-delay: 0.4s;
 }
 
-
 /* PROFILE IMAGE AREA ENDS */
-/* 
-
-		#logo h1 {
-			position: relative;
-			color: #000;
-			font-weight: 600;
-			font-size: 1em;
-			line-height: 1em;
-		}
-
-		#logo p {
-			position: relative;
-			display: block;
-			font-size: 0.6em;
-			color: #000;
-			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
-		}
-
-		#logo .image {
-			position: absolute;
-			left: 0;
-			top: 0;
-		} */
 
 #nav ul {
 	list-style: none;
@@ -3285,13 +3162,6 @@ input.btn {
 	line-height: 1.75em;
 }
 
-/* #nav ul li a.active {   SHADOW OVER LI TEXT ON ACTIVE */
-/* background: rgba(0, 0, 0, 0.15);
-					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
-					color: #000; */
-
-/* } */
-
 #nav ul li a.active span:before {
 	color: #000;
 }
@@ -3307,7 +3177,6 @@ input.btn {
 #footer {
 	margin-left: 375px;
 	text-align: center;
-	/* background-color: #000; */
 	padding: 0 0 5em 0;
 	font-size: 0.8em;
 }
@@ -3368,7 +3237,6 @@ footer #scrolly {
 	margin: -1px;
 	overflow: hidden;
 	text-align: center;
-	/* padding: 6em 0 0 0; */
 }
 
 
@@ -3440,15 +3308,6 @@ footer #scrolly {
 		font-size: 1.8rem;
 	}
 }
-
-/* .on {
-				font-family:'Font Awesome\ 5 Free';
-				font-style: normal;
-				font-weight: 900;
-				content: "&#xf185";
-				font-size: 1rem;
-				cursor: pointer;
-			}  */
 
 #main>section.two {
 	/* background: #fff; */
@@ -3550,9 +3409,6 @@ section.three {
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	overflow: hidden;
-	/* background-image: url("/images/game.jpg");
-			background-size: 100% 100%;
-			background-repeat: no-repeat; */
 }
 
 @media screen and (max-width:800px) {
@@ -3605,7 +3461,6 @@ section.three {
 .main-pos {
 	margin-left: 2em !important;
 	z-index: 3000;
-	/* background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png'); */
 }
 
 .left-pos {
@@ -3868,7 +3723,6 @@ iframe {
 
 #wrapper,
 #wrapp {
-	/* padding-top: 12rem; */
 	width: 100%;
 	height: 100%;
 }
