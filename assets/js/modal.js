@@ -7,24 +7,24 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
 
 // PROFILE IMAGE POPUP
-$(".LogoBtn").click(function() {
+$(".fa-info-circle").click(function () {
   $(this).toggleClass("active");
   return $(".LogoBox").toggleClass("open");
 });
@@ -32,7 +32,7 @@ $(".LogoBtn").click(function() {
 // SUCCESS MODAL
 let ContactForm = document.querySelector("#contact form");
 
-ContactForm.addEventListener("submit", e => {
+ContactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const formData = new FormData(ContactForm);
@@ -40,15 +40,15 @@ ContactForm.addEventListener("submit", e => {
     method: "POST",
     headers: {
       Accept: "application/x-www-form-urlencoded;charset=UTF-8",
-      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
     },
-    body: new URLSearchParams(formData).toString()
-  }).then(res => {
+    body: new URLSearchParams(formData).toString(),
+  }).then((res) => {
     if (res) {
       ContactForm.reset();
       var successModal = document.getElementById("myM");
       successModal.style.display = "block";
-      setTimeout(function() {
+      setTimeout(function () {
         successModal.style.display = "none";
       }, 3000);
     }
