@@ -3045,21 +3045,6 @@ input.btn {
 }
 
 
-
-/* @keyframes pop-btn {
-	0% {
-		transform: scale(0);
-	}
-
-	80% {
-		transform: scale(1.2);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-} */
-
 #logo .LogoProfile .LogoBox {
 	width: 203px;
 	height: 100px;
@@ -3084,6 +3069,7 @@ input.btn {
 	top: calc(75px - -2px/2);
 	transition-duration: .3s;
 }
+
 
 #logo .LogoProfile .LogoBox.open {
 	opacity: 1;
