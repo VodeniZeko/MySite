@@ -112,6 +112,7 @@ $("#video-BitcoinDiagrams").on("click", function () {
     )
     .css("background", "none");
 });
+
 $("#video-allay").on("click", function () {
   $(this)
     .html(
@@ -119,6 +120,7 @@ $("#video-allay").on("click", function () {
     )
     .css("background", "none");
 });
+
 $("#video-user").on("click", function () {
   $(this)
     .html(
@@ -134,6 +136,7 @@ $("#video-trim4").on("click", function () {
     )
     .css("background", "none");
 });
+
 $("#video-trimed1").on("click", function () {
   $(this)
     .html(
